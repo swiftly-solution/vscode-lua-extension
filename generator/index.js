@@ -1,0 +1,78 @@
+const { readFileSync, existsSync, writeFileSync, rm, mkdirSync, appendFileSync } = require("fs");
+const { dirname } = require('path')
+
+let data = JSON.parse(readFileSync("data.json").toString())
+data.events.data.function.data.addeventhandler.params.eventName = "GameEvent"
+data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any)"
+
+const ProcessParameters = (params) => {
+    const returnParams = [];
+    for (const paramkey of Object.keys(params)) {
+        let name = paramkey
+        returnParams.push(`--- @param ${name} ${params[paramkey]}`)
+    }
+    if (returnParams.length == 0) return "";
+    return `\n${returnParams.join("\n")}`;
+}
+
+const GenerateClassProperties = (properties) => {
+    const props = []
+    for (const [propertyName, propertyValues] of Object.entries(properties)) {
+        props.push(`--- @field${propertyValues.writable == false ? " readonly" : ""} public ${propertyName} ${propertyValues.type}`)
+    }
+
+    if (props.length == 0) return "";
+    return `\n${props.join("\n")}`
+}
+
+const GenerateClassFunctions = (key, data) => {
+    const functions = []
+
+    for (const [fnc, fncData] of Object.entries(data.functions || {})) {
+        const params = ProcessParameters(fncData.params)
+        functions.push(`${params != "" ? `${params}\n` : "\n"}--- @return ${fncData.return['lua'] == "void" ? "nil" : (fncData.return['lua'] == "Any* any" ? "any" : (fncData.return['lua'].includes("table of") ? "table" : fncData.return['lua']))}\nfunction ${key}:${fnc}(${Object.keys(fncData.params).join(", ")}) end`)
+    }
+
+    if (functions.length == 0) return "";
+    return `\n\n${functions.join("\n")}`
+}
+
+const ProcessData = async (data, subfolder, className) => {
+    for (const key of Object.keys(data)) {
+        if (data[key].iscategory) {
+            ProcessData(data[key].data, `${subfolder}/${key}`, data[key].title)
+        } else {
+            const dir = subfolder + ".lua"
+            if (!existsSync(dirname(dir))) mkdirSync(dirname(dir))
+            if (data[key].template == "function-syntax") {
+                if (!existsSync(subfolder + ".lua")) {
+                    let classVariable = data[key].variable["lua"].split(":")[0]
+                    if (classVariable.includes('[')) classVariable = classVariable.split('[')[0]
+
+                    writeFileSync(subfolder + ".lua", data[key].variable["lua"].split(":").length >= 2 ? `---@meta
+
+---@class ${className}
+${classVariable} = {}` : `---@meta`)
+                }
+
+                if (data[key].variable['lua'].includes("[")) continue;
+                appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua']))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
+            } else if (data[key].template == "types-syntax") {
+                if (!existsSync(subfolder)) mkdirSync(subfolder)
+                writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+            } else if (data[key].template.includes("event-syntax")) {
+                subfolder = `${subfolder}/../list.lua`
+                if (!existsSync(subfolder)) writeFileSync(subfolder, `--- @meta\n--- @alias GameEvent`)
+                appendFileSync(subfolder, `\n--- |"${data[key].title}"`)
+            } else if (data[key].template == "class-syntax") {
+                if (!existsSync(subfolder)) mkdirSync(subfolder)
+                writeFileSync(subfolder + `/${key}.lua`, `--- @meta\n\n--- @class ${data[key].title}${GenerateClassProperties(data[key].properties)}\n${key} = {}\n\n--- This is the constructor for ${data[key].title} class.${ProcessParameters(data[key].constructor)}\n--- @return ${data[key].title}\nfunction ${data[key].title}(${Object.keys(data[key].constructor).join(", ")}) end${GenerateClassFunctions(key, data[key])}`)
+            }
+        }
+    }
+}
+
+rm("../EmmyLua", { recursive: true }, () => {
+    mkdirSync("../EmmyLua")
+    ProcessData(data, __dirname + "/../EmmyLua")
+});

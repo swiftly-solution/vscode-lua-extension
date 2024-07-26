@@ -1,0 +1,6 @@
+--- @meta
+
+--- @class TimerHandle
+TimerHandle = {
+
+}

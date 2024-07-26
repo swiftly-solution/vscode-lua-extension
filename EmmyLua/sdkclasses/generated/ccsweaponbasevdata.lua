@@ -1,0 +1,96 @@
+--- @meta
+
+--- @class CCSWeaponBaseVData
+--- @field public WeaponType number
+--- @field public WeaponCategory number
+--- @field public GearSlot number
+--- @field public GearSlotPosition number
+--- @field public DefaultLoadoutSlot number
+--- @field public WrongTeamMsg string
+--- @field public Price number
+--- @field public KillAward number
+--- @field public PrimaryReserveAmmoMax number
+--- @field public SecondaryReserveAmmoMax number
+--- @field public MeleeWeapon boolean
+--- @field public HasBurstMode boolean
+--- @field public IsRevolver boolean
+--- @field public CannotShootUnderwater boolean
+--- @field public AnimExtension string
+--- @field public SilencerType number
+--- @field public CrosshairMinDistance number
+--- @field public CrosshairDeltaDistance number
+--- @field public IsFullAuto boolean
+--- @field public NumBullets number
+--- @field readonly public CycleTime CFiringModeFloat
+--- @field readonly public MaxSpeed CFiringModeFloat
+--- @field readonly public Spread CFiringModeFloat
+--- @field readonly public InaccuracyCrouch CFiringModeFloat
+--- @field readonly public InaccuracyStand CFiringModeFloat
+--- @field readonly public InaccuracyJump CFiringModeFloat
+--- @field readonly public InaccuracyLand CFiringModeFloat
+--- @field readonly public InaccuracyLadder CFiringModeFloat
+--- @field readonly public InaccuracyFire CFiringModeFloat
+--- @field readonly public InaccuracyMove CFiringModeFloat
+--- @field readonly public RecoilAngle CFiringModeFloat
+--- @field readonly public RecoilAngleVariance CFiringModeFloat
+--- @field readonly public RecoilMagnitude CFiringModeFloat
+--- @field readonly public RecoilMagnitudeVariance CFiringModeFloat
+--- @field readonly public TracerFrequency CFiringModeInt
+--- @field public InaccuracyJumpInitial number
+--- @field public InaccuracyJumpApex number
+--- @field public InaccuracyReload number
+--- @field public RecoilSeed number
+--- @field public SpreadSeed number
+--- @field public TimeToIdleAfterFire number
+--- @field public IdleInterval number
+--- @field public AttackMovespeedFactor number
+--- @field public HeatPerShot number
+--- @field public InaccuracyPitchShift number
+--- @field public InaccuracyAltSoundThreshold number
+--- @field public BotAudibleRange number
+--- @field public UseRadioSubtitle string
+--- @field public UnzoomsAfterShot boolean
+--- @field public HideViewModelWhenZoomed boolean
+--- @field public ZoomLevels number
+--- @field public ZoomFOV1 number
+--- @field public ZoomFOV2 number
+--- @field public ZoomTime0 number
+--- @field public ZoomTime1 number
+--- @field public ZoomTime2 number
+--- @field public IronSightPullUpSpeed number
+--- @field public IronSightPutDownSpeed number
+--- @field public IronSightFOV number
+--- @field public IronSightPivotForward number
+--- @field public IronSightLooseness number
+--- @field public PivotAngle QAngle
+--- @field public IronSightEyePos Vector
+--- @field public Damage number
+--- @field public HeadshotMultiplier number
+--- @field public ArmorRatio number
+--- @field public Penetration number
+--- @field public Range number
+--- @field public RangeModifier number
+--- @field public FlinchVelocityModifierLarge number
+--- @field public FlinchVelocityModifierSmall number
+--- @field public RecoveryTimeCrouch number
+--- @field public RecoveryTimeStand number
+--- @field public RecoveryTimeCrouchFinal number
+--- @field public RecoveryTimeStandFinal number
+--- @field public RecoveryTransitionStartBullet number
+--- @field public RecoveryTransitionEndBullet number
+--- @field public ThrowVelocity number
+--- @field public SmokeColor Vector
+--- @field public Parent CBasePlayerWeaponVData
+ccsweaponbasevdata = {}
+
+--- This is the constructor for CCSWeaponBaseVData class.
+--- @param ptr string
+--- @return CCSWeaponBaseVData
+function CCSWeaponBaseVData(ptr) end
+
+
+--- @return string
+function ccsweaponbasevdata:ToPtr() end
+
+--- @return bool
+function ccsweaponbasevdata:IsValid() end

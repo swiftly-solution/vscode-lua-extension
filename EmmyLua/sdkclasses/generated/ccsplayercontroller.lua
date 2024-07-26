@@ -1,0 +1,103 @@
+--- @meta
+
+--- @class CCSPlayerController
+--- @field public InGameMoneyServices CCSPlayerController_InGameMoneyServices
+--- @field public InventoryServices CCSPlayerController_InventoryServices
+--- @field public ActionTrackingServices CCSPlayerController_ActionTrackingServices
+--- @field public DamageServices CCSPlayerController_DamageServices
+--- @field public Ping number
+--- @field public HasCommunicationAbuseMute boolean
+--- @field public CrosshairCodes string
+--- @field public PendingTeamNum number
+--- @field public ForceTeamTime number
+--- @field public CompTeammateColor number
+--- @field public EverPlayedOnTeam boolean
+--- @field public AttemptedToGetColor boolean
+--- @field public TeammatePreferredColor number
+--- @field public TeamChanged boolean
+--- @field public InSwitchTeam boolean
+--- @field public HasSeenJoinGame boolean
+--- @field public JustBecameSpectator boolean
+--- @field public SwitchTeamsOnNextRoundReset boolean
+--- @field public RemoveAllItemsOnNextRoundReset boolean
+--- @field public Clan string
+--- @field public ClanName string
+--- @field public CoachingTeam number
+--- @field public PlayerDominated number
+--- @field public PlayerDominatingMe number
+--- @field public CompetitiveRanking number
+--- @field public CompetitiveWins number
+--- @field public CompetitiveRankType number
+--- @field public CompetitiveRankingPredicted_Win number
+--- @field public CompetitiveRankingPredicted_Loss number
+--- @field public CompetitiveRankingPredicted_Tie number
+--- @field public EndMatchNextMapVote number
+--- @field public ActiveQuestId number
+--- @field readonly public QuestProgressReason QuestProgress
+--- @field public PlayerTvControlFlags number
+--- @field public DraftIndex number
+--- @field public MsQueuedModeDisconnectionTimestamp number
+--- @field public UiAbandonRecordedReason number
+--- @field public CannotBeKicked boolean
+--- @field public EverFullyConnected boolean
+--- @field public AbandonAllowsSurrender boolean
+--- @field public AbandonOffersInstantSurrender boolean
+--- @field public Disconnection1MinWarningPrinted boolean
+--- @field public ScoreReported boolean
+--- @field public DisconnectionTick number
+--- @field public ControllingBot boolean
+--- @field public HasControlledBotThisRound boolean
+--- @field public HasBeenControlledByPlayerThisRound boolean
+--- @field public BotsControlledThisRound number
+--- @field public CanControlObservedBot boolean
+--- @field readonly public PlayerPawn CCSPlayerPawn
+--- @field readonly public ObserverPawn CCSObserverPawn
+--- @field public DesiredObserverMode number
+--- @field readonly public DesiredObserverTarget CEntityInstance
+--- @field public PawnIsAlive boolean
+--- @field public PawnHealth number
+--- @field public PawnArmor number
+--- @field public PawnHasDefuser boolean
+--- @field public PawnHasHelmet boolean
+--- @field public PawnCharacterDefIndex number
+--- @field public PawnLifetimeStart number
+--- @field public PawnLifetimeEnd number
+--- @field public PawnBotDifficulty number
+--- @field readonly public OriginalControllerOfCurrentPawn CCSPlayerController
+--- @field public Score number
+--- @field public RoundScore number
+--- @field public RoundsWon number
+--- @field public Kills table
+--- @field public MvpNoMusic boolean
+--- @field public MvpReason number
+--- @field public MusicKitID number
+--- @field public MusicKitMVPs number
+--- @field public MVPs number
+--- @field public UpdateCounter number
+--- @field public SmoothedPing number
+--- @field readonly public LastHeldVoteTimer IntervalTimer
+--- @field public ShowHints boolean
+--- @field public NextTimeCheck number
+--- @field public JustDidTeamKill boolean
+--- @field public PunishForTeamKill boolean
+--- @field public GaveTeamDamageWarning boolean
+--- @field public GaveTeamDamageWarningThisRound boolean
+--- @field public DblLastReceivedPacketPlatFloatTime number
+--- @field public LastTeamDamageWarningTime number
+--- @field public LastTimePlayerWasDisconnectedForPawnsRemove number
+--- @field public SuspiciousHitCount number
+--- @field public NonSuspiciousHitStreak number
+--- @field public Parent CBasePlayerController
+ccsplayercontroller = {}
+
+--- This is the constructor for CCSPlayerController class.
+--- @param ptr string
+--- @return CCSPlayerController
+function CCSPlayerController(ptr) end
+
+
+--- @return string
+function ccsplayercontroller:ToPtr() end
+
+--- @return bool
+function ccsplayercontroller:IsValid() end

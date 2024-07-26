@@ -1,0 +1,116 @@
+--- @meta
+
+--- @class PhysFeModelDesc_t
+--- @field public CtrlHash table
+--- @field public CtrlName table
+--- @field public StaticNodeFlags number
+--- @field public DynamicNodeFlags number
+--- @field public LocalForce number
+--- @field public LocalRotation number
+--- @field public NodeCount number
+--- @field public StaticNodes number
+--- @field public RotLockStaticNodes number
+--- @field public FirstPositionDrivenNode number
+--- @field public SimdTriCount1 number
+--- @field public SimdTriCount2 number
+--- @field public SimdQuadCount1 number
+--- @field public SimdQuadCount2 number
+--- @field public QuadCount1 number
+--- @field public QuadCount2 number
+--- @field public TreeDepth number
+--- @field public NodeBaseJiggleboneDependsCount number
+--- @field public RopeCount number
+--- @field public Ropes table
+--- @field public NodeBases table
+--- @field public SimdNodeBases table
+--- @field public Quads table
+--- @field public SimdQuads table
+--- @field public SimdTris table
+--- @field public SimdRods table
+--- @field public SimdRodsAnim table
+--- @field public Rods table
+--- @field public Twists table
+--- @field public AxialEdges table
+--- @field public NodeInvMasses table
+--- @field public CtrlOffsets table
+--- @field public CtrlOsOffsets table
+--- @field public FollowNodes table
+--- @field public CollisionPlanes table
+--- @field public NodeIntegrator table
+--- @field public SpringIntegrator table
+--- @field public SimdSpringIntegrator table
+--- @field public WorldCollisionParams table
+--- @field public LegacyStretchForce table
+--- @field public NodeCollisionRadii table
+--- @field public DynNodeFriction table
+--- @field public LocalRotation1 table
+--- @field public LocalForce1 table
+--- @field public TaperedCapsuleStretches table
+--- @field public TaperedCapsuleRigids table
+--- @field public SphereRigids table
+--- @field public WorldCollisionNodes table
+--- @field public TreeParents table
+--- @field public TreeCollisionMasks table
+--- @field public TreeChildren table
+--- @field public FreeNodes table
+--- @field public FitMatrices table
+--- @field public FitWeights table
+--- @field public ReverseOffsets table
+--- @field public AnimStrayRadii table
+--- @field public SimdAnimStrayRadii table
+--- @field public KelagerBends table
+--- @field public CtrlSoftOffsets table
+--- @field public JiggleBones table
+--- @field public SourceElems table
+--- @field public GoalDampedSpringIntegrators table
+--- @field public Tris table
+--- @field public TriCount1 number
+--- @field public TriCount2 number
+--- @field public ReservedUint8 number
+--- @field public ExtraPressureIterations number
+--- @field public ExtraGoalIterations number
+--- @field public ExtraIterations number
+--- @field public BoxRigids table
+--- @field public DynNodeVertexSet table
+--- @field public VertexSetNames table
+--- @field public RigidColliderPriorities table
+--- @field public MorphLayers table
+--- @field public MorphSetData table
+--- @field public VertexMaps table
+--- @field public VertexMapValues table
+--- @field public Effects table
+--- @field public LockToParent table
+--- @field public LockToGoal table
+--- @field public SkelParents table
+--- @field public DynNodeWindBases table
+--- @field public InternalPressure number
+--- @field public DefaultTimeDilation number
+--- @field public Windage number
+--- @field public WindDrag number
+--- @field public DefaultSurfaceStretch number
+--- @field public DefaultThreadStretch number
+--- @field public DefaultGravityScale number
+--- @field public DefaultVelAirDrag number
+--- @field public DefaultExpAirDrag number
+--- @field public DefaultVelQuadAirDrag number
+--- @field public DefaultExpQuadAirDrag number
+--- @field public RodVelocitySmoothRate number
+--- @field public QuadVelocitySmoothRate number
+--- @field public AddWorldCollisionRadius number
+--- @field public DefaultVolumetricSolveAmount number
+--- @field public MotionSmoothCDT number
+--- @field public RodVelocitySmoothIterations number
+--- @field public QuadVelocitySmoothIterations number
+physfemodeldesc_t = {}
+
+--- This is the constructor for PhysFeModelDesc_t class.
+--- @param ptr string
+--- @return PhysFeModelDesc_t
+function PhysFeModelDesc_t(ptr) end
+
+
+--- @return string
+function physfemodeldesc_t:ToPtr() end
+
+--- @return bool
+function physfemodeldesc_t:IsValid() end

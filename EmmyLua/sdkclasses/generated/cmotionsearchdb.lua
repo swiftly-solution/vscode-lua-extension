@@ -1,0 +1,19 @@
+--- @meta
+
+--- @class CMotionSearchDB
+--- @field readonly public RootNode CMotionSearchNode
+--- @field readonly public ResidualQuantizer CProductQuantizer
+--- @field public CodeIndices table
+cmotionsearchdb = {}
+
+--- This is the constructor for CMotionSearchDB class.
+--- @param ptr string
+--- @return CMotionSearchDB
+function CMotionSearchDB(ptr) end
+
+
+--- @return string
+function cmotionsearchdb:ToPtr() end
+
+--- @return bool
+function cmotionsearchdb:IsValid() end

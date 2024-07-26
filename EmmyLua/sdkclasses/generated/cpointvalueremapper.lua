@@ -1,0 +1,59 @@
+--- @meta
+
+--- @class CPointValueRemapper
+--- @field public Disabled boolean
+--- @field public UpdateOnClient boolean
+--- @field public InputType number
+--- @field public RemapLineStartName string
+--- @field public RemapLineEndName string
+--- @field readonly public RemapLineStart CBaseEntity
+--- @field readonly public RemapLineEnd CBaseEntity
+--- @field public MaximumChangePerSecond number
+--- @field public DisengageDistance number
+--- @field public EngageDistance number
+--- @field public RequiresUseKey boolean
+--- @field public OutputType number
+--- @field public OutputEntityName string
+--- @field public OutputEntity2Name string
+--- @field public OutputEntity3Name string
+--- @field public OutputEntity4Name string
+--- @field public OutputEntities table
+--- @field public HapticsType number
+--- @field public MomentumType number
+--- @field public MomentumModifier number
+--- @field public SnapValue number
+--- @field public CurrentMomentum number
+--- @field public RatchetType number
+--- @field public RatchetOffset number
+--- @field public InputOffset number
+--- @field public Engaged boolean
+--- @field public FirstUpdate boolean
+--- @field public PreviousValue number
+--- @field public PreviousUpdateTickTime number
+--- @field public PreviousTestPoint Vector
+--- @field readonly public UsingPlayer CBasePlayerPawn
+--- @field public CustomOutputValue number
+--- @field public SoundEngage string
+--- @field public SoundDisengage string
+--- @field public SoundReachedValueZero string
+--- @field public SoundReachedValueOne string
+--- @field public SoundMovingLoop string
+--- @field readonly public OnReachedValueZero CEntityIOOutput
+--- @field readonly public OnReachedValueOne CEntityIOOutput
+--- @field readonly public OnReachedValueCustom CEntityIOOutput
+--- @field readonly public OnEngage CEntityIOOutput
+--- @field readonly public OnDisengage CEntityIOOutput
+--- @field public Parent CBaseEntity
+cpointvalueremapper = {}
+
+--- This is the constructor for CPointValueRemapper class.
+--- @param ptr string
+--- @return CPointValueRemapper
+function CPointValueRemapper(ptr) end
+
+
+--- @return string
+function cpointvalueremapper:ToPtr() end
+
+--- @return bool
+function cpointvalueremapper:IsValid() end
