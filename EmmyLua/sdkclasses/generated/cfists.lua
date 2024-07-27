@@ -4,8 +4,8 @@
 --- @field public PlayingUninterruptableAct boolean
 --- @field public UninterruptableActivity number
 --- @field public RestorePrevWep boolean
---- @field readonly public WeaponBeforePrevious CBasePlayerWeapon
---- @field readonly public WeaponPrevious CBasePlayerWeapon
+--- @field public WeaponBeforePrevious CBasePlayerWeapon
+--- @field public WeaponPrevious CBasePlayerWeapon
 --- @field public DelayedHardPunchIncoming boolean
 --- @field public DestroyAfterTaunt boolean
 --- @field public Parent CCSWeaponBase

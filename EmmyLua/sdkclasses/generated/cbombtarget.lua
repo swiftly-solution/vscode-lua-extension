@@ -1,14 +1,14 @@
 --- @meta
 
 --- @class CBombTarget
---- @field readonly public OnBombExplode CEntityIOOutput
---- @field readonly public OnBombPlanted CEntityIOOutput
---- @field readonly public OnBombDefused CEntityIOOutput
+--- @field public OnBombExplode CEntityIOOutput
+--- @field public OnBombPlanted CEntityIOOutput
+--- @field public OnBombDefused CEntityIOOutput
 --- @field public IsBombSiteB boolean
 --- @field public IsHeistBombTarget boolean
 --- @field public BombPlantedHere boolean
 --- @field public MountTarget string
---- @field readonly public InstructorHint CBaseEntity
+--- @field public InstructorHint CBaseEntity
 --- @field public BombSiteDesignation number
 --- @field public Parent CBaseTrigger
 cbombtarget = {}

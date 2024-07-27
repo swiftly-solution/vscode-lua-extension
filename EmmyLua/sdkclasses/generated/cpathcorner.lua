@@ -3,7 +3,7 @@
 --- @class CPathCorner
 --- @field public Wait number
 --- @field public Radius number
---- @field readonly public OnPass CEntityIOOutput
+--- @field public OnPass CEntityIOOutput
 --- @field public Parent CPointEntity
 cpathcorner = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CInfoWorldLayer
---- @field readonly public OutputOnEntitiesSpawned CEntityIOOutput
+--- @field public OutputOnEntitiesSpawned CEntityIOOutput
 --- @field public WorldName string
 --- @field public LayerName string
 --- @field public WorldLayerVisible boolean

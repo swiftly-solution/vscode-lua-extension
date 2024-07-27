@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CNetworkVarChainer
---- @field readonly public PathIndex ChangeAccessorFieldPathIndex_t
+--- @field public PathIndex ChangeAccessorFieldPathIndex_t
 cnetworkvarchainer = {}
 
 --- This is the constructor for CNetworkVarChainer class.

@@ -2,7 +2,7 @@
 
 --- @class CCycleControlUpdateNode
 --- @field public ValueSource number
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public Parent CUnaryUpdateNode
 ccyclecontrolupdatenode = {}
 

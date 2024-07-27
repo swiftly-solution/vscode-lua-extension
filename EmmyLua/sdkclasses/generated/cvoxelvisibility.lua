@@ -8,12 +8,12 @@
 --- @field public GridSize number
 --- @field public SkyVisibilityCluster number
 --- @field public SunVisibilityCluster number
---- @field readonly public NodeBlock VoxelVisBlockOffset_t
---- @field readonly public RegionBlock VoxelVisBlockOffset_t
---- @field readonly public EnclosedClusterListBlock VoxelVisBlockOffset_t
---- @field readonly public EnclosedClustersBlock VoxelVisBlockOffset_t
---- @field readonly public MasksBlock VoxelVisBlockOffset_t
---- @field readonly public VisBlocks VoxelVisBlockOffset_t
+--- @field public NodeBlock VoxelVisBlockOffset_t
+--- @field public RegionBlock VoxelVisBlockOffset_t
+--- @field public EnclosedClusterListBlock VoxelVisBlockOffset_t
+--- @field public EnclosedClustersBlock VoxelVisBlockOffset_t
+--- @field public MasksBlock VoxelVisBlockOffset_t
+--- @field public VisBlocks VoxelVisBlockOffset_t
 cvoxelvisibility = {}
 
 --- This is the constructor for CVoxelVisibility class.

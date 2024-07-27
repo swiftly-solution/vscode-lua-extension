@@ -2,12 +2,12 @@
 
 --- @class CPhysMotor
 --- @field public NameAttach string
---- @field readonly public AttachedObject CBaseEntity
+--- @field public AttachedObject CBaseEntity
 --- @field public SpinUp number
 --- @field public AdditionalAcceleration number
 --- @field public AngularAcceleration number
 --- @field public LastTime number
---- @field readonly public Motor CMotorController
+--- @field public Motor CMotorController
 --- @field public Parent CLogicalEntity
 cphysmotor = {}
 

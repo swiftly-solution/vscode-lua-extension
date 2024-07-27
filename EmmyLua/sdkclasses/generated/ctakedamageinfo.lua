@@ -5,9 +5,9 @@
 --- @field public DamagePosition Vector
 --- @field public ReportedPosition Vector
 --- @field public DamageDirection Vector
---- @field readonly public Inflictor CBaseEntity
---- @field readonly public Attacker CBaseEntity
---- @field readonly public Ability CBaseEntity
+--- @field public Inflictor CBaseEntity
+--- @field public Attacker CBaseEntity
+--- @field public Ability CBaseEntity
 --- @field public Damage number
 --- @field public TotalledDamage number
 --- @field public BitsDamageType number

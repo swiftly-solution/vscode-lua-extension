@@ -7,7 +7,7 @@
 --- @field public FlexControllers table
 --- @field public SnapshotType number
 --- @field public HasDecodeDump boolean
---- @field readonly public DecodeDump AnimationDecodeDebugDumpElement_t
+--- @field public DecodeDump AnimationDecodeDebugDumpElement_t
 animationsnapshotbase_t = {}
 
 --- This is the constructor for AnimationSnapshotBase_t class.

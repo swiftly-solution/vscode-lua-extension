@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventClientPollInput_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public RealTime number
 eventclientpollinput_t = {}
 

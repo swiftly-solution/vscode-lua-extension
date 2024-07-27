@@ -4,7 +4,7 @@
 --- @field public ShouldVoiceDuck boolean
 --- @field public RunTimePhonemes table
 --- @field public EmphasisSamples table
---- @field readonly public MorphData CAudioMorphData
+--- @field public MorphData CAudioMorphData
 caudiosentence = {}
 
 --- This is the constructor for CAudioSentence class.

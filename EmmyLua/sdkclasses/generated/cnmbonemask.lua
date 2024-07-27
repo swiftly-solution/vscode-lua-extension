@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CNmBoneMask
---- @field readonly public WeightInfo CNmBoneMask
+--- @field public WeightInfo CNmBoneMask
 --- @field public Weights table
 cnmbonemask = {}
 

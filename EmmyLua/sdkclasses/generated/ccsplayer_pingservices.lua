@@ -2,7 +2,7 @@
 
 --- @class CCSPlayer_PingServices
 --- @field public PlayerPingTokens table
---- @field readonly public PlayerPing CBaseEntity
+--- @field public PlayerPing CBaseEntity
 --- @field public Parent CPlayerPawnComponent
 ccsplayer_pingservices = {}
 

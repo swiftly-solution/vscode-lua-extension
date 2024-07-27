@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CBinaryUpdateNode
---- @field readonly public Child1 CAnimUpdateNodeRef
---- @field readonly public Child2 CAnimUpdateNodeRef
+--- @field public Child1 CAnimUpdateNodeRef
+--- @field public Child2 CAnimUpdateNodeRef
 --- @field public TimingBehavior number
 --- @field public TimingBlend number
 --- @field public ResetChild1 boolean

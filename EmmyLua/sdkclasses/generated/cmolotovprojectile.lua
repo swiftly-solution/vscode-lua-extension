@@ -3,7 +3,7 @@
 --- @class CMolotovProjectile
 --- @field public IsIncGrenade boolean
 --- @field public Detonated boolean
---- @field readonly public StillTimer IntervalTimer
+--- @field public StillTimer IntervalTimer
 --- @field public HasBouncedOffPlayer boolean
 --- @field public Parent CBaseCSGrenadeProjectile
 cmolotovprojectile = {}

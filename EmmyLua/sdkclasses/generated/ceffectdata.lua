@@ -5,8 +5,8 @@
 --- @field public Start Vector
 --- @field public Normal Vector
 --- @field public Angles QAngle
---- @field readonly public Entity CEntityInstance
---- @field readonly public OtherEntity CEntityInstance
+--- @field public Entity CEntityInstance
+--- @field public OtherEntity CEntityInstance
 --- @field public Scale number
 --- @field public Magnitude number
 --- @field public Radius number

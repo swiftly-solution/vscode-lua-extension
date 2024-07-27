@@ -1,12 +1,12 @@
 --- @meta
 
 --- @class CSeqS1SeqDesc
---- @field readonly public Flags CSeqSeqDescFlag
---- @field readonly public Fetch CSeqMultiFetch
+--- @field public Flags CSeqSeqDescFlag
+--- @field public Fetch CSeqMultiFetch
 --- @field public LocalWeightlist number
 --- @field public AutoLayerArray table
 --- @field public IKLockArray table
---- @field readonly public Transition CSeqTransition
+--- @field public Transition CSeqTransition
 --- @field public ActivityArray table
 --- @field public FootMotion table
 cseqs1seqdesc = {}

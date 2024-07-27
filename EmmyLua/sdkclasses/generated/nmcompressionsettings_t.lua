@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class NmCompressionSettings_t
---- @field readonly public TranslationRangeX NmCompressionSettings_t
---- @field readonly public TranslationRangeY NmCompressionSettings_t
---- @field readonly public TranslationRangeZ NmCompressionSettings_t
---- @field readonly public ScaleRange NmCompressionSettings_t
+--- @field public TranslationRangeX NmCompressionSettings_t
+--- @field public TranslationRangeY NmCompressionSettings_t
+--- @field public TranslationRangeZ NmCompressionSettings_t
+--- @field public ScaleRange NmCompressionSettings_t
 --- @field public IsRotationStatic boolean
 --- @field public IsTranslationStatic boolean
 --- @field public IsScaleStatic boolean

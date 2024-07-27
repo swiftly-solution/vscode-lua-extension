@@ -3,7 +3,7 @@
 --- @class ParticleControlPointConfiguration_t
 --- @field public Name string
 --- @field public Drivers table
---- @field readonly public PreviewState ParticlePreviewState_t
+--- @field public PreviewState ParticlePreviewState_t
 particlecontrolpointconfiguration_t = {}
 
 --- This is the constructor for ParticleControlPointConfiguration_t class.

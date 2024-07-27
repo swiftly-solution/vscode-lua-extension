@@ -14,7 +14,7 @@
 --- @field public JustPulledPin boolean
 --- @field public NextHoldTick number
 --- @field public NextHoldFrac number
---- @field readonly public SwitchToWeaponAfterThrow CCSWeaponBase
+--- @field public SwitchToWeaponAfterThrow CCSWeaponBase
 --- @field public Parent CCSWeaponBase
 cbasecsgrenade = {}
 

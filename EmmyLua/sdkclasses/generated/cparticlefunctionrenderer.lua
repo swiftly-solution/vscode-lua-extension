@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CParticleFunctionRenderer
---- @field readonly public VisibilityInputs CParticleVisibilityInputs
+--- @field public VisibilityInputs CParticleVisibilityInputs
 --- @field public CannotBeRefracted boolean
 --- @field public SkipRenderingOnMobile boolean
 --- @field public Parent CParticleFunction

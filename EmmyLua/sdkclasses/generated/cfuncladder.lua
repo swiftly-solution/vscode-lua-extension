@@ -10,8 +10,8 @@
 --- @field public FakeLadder boolean
 --- @field public HasSlack boolean
 --- @field public SurfacePropName string
---- @field readonly public OnPlayerGotOnLadder CEntityIOOutput
---- @field readonly public OnPlayerGotOffLadder CEntityIOOutput
+--- @field public OnPlayerGotOnLadder CEntityIOOutput
+--- @field public OnPlayerGotOffLadder CEntityIOOutput
 --- @field public Parent CBaseModelEntity
 cfuncladder = {}
 

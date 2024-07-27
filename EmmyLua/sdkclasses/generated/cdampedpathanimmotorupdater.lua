@@ -3,8 +3,8 @@
 --- @class CDampedPathAnimMotorUpdater
 --- @field public AnticipationTime number
 --- @field public MinSpeedScale number
---- @field readonly public AnticipationPosParam CAnimParamHandle
---- @field readonly public AnticipationHeadingParam CAnimParamHandle
+--- @field public AnticipationPosParam CAnimParamHandle
+--- @field public AnticipationHeadingParam CAnimParamHandle
 --- @field public SpringConstant number
 --- @field public MinSpringTension number
 --- @field public MaxSpringTension number

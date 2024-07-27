@@ -3,7 +3,7 @@
 --- @class CFeIndexedJiggleBone
 --- @field public Node number
 --- @field public JiggleParent number
---- @field readonly public JiggleBone CFeJiggleBone
+--- @field public JiggleBone CFeJiggleBone
 cfeindexedjigglebone = {}
 
 --- This is the constructor for CFeIndexedJiggleBone class.

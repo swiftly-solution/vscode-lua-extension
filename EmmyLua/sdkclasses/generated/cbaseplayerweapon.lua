@@ -8,7 +8,7 @@
 --- @field public Clip1 number
 --- @field public Clip2 number
 --- @field public ReserveAmmo table
---- @field readonly public OnPlayerUse CEntityIOOutput
+--- @field public OnPlayerUse CEntityIOOutput
 --- @field public Parent CEconEntity
 cbaseplayerweapon = {}
 

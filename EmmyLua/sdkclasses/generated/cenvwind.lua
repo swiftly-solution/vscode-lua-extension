@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CEnvWind
---- @field readonly public EnvWindShared CEnvWindShared
+--- @field public EnvWindShared CEnvWindShared
 --- @field public Parent CBaseEntity
 cenvwind = {}
 

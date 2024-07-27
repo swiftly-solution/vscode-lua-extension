@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CJiggleBoneUpdateNode
---- @field readonly public OpFixedData JiggleBoneSettingsList_t
+--- @field public OpFixedData JiggleBoneSettingsList_t
 --- @field public Parent CUnaryUpdateNode
 cjiggleboneupdatenode = {}
 

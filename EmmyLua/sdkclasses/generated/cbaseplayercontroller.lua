@@ -3,10 +3,10 @@
 --- @class CBasePlayerController
 --- @field public InButtonsWhichAreToggles number
 --- @field public TickBase number
---- @field readonly public Pawn CBasePlayerPawn
+--- @field public Pawn CBasePlayerPawn
 --- @field public KnownTeamMismatch boolean
 --- @field public SplitScreenSlot number
---- @field readonly public SplitOwner CBasePlayerController
+--- @field public SplitOwner CBasePlayerController
 --- @field public IsHLTV boolean
 --- @field public Connected number
 --- @field public PlayerName string

@@ -13,7 +13,7 @@
 --- @field public StrCopyKeysWithSuffix_InputContainerSrc string
 --- @field public StrCopyKeysWithSuffix_FindSuffix string
 --- @field public StrCopyKeysWithSuffix_ReplaceSuffix string
---- @field readonly public SetValue_Value CompositeMaterialInputLooseVariable_t
+--- @field public SetValue_Value CompositeMaterialInputLooseVariable_t
 --- @field public StrGenerateTexture_TargetParam string
 --- @field public StrGenerateTexture_InitialContainer string
 --- @field public Resolution number

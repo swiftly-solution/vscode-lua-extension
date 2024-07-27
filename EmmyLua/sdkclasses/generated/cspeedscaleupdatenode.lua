@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSpeedScaleUpdateNode
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public Parent CUnaryUpdateNode
 cspeedscaleupdatenode = {}
 

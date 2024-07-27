@@ -10,9 +10,9 @@
 --- @field public NavLinkIdReverse number
 --- @field public Enabled boolean
 --- @field public StrFilterName string
---- @field readonly public Filter CBaseFilter
---- @field readonly public OnNavLinkStart CEntityIOOutput
---- @field readonly public OnNavLinkFinish CEntityIOOutput
+--- @field public Filter CBaseFilter
+--- @field public OnNavLinkStart CEntityIOOutput
+--- @field public OnNavLinkFinish CEntityIOOutput
 --- @field public IsTerminus boolean
 --- @field public Parent CPointEntity
 cnavlinkareaentity = {}

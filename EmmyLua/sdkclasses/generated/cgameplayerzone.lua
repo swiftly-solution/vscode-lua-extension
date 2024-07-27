@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CGamePlayerZone
---- @field readonly public OnPlayerInZone CEntityIOOutput
---- @field readonly public OnPlayerOutZone CEntityIOOutput
+--- @field public OnPlayerInZone CEntityIOOutput
+--- @field public OnPlayerOutZone CEntityIOOutput
 --- @field public Parent CRuleBrushEntity
 cgameplayerzone = {}
 

@@ -2,10 +2,10 @@
 
 --- @class CStateUpdateData
 --- @field public Name string
---- @field readonly public Script AnimScriptHandle
+--- @field public Script AnimScriptHandle
 --- @field public TransitionIndices table
 --- @field public Actions table
---- @field readonly public StateID AnimStateID
+--- @field public StateID AnimStateID
 cstateupdatedata = {}
 
 --- This is the constructor for CStateUpdateData class.

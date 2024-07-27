@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPlatTrigger
---- @field readonly public Platform CFuncPlat
+--- @field public Platform CFuncPlat
 --- @field public Parent CBaseModelEntity
 cplattrigger = {}
 

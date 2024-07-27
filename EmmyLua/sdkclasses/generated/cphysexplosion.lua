@@ -9,7 +9,7 @@
 --- @field public InnerRadius number
 --- @field public PushScale number
 --- @field public ConvertToDebrisWhenPossible boolean
---- @field readonly public OnPushedPlayer CEntityIOOutput
+--- @field public OnPushedPlayer CEntityIOOutput
 --- @field public Parent CPointEntity
 cphysexplosion = {}
 

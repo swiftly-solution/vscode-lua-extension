@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerRemove
---- @field readonly public OnRemove CEntityIOOutput
+--- @field public OnRemove CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggerremove = {}
 

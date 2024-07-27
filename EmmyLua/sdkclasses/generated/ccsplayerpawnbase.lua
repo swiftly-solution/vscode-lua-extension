@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CCSPlayerPawnBase
---- @field readonly public CTouchExpansionComponent CTouchExpansionComponent
+--- @field public CTouchExpansionComponent CTouchExpansionComponent
 --- @field public PingServices CCSPlayer_PingServices
 --- @field public ViewModelServices CPlayer_ViewModelServices
 --- @field public BlindUntilTime number
@@ -23,7 +23,7 @@
 --- @field public NumEnemiesAtRoundStart number
 --- @field public WasNotKilledNaturally boolean
 --- @field public CommittingSuicideOnTeamChange boolean
---- @field readonly public OriginalController CCSPlayerController
+--- @field public OriginalController CCSPlayerController
 --- @field public Parent CBasePlayerPawn
 ccsplayerpawnbase = {}
 

@@ -7,14 +7,14 @@
 --- @field public Flags number
 --- @field public EnableCollision boolean
 --- @field public EnableLinearLimit boolean
---- @field readonly public LinearLimit VPhysXRange_t
+--- @field public LinearLimit VPhysXRange_t
 --- @field public EnableLinearMotor boolean
 --- @field public LinearTargetVelocity Vector
 --- @field public MaxForce number
 --- @field public EnableSwingLimit boolean
---- @field readonly public SwingLimit VPhysXRange_t
+--- @field public SwingLimit VPhysXRange_t
 --- @field public EnableTwistLimit boolean
---- @field readonly public TwistLimit VPhysXRange_t
+--- @field public TwistLimit VPhysXRange_t
 --- @field public EnableAngularMotor boolean
 --- @field public AngularTargetVelocity Vector
 --- @field public MaxTorque number

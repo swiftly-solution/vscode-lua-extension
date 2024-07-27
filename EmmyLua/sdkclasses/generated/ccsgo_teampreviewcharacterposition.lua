@@ -6,9 +6,9 @@
 --- @field public Ordinal number
 --- @field public WeaponName string
 --- @field public Xuid number
---- @field readonly public AgentItem CEconItemView
---- @field readonly public GlovesItem CEconItemView
---- @field readonly public WeaponItem CEconItemView
+--- @field public AgentItem CEconItemView
+--- @field public GlovesItem CEconItemView
+--- @field public WeaponItem CEconItemView
 --- @field public Parent CBaseEntity
 ccsgo_teampreviewcharacterposition = {}
 

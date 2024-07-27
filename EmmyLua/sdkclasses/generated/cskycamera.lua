@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSkyCamera
---- @field readonly public SkyboxData sky3dparams_t
+--- @field public SkyboxData sky3dparams_t
 --- @field public SkyboxSlotToken number
 --- @field public UseAngles boolean
 --- @field public Next CSkyCamera

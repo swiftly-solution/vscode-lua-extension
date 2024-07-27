@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CLightComponent
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 --- @field public Color Color
 --- @field public SecondaryColor Color
 --- @field public Brightness number

@@ -1,14 +1,14 @@
 --- @meta
 
 --- @class CAimCameraUpdateNode
---- @field readonly public ParameterPosition CAnimParamHandle
---- @field readonly public ParameterOrientation CAnimParamHandle
---- @field readonly public ParameterSpineRotationWeight CAnimParamHandle
---- @field readonly public ParameterPelvisOffset CAnimParamHandle
---- @field readonly public ParameterUseIK CAnimParamHandle
---- @field readonly public ParameterWeaponDepenetrationDistance CAnimParamHandle
---- @field readonly public ParameterCameraClearanceDistance CAnimParamHandle
---- @field readonly public OpFixedSettings AimCameraOpFixedSettings_t
+--- @field public ParameterPosition CAnimParamHandle
+--- @field public ParameterOrientation CAnimParamHandle
+--- @field public ParameterSpineRotationWeight CAnimParamHandle
+--- @field public ParameterPelvisOffset CAnimParamHandle
+--- @field public ParameterUseIK CAnimParamHandle
+--- @field public ParameterWeaponDepenetrationDistance CAnimParamHandle
+--- @field public ParameterCameraClearanceDistance CAnimParamHandle
+--- @field public OpFixedSettings AimCameraOpFixedSettings_t
 --- @field public Parent CUnaryUpdateNode
 caimcameraupdatenode = {}
 

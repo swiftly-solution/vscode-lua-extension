@@ -7,7 +7,7 @@
 --- @field public FootMotionTiming number
 --- @field public UseBlendScale boolean
 --- @field public BlendValueSource number
---- @field readonly public BlendParameter CAnimParamHandle
+--- @field public BlendParameter CAnimParamHandle
 --- @field public Parent CBinaryUpdateNode
 cbonemaskupdatenode = {}
 

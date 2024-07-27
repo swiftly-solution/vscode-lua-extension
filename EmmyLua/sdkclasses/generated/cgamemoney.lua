@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CGameMoney
---- @field readonly public OnMoneySpent CEntityIOOutput
---- @field readonly public OnMoneySpentFail CEntityIOOutput
+--- @field public OnMoneySpent CEntityIOOutput
+--- @field public OnMoneySpentFail CEntityIOOutput
 --- @field public Money number
 --- @field public StrAwardText string
 --- @field public Parent CRulePointEntity

@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class LookAtOpFixedSettings_t
---- @field readonly public Attachment CAnimAttachment
---- @field readonly public Damping CAnimInputDamping
+--- @field public Attachment CAnimAttachment
+--- @field public Damping CAnimInputDamping
 --- @field public Bones table
 --- @field public YawLimit number
 --- @field public PitchLimit number

@@ -44,7 +44,7 @@
 --- @field public RagdollDamageWeaponName string
 --- @field public RagdollDamageHeadshot boolean
 --- @field public RagdollServerOrigin Vector
---- @field readonly public EconGloves CEconItemView
+--- @field public EconGloves CEconItemView
 --- @field public EconGlovesChanged number
 --- @field public DeathEyeAngles QAngle
 --- @field public SkipOneHeadConstraintUpdate boolean
@@ -63,7 +63,7 @@
 --- @field public AllowAutoFollowTime number
 --- @field public ResetArmorNextSpawn boolean
 --- @field public LastKillerIndex number
---- @field readonly public EntitySpottedState EntitySpottedState_t
+--- @field public EntitySpottedState EntitySpottedState_t
 --- @field public SpotRules number
 --- @field public IsScoped boolean
 --- @field public ResumeZoom boolean

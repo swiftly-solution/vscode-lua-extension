@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CLogicPlayerProxy
---- @field readonly public Player CBaseEntity
---- @field readonly public PlayerHasAmmo CEntityIOOutput
---- @field readonly public PlayerHasNoAmmo CEntityIOOutput
---- @field readonly public PlayerDied CEntityIOOutput
+--- @field public Player CBaseEntity
+--- @field public PlayerHasAmmo CEntityIOOutput
+--- @field public PlayerHasNoAmmo CEntityIOOutput
+--- @field public PlayerDied CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogicplayerproxy = {}
 

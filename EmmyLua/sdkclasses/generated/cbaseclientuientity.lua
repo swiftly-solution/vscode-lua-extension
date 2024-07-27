@@ -5,16 +5,16 @@
 --- @field public DialogXMLName string
 --- @field public PanelClassName string
 --- @field public PanelID string
---- @field readonly public CustomOutput0 CEntityIOOutput
---- @field readonly public CustomOutput1 CEntityIOOutput
---- @field readonly public CustomOutput2 CEntityIOOutput
---- @field readonly public CustomOutput3 CEntityIOOutput
---- @field readonly public CustomOutput4 CEntityIOOutput
---- @field readonly public CustomOutput5 CEntityIOOutput
---- @field readonly public CustomOutput6 CEntityIOOutput
---- @field readonly public CustomOutput7 CEntityIOOutput
---- @field readonly public CustomOutput8 CEntityIOOutput
---- @field readonly public CustomOutput9 CEntityIOOutput
+--- @field public CustomOutput0 CEntityIOOutput
+--- @field public CustomOutput1 CEntityIOOutput
+--- @field public CustomOutput2 CEntityIOOutput
+--- @field public CustomOutput3 CEntityIOOutput
+--- @field public CustomOutput4 CEntityIOOutput
+--- @field public CustomOutput5 CEntityIOOutput
+--- @field public CustomOutput6 CEntityIOOutput
+--- @field public CustomOutput7 CEntityIOOutput
+--- @field public CustomOutput8 CEntityIOOutput
+--- @field public CustomOutput9 CEntityIOOutput
 --- @field public Parent CBaseModelEntity
 cbaseclientuientity = {}
 

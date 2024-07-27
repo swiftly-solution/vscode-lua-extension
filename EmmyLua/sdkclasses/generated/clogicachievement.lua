@@ -3,7 +3,7 @@
 --- @class CLogicAchievement
 --- @field public Disabled boolean
 --- @field public AchievementEventID string
---- @field readonly public OnFired CEntityIOOutput
+--- @field public OnFired CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogicachievement = {}
 

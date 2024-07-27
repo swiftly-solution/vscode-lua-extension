@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class RelationshipOverride_t
---- @field readonly public Entity CBaseEntity
+--- @field public Entity CBaseEntity
 --- @field public ClassType number
 --- @field public Parent Relationship_t
 relationshipoverride_t = {}

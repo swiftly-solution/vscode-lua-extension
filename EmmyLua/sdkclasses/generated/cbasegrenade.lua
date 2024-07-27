@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CBaseGrenade
---- @field readonly public OnPlayerPickup CEntityIOOutput
---- @field readonly public OnExplode CEntityIOOutput
+--- @field public OnPlayerPickup CEntityIOOutput
+--- @field public OnExplode CEntityIOOutput
 --- @field public HasWarnedAI boolean
 --- @field public IsSmokeGrenade boolean
 --- @field public IsLive boolean
@@ -12,9 +12,9 @@
 --- @field public Damage number
 --- @field public BounceSound string
 --- @field public ExplosionSound string
---- @field readonly public Thrower CCSPlayerPawn
+--- @field public Thrower CCSPlayerPawn
 --- @field public NextAttack number
---- @field readonly public OriginalThrower CCSPlayerPawn
+--- @field public OriginalThrower CCSPlayerPawn
 --- @field public Parent CBaseFlex
 cbasegrenade = {}
 

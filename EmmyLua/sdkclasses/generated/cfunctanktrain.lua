@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFuncTankTrain
---- @field readonly public OnDeath CEntityIOOutput
+--- @field public OnDeath CEntityIOOutput
 --- @field public Parent CFuncTrackTrain
 cfunctanktrain = {}
 

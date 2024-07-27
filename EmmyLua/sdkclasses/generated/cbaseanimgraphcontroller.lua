@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CBaseAnimGraphController
---- @field readonly public AnimGraphNetworkedVars CAnimGraphNetworkedVariables
+--- @field public AnimGraphNetworkedVars CAnimGraphNetworkedVariables
 --- @field public SequenceFinished boolean
 --- @field public SoundSyncTime number
 --- @field public ActiveIKChainMask number

@@ -5,8 +5,8 @@
 --- @field public FOVStart number
 --- @field public FOVTime number
 --- @field public FOVRate number
---- @field readonly public ZoomOwner CBaseEntity
---- @field readonly public LastFogTrigger CBaseEntity
+--- @field public ZoomOwner CBaseEntity
+--- @field public LastFogTrigger CBaseEntity
 --- @field public Parent CPlayer_CameraServices
 ccsplayerbase_cameraservices = {}
 

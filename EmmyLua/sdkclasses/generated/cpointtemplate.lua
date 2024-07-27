@@ -6,7 +6,7 @@
 --- @field public EntityFilterName string
 --- @field public TimeoutInterval number
 --- @field public AsynchronouslySpawnEntities boolean
---- @field readonly public OutputOnSpawned CEntityIOOutput
+--- @field public OutputOnSpawned CEntityIOOutput
 --- @field public ClientOnlyEntityBehavior number
 --- @field public OwnerSpawnGroupType number
 --- @field public CreatedSpawnGroupHandles table

@@ -4,7 +4,7 @@
 --- @field public FadeColor Color
 --- @field public Duration number
 --- @field public HoldDuration number
---- @field readonly public OnBeginFade CEntityIOOutput
+--- @field public OnBeginFade CEntityIOOutput
 --- @field public Parent CLogicalEntity
 cenvfade = {}
 

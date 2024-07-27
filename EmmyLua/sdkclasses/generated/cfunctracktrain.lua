@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFuncTrackTrain
---- @field readonly public Ppath CPathTrack
+--- @field public Ppath CPathTrack
 --- @field public Length number
 --- @field public PosPrev Vector
 --- @field public Prev QAngle
@@ -28,9 +28,9 @@
 --- @field public MoveSoundMaxPitch number
 --- @field public OrientationType number
 --- @field public VelocityType number
---- @field readonly public OnStart CEntityIOOutput
---- @field readonly public OnNext CEntityIOOutput
---- @field readonly public OnArrivedAtDestinationNode CEntityIOOutput
+--- @field public OnStart CEntityIOOutput
+--- @field public OnNext CEntityIOOutput
+--- @field public OnArrivedAtDestinationNode CEntityIOOutput
 --- @field public ManualSpeedChanges boolean
 --- @field public DesiredSpeed number
 --- @field public SpeedChangeTime number

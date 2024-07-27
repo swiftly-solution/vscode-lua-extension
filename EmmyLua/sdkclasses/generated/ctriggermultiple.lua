@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerMultiple
---- @field readonly public OnTrigger CEntityIOOutput
+--- @field public OnTrigger CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggermultiple = {}
 

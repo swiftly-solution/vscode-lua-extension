@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class SimpleConstraintSoundProfile
---- @field readonly public Keypoints SimpleConstraintSoundProfile
+--- @field public Keypoints SimpleConstraintSoundProfile
 --- @field public KeyPoints table
 --- @field public ReversalSoundThresholds table
 simpleconstraintsoundprofile = {}

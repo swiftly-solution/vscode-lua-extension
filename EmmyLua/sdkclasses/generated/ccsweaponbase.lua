@@ -18,7 +18,7 @@
 --- @field public ReloadsWithClips boolean
 --- @field public TimeWeaponIdle number
 --- @field public FireOnEmpty boolean
---- @field readonly public OnPlayerPickup CEntityIOOutput
+--- @field public OnPlayerPickup CEntityIOOutput
 --- @field public WeaponMode number
 --- @field public TurningInaccuracyDelta number
 --- @field public TurningInaccuracyEyeDirLast Vector
@@ -46,7 +46,7 @@
 --- @field public UseCanOverrideNextOwnerTouchTime boolean
 --- @field public NextOwnerTouchTime number
 --- @field public NextPrevOwnerTouchTime number
---- @field readonly public PrevOwner CCSPlayerPawn
+--- @field public PrevOwner CCSPlayerPawn
 --- @field public DropTick number
 --- @field public Donated boolean
 --- @field public LastShotTime number
@@ -54,7 +54,7 @@
 --- @field public WasOwnedByTerrorist boolean
 --- @field public FiredOutOfAmmoEvent boolean
 --- @field public NumRemoveUnownedWeaponThink number
---- @field readonly public IronSightController CIronSightController
+--- @field public IronSightController CIronSightController
 --- @field public IronSightMode number
 --- @field public LastLOSTraceFailureTime number
 --- @field public NumEmptyAttacks number

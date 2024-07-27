@@ -3,7 +3,7 @@
 --- @class CSeqAutoLayer
 --- @field public LocalReference number
 --- @field public LocalPose number
---- @field readonly public Flags CSeqAutoLayerFlag
+--- @field public Flags CSeqAutoLayerFlag
 --- @field public Start number
 --- @field public Peak number
 --- @field public Tail number

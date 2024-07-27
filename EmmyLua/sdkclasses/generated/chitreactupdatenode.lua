@@ -1,12 +1,12 @@
 --- @meta
 
 --- @class CHitReactUpdateNode
---- @field readonly public OpFixedSettings HitReactFixedSettings_t
---- @field readonly public TriggerParam CAnimParamHandle
---- @field readonly public HitBoneParam CAnimParamHandle
---- @field readonly public HitOffsetParam CAnimParamHandle
---- @field readonly public HitDirectionParam CAnimParamHandle
---- @field readonly public HitStrengthParam CAnimParamHandle
+--- @field public OpFixedSettings HitReactFixedSettings_t
+--- @field public TriggerParam CAnimParamHandle
+--- @field public HitBoneParam CAnimParamHandle
+--- @field public HitOffsetParam CAnimParamHandle
+--- @field public HitDirectionParam CAnimParamHandle
+--- @field public HitStrengthParam CAnimParamHandle
 --- @field public MinDelayBetweenHits number
 --- @field public ResetChild boolean
 --- @field public Parent CUnaryUpdateNode

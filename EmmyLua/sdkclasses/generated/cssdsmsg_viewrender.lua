@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSSDSMsg_ViewRender
---- @field readonly public ViewId SceneViewId_t
+--- @field public ViewId SceneViewId_t
 --- @field public ViewName string
 cssdsmsg_viewrender = {}
 

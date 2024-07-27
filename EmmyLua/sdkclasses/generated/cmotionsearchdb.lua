@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CMotionSearchDB
---- @field readonly public RootNode CMotionSearchNode
---- @field readonly public ResidualQuantizer CProductQuantizer
+--- @field public RootNode CMotionSearchNode
+--- @field public ResidualQuantizer CProductQuantizer
 --- @field public CodeIndices table
 cmotionsearchdb = {}
 

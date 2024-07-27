@@ -21,8 +21,8 @@
 --- @field public PrevSwayVector Vector
 --- @field public InitialWindDir number
 --- @field public InitialWindSpeed number
---- @field readonly public OnGustStart CEntityIOOutput
---- @field readonly public OnGustEnd CEntityIOOutput
+--- @field public OnGustStart CEntityIOOutput
+--- @field public OnGustEnd CEntityIOOutput
 --- @field public VariationTime number
 --- @field public SwayTime number
 --- @field public SimTime number

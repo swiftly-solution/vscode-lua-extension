@@ -5,7 +5,7 @@
 --- @field public Magnitude number
 --- @field public TrailLength number
 --- @field public Type number
---- @field readonly public OnSpark CEntityIOOutput
+--- @field public OnSpark CEntityIOOutput
 --- @field public Parent CPointEntity
 cenvspark = {}
 

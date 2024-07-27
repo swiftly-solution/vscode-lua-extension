@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CFootLockUpdateNode
---- @field readonly public OpFixedSettings FootLockPoseOpFixedSettings
+--- @field public OpFixedSettings FootLockPoseOpFixedSettings
 --- @field public FootSettings table
---- @field readonly public HipShiftDamping CAnimInputDamping
---- @field readonly public RootHeightDamping CAnimInputDamping
+--- @field public HipShiftDamping CAnimInputDamping
+--- @field public RootHeightDamping CAnimInputDamping
 --- @field public StrideCurveScale number
 --- @field public StrideCurveLimitScale number
 --- @field public StepHeightIncreaseScale number

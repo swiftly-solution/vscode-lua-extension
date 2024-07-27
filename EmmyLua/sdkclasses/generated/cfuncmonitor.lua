@@ -6,7 +6,7 @@
 --- @field public RenderShadows boolean
 --- @field public UseUniqueColorTarget boolean
 --- @field public BrushModelName string
---- @field readonly public TargetCamera1 CBaseEntity
+--- @field public TargetCamera1 CBaseEntity
 --- @field public Enabled boolean
 --- @field public Draw3DSkybox boolean
 --- @field public StartEnabled boolean

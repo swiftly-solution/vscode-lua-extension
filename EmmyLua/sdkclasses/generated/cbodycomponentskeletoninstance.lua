@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CBodyComponentSkeletonInstance
---- @field readonly public SkeletonInstance CSkeletonInstance
+--- @field public SkeletonInstance CSkeletonInstance
 --- @field public Parent CBodyComponent
 cbodycomponentskeletoninstance = {}
 

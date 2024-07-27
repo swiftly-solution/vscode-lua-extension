@@ -4,10 +4,10 @@
 --- @field public StrMeasureTarget string
 --- @field public StrMeasureReference string
 --- @field public StrTargetReference string
---- @field readonly public MeasureTarget CBaseEntity
---- @field readonly public MeasureReference CBaseEntity
---- @field readonly public Target CBaseEntity
---- @field readonly public TargetReference CBaseEntity
+--- @field public MeasureTarget CBaseEntity
+--- @field public MeasureReference CBaseEntity
+--- @field public Target CBaseEntity
+--- @field public TargetReference CBaseEntity
 --- @field public Scale number
 --- @field public MeasureType number
 --- @field public Parent CLogicalEntity

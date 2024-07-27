@@ -24,7 +24,7 @@
 --- @field public DamagePositioningEntityName04 string
 --- @field public InitialDamagePositions table
 --- @field public ExtraDamagePositions table
---- @field readonly public OnBroken CEntityIOOutput
+--- @field public OnBroken CEntityIOOutput
 --- @field public SurfaceType number
 --- @field public Parent CBaseModelEntity
 cfuncshatterglass = {}

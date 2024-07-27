@@ -3,8 +3,8 @@
 --- @class CSelectorUpdateNode
 --- @field public Children table
 --- @field public Tags table
---- @field readonly public BlendCurve CBlendCurve
---- @field readonly public Parameter CAnimParamHandle
+--- @field public BlendCurve CBlendCurve
+--- @field public Parameter CAnimParamHandle
 --- @field public TagIndex number
 --- @field public TagBehavior number
 --- @field public ResetOnChange boolean

@@ -2,7 +2,7 @@
 
 --- @class CSoundOpvarSetPointBase
 --- @field public Disabled boolean
---- @field readonly public Source CEntityInstance
+--- @field public Source CEntityInstance
 --- @field public SourceEntityName string
 --- @field public LastPosition Vector
 --- @field public StackName string

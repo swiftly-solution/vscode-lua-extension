@@ -1,14 +1,14 @@
 --- @meta
 
 --- @class CEntityFlame
---- @field readonly public EntAttached CBaseEntity
+--- @field public EntAttached CBaseEntity
 --- @field public CheapEffect boolean
 --- @field public Size number
 --- @field public UseHitboxes boolean
 --- @field public NumHitboxFires number
 --- @field public HitboxFireScale number
 --- @field public Lifetime number
---- @field readonly public Attacker CBaseEntity
+--- @field public Attacker CBaseEntity
 --- @field public DangerSound number
 --- @field public DirectDamagePerSecond number
 --- @field public CustomDamageType number

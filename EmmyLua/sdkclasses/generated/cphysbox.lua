@@ -10,12 +10,12 @@
 --- @field public EnableUseOutput boolean
 --- @field public ExploitableByPlayer number
 --- @field public TouchOutputPerEntityDelay number
---- @field readonly public OnDamaged CEntityIOOutput
---- @field readonly public OnAwakened CEntityIOOutput
---- @field readonly public OnMotionEnabled CEntityIOOutput
---- @field readonly public OnPlayerUse CEntityIOOutput
---- @field readonly public OnStartTouch CEntityIOOutput
---- @field readonly public CarryingPlayer CBasePlayerPawn
+--- @field public OnDamaged CEntityIOOutput
+--- @field public OnAwakened CEntityIOOutput
+--- @field public OnMotionEnabled CEntityIOOutput
+--- @field public OnPlayerUse CEntityIOOutput
+--- @field public OnStartTouch CEntityIOOutput
+--- @field public CarryingPlayer CBasePlayerPawn
 --- @field public Parent CBreakable
 cphysbox = {}
 

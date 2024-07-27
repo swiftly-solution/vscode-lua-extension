@@ -3,7 +3,7 @@
 --- @class FeCollisionPlane_t
 --- @field public CtrlParent number
 --- @field public ChildNode number
---- @field readonly public Plane RnPlane_t
+--- @field public Plane RnPlane_t
 --- @field public Strength number
 fecollisionplane_t = {}
 

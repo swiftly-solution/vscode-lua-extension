@@ -1,11 +1,11 @@
 --- @meta
 
 --- @class CBasePlayerVData
---- @field readonly public HeadDamageMultiplier CSkillFloat
---- @field readonly public ChestDamageMultiplier CSkillFloat
---- @field readonly public StomachDamageMultiplier CSkillFloat
---- @field readonly public ArmDamageMultiplier CSkillFloat
---- @field readonly public LegDamageMultiplier CSkillFloat
+--- @field public HeadDamageMultiplier CSkillFloat
+--- @field public ChestDamageMultiplier CSkillFloat
+--- @field public StomachDamageMultiplier CSkillFloat
+--- @field public ArmDamageMultiplier CSkillFloat
+--- @field public LegDamageMultiplier CSkillFloat
 --- @field public HoldBreathTime number
 --- @field public DrowningDamageInterval number
 --- @field public DrowningDamageInitial number

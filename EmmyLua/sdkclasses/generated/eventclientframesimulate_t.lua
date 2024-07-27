@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventClientFrameSimulate_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public RealTime number
 --- @field public FrameTime number
 --- @field public WhenScheduleSendTickPacket number

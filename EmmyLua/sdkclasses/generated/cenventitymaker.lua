@@ -3,16 +3,16 @@
 --- @class CEnvEntityMaker
 --- @field public EntityMins Vector
 --- @field public EntityMaxs Vector
---- @field readonly public CurrentInstance CBaseEntity
---- @field readonly public CurrentBlocker CBaseEntity
+--- @field public CurrentInstance CBaseEntity
+--- @field public CurrentBlocker CBaseEntity
 --- @field public BlockerOrigin Vector
 --- @field public PostSpawnDirection QAngle
 --- @field public PostSpawnDirectionVariance number
 --- @field public PostSpawnSpeed number
 --- @field public PostSpawnUseAngles boolean
 --- @field public Template string
---- @field readonly public OutputOnSpawned CEntityIOOutput
---- @field readonly public OutputOnFailedSpawn CEntityIOOutput
+--- @field public OutputOnSpawned CEntityIOOutput
+--- @field public OutputOnFailedSpawn CEntityIOOutput
 --- @field public Parent CPointEntity
 cenventitymaker = {}
 

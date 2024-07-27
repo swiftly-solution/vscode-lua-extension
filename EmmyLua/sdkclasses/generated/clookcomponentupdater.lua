@@ -1,13 +1,13 @@
 --- @meta
 
 --- @class CLookComponentUpdater
---- @field readonly public LookHeading CAnimParamHandle
---- @field readonly public LookHeadingVelocity CAnimParamHandle
---- @field readonly public LookPitch CAnimParamHandle
---- @field readonly public LookDistance CAnimParamHandle
---- @field readonly public LookDirection CAnimParamHandle
---- @field readonly public LookTarget CAnimParamHandle
---- @field readonly public LookTargetWorldSpace CAnimParamHandle
+--- @field public LookHeading CAnimParamHandle
+--- @field public LookHeadingVelocity CAnimParamHandle
+--- @field public LookPitch CAnimParamHandle
+--- @field public LookDistance CAnimParamHandle
+--- @field public LookDirection CAnimParamHandle
+--- @field public LookTarget CAnimParamHandle
+--- @field public LookTargetWorldSpace CAnimParamHandle
 --- @field public NetworkLookTarget boolean
 --- @field public Parent CAnimComponentUpdater
 clookcomponentupdater = {}

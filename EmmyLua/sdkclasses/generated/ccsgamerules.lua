@@ -162,8 +162,8 @@
 --- @field public HasTriggeredRoundStartMusic boolean
 --- @field public SwitchingTeamsAtRoundReset boolean
 --- @field public GameModeRules CCSGameModeRules
---- @field readonly public PlayerResource CBaseEntity
---- @field readonly public RetakeRules CRetakeGameRules
+--- @field public PlayerResource CBaseEntity
+--- @field public RetakeRules CRetakeGameRules
 --- @field public TeamLastKillUsedUniqueWeaponMatch table
 --- @field public MatchEndCount number
 --- @field public TTeamIntroVariant number

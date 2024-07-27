@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CGameRules
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 --- @field public QuestName string
 --- @field public QuestPhase number
 --- @field public TotalPausedTicks number

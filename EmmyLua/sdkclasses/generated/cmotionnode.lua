@@ -2,7 +2,7 @@
 
 --- @class CMotionNode
 --- @field public Name string
---- @field readonly public Id AnimNodeID
+--- @field public Id AnimNodeID
 cmotionnode = {}
 
 --- This is the constructor for CMotionNode class.

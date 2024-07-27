@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CDamageRecord
---- @field readonly public PlayerDamager CCSPlayerPawn
---- @field readonly public PlayerRecipient CCSPlayerPawn
---- @field readonly public PlayerControllerDamager CCSPlayerController
---- @field readonly public PlayerControllerRecipient CCSPlayerController
+--- @field public PlayerDamager CCSPlayerPawn
+--- @field public PlayerRecipient CCSPlayerPawn
+--- @field public PlayerControllerDamager CCSPlayerController
+--- @field public PlayerControllerRecipient CCSPlayerController
 --- @field public PlayerDamagerName string
 --- @field public PlayerRecipientName string
 --- @field public DamagerXuid number

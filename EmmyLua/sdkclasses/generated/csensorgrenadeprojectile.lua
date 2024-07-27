@@ -3,7 +3,7 @@
 --- @class CSensorGrenadeProjectile
 --- @field public ExpireTime number
 --- @field public NextDetectPlayerSound number
---- @field readonly public DisplayGrenade CBaseEntity
+--- @field public DisplayGrenade CBaseEntity
 --- @field public Parent CBaseCSGrenadeProjectile
 csensorgrenadeprojectile = {}
 

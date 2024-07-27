@@ -17,8 +17,8 @@
 --- @field public ScrollSpeed number
 --- @field public StartPointValid boolean
 --- @field public EndPointValid boolean
---- @field readonly public StartPoint CBaseEntity
---- @field readonly public EndPoint CBaseEntity
+--- @field public StartPoint CBaseEntity
+--- @field public EndPoint CBaseEntity
 --- @field public Parent CBaseModelEntity
 cropekeyframe = {}
 

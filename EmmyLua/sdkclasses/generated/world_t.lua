@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class World_t
---- @field readonly public BuilderParams WorldBuilderParams_t
+--- @field public BuilderParams WorldBuilderParams_t
 --- @field public WorldNodes table
---- @field readonly public WorldLightingInfo BakedLightingInfo_t
+--- @field public WorldLightingInfo BakedLightingInfo_t
 world_t = {}
 
 --- This is the constructor for World_t class.

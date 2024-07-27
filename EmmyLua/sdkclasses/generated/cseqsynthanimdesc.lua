@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CSeqSynthAnimDesc
---- @field readonly public Flags CSeqSeqDescFlag
---- @field readonly public Transition CSeqTransition
+--- @field public Flags CSeqSeqDescFlag
+--- @field public Transition CSeqTransition
 --- @field public LocalBaseReference number
 --- @field public LocalBoneMask number
 --- @field public ActivityArray table

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CAnimUpdateNodeBase
---- @field readonly public NodePath CAnimNodePath
+--- @field public NodePath CAnimNodePath
 --- @field public NetworkMode number
 --- @field public Name string
 canimupdatenodebase = {}

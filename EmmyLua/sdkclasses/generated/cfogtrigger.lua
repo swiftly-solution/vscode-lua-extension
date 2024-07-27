@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFogTrigger
---- @field readonly public Fog fogparams_t
+--- @field public Fog fogparams_t
 --- @field public Parent CBaseTrigger
 cfogtrigger = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPointAngularVelocitySensor
---- @field readonly public TargetEntity CBaseEntity
+--- @field public TargetEntity CBaseEntity
 --- @field public Threshold number
 --- @field public LastCompareResult number
 --- @field public LastFireResult number
@@ -11,11 +11,11 @@
 --- @field public LastOrientation QAngle
 --- @field public Axis Vector
 --- @field public UseHelper boolean
---- @field readonly public OnLessThan CEntityIOOutput
---- @field readonly public OnLessThanOrEqualTo CEntityIOOutput
---- @field readonly public OnGreaterThan CEntityIOOutput
---- @field readonly public OnGreaterThanOrEqualTo CEntityIOOutput
---- @field readonly public OnEqualTo CEntityIOOutput
+--- @field public OnLessThan CEntityIOOutput
+--- @field public OnLessThanOrEqualTo CEntityIOOutput
+--- @field public OnGreaterThan CEntityIOOutput
+--- @field public OnGreaterThanOrEqualTo CEntityIOOutput
+--- @field public OnEqualTo CEntityIOOutput
 --- @field public Parent CPointEntity
 cpointangularvelocitysensor = {}
 

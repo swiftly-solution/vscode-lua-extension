@@ -9,9 +9,9 @@
 --- @field public MinAngle number
 --- @field public MaxAngle number
 --- @field public SpeedScaleBlending number
---- @field readonly public TurnDamping CAnimInputDamping
+--- @field public TurnDamping CAnimInputDamping
 --- @field public FacingTarget number
---- @field readonly public Param CAnimParamHandle
+--- @field public Param CAnimParamHandle
 --- @field public TurnToFaceOffset number
 --- @field public TurnToFace boolean
 --- @field public Parent CUnaryUpdateNode

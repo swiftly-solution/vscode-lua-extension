@@ -12,7 +12,7 @@
 --- @field public PushPlayer boolean
 --- @field public RampDown boolean
 --- @field public AddNoise boolean
---- @field readonly public RampTimer CountdownTimer
+--- @field public RampTimer CountdownTimer
 --- @field public Parent CBaseTrigger
 ctriggerfan = {}
 

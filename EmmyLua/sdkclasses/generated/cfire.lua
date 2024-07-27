@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CFire
---- @field readonly public Effect CBaseFire
---- @field readonly public Owner CBaseEntity
+--- @field public Effect CBaseFire
+--- @field public Owner CBaseEntity
 --- @field public FireType number
 --- @field public Fuel number
 --- @field public DamageTime number
@@ -18,8 +18,8 @@
 --- @field public Enabled boolean
 --- @field public StartDisabled boolean
 --- @field public DidActivate boolean
---- @field readonly public OnIgnited CEntityIOOutput
---- @field readonly public OnExtinguished CEntityIOOutput
+--- @field public OnIgnited CEntityIOOutput
+--- @field public OnExtinguished CEntityIOOutput
 --- @field public Parent CBaseModelEntity
 cfire = {}
 

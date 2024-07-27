@@ -4,7 +4,7 @@
 --- @field public Tags table
 --- @field public Duration number
 --- @field public ValueSource number
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public Parent CLeafUpdateNode
 ccyclecontrolclipupdatenode = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventSimpleLoopFrameUpdate_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public RealTime number
 --- @field public FrameTime number
 eventsimpleloopframeupdate_t = {}

@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CLogicRelay
---- @field readonly public OnTrigger CEntityIOOutput
---- @field readonly public OnSpawn CEntityIOOutput
+--- @field public OnTrigger CEntityIOOutput
+--- @field public OnSpawn CEntityIOOutput
 --- @field public Disabled boolean
 --- @field public WaitForRefire boolean
 --- @field public TriggerOnce boolean

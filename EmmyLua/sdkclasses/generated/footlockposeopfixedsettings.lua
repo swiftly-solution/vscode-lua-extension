@@ -2,7 +2,7 @@
 
 --- @class FootLockPoseOpFixedSettings
 --- @field public FootInfo table
---- @field readonly public HipDampingSettings CAnimInputDamping
+--- @field public HipDampingSettings CAnimInputDamping
 --- @field public HipBoneIndex number
 --- @field public IkSolverType number
 --- @field public ApplyTilt boolean

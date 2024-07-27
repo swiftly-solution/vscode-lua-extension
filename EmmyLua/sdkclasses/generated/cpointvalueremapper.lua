@@ -6,8 +6,8 @@
 --- @field public InputType number
 --- @field public RemapLineStartName string
 --- @field public RemapLineEndName string
---- @field readonly public RemapLineStart CBaseEntity
---- @field readonly public RemapLineEnd CBaseEntity
+--- @field public RemapLineStart CBaseEntity
+--- @field public RemapLineEnd CBaseEntity
 --- @field public MaximumChangePerSecond number
 --- @field public DisengageDistance number
 --- @field public EngageDistance number
@@ -31,18 +31,18 @@
 --- @field public PreviousValue number
 --- @field public PreviousUpdateTickTime number
 --- @field public PreviousTestPoint Vector
---- @field readonly public UsingPlayer CBasePlayerPawn
+--- @field public UsingPlayer CBasePlayerPawn
 --- @field public CustomOutputValue number
 --- @field public SoundEngage string
 --- @field public SoundDisengage string
 --- @field public SoundReachedValueZero string
 --- @field public SoundReachedValueOne string
 --- @field public SoundMovingLoop string
---- @field readonly public OnReachedValueZero CEntityIOOutput
---- @field readonly public OnReachedValueOne CEntityIOOutput
---- @field readonly public OnReachedValueCustom CEntityIOOutput
---- @field readonly public OnEngage CEntityIOOutput
---- @field readonly public OnDisengage CEntityIOOutput
+--- @field public OnReachedValueZero CEntityIOOutput
+--- @field public OnReachedValueOne CEntityIOOutput
+--- @field public OnReachedValueCustom CEntityIOOutput
+--- @field public OnEngage CEntityIOOutput
+--- @field public OnDisengage CEntityIOOutput
 --- @field public Parent CBaseEntity
 cpointvalueremapper = {}
 

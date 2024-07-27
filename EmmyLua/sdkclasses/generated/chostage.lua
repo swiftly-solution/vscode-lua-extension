@@ -1,11 +1,11 @@
 --- @meta
 
 --- @class CHostage
---- @field readonly public OnHostageBeginGrab CEntityIOOutput
---- @field readonly public OnFirstPickedUp CEntityIOOutput
---- @field readonly public OnDroppedNotRescued CEntityIOOutput
---- @field readonly public OnRescued CEntityIOOutput
---- @field readonly public EntitySpottedState EntitySpottedState_t
+--- @field public OnHostageBeginGrab CEntityIOOutput
+--- @field public OnFirstPickedUp CEntityIOOutput
+--- @field public OnDroppedNotRescued CEntityIOOutput
+--- @field public OnRescued CEntityIOOutput
+--- @field public EntitySpottedState EntitySpottedState_t
 --- @field public SpotRules number
 --- @field public UiHostageSpawnExclusionGroupMask number
 --- @field public HostageSpawnRandomFactor number
@@ -14,22 +14,22 @@
 --- @field public IsRescued boolean
 --- @field public JumpedThisFrame boolean
 --- @field public HostageState number
---- @field readonly public Leader CBaseEntity
---- @field readonly public LastLeader CCSPlayerPawnBase
---- @field readonly public ReuseTimer CountdownTimer
+--- @field public Leader CBaseEntity
+--- @field public LastLeader CCSPlayerPawnBase
+--- @field public ReuseTimer CountdownTimer
 --- @field public HasBeenUsed boolean
 --- @field public Accel Vector
 --- @field public IsRunning boolean
 --- @field public IsCrouching boolean
---- @field readonly public JumpTimer CountdownTimer
+--- @field public JumpTimer CountdownTimer
 --- @field public IsWaitingForLeader boolean
---- @field readonly public RepathTimer CountdownTimer
---- @field readonly public InhibitDoorTimer CountdownTimer
---- @field readonly public InhibitObstacleAvoidanceTimer CountdownTimer
---- @field readonly public WiggleTimer CountdownTimer
+--- @field public RepathTimer CountdownTimer
+--- @field public InhibitDoorTimer CountdownTimer
+--- @field public InhibitObstacleAvoidanceTimer CountdownTimer
+--- @field public WiggleTimer CountdownTimer
 --- @field public IsAdjusted boolean
 --- @field public HandsHaveBeenCut boolean
---- @field readonly public HostageGrabber CCSPlayerPawn
+--- @field public HostageGrabber CCSPlayerPawn
 --- @field public LastGrabTime number
 --- @field public PositionWhenStartedDroppingToGround Vector
 --- @field public GrabbedPos Vector

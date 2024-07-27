@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CAimMatrixUpdateNode
---- @field readonly public OpFixedSettings AimMatrixOpFixedSettings_t
+--- @field public OpFixedSettings AimMatrixOpFixedSettings_t
 --- @field public Target number
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public ResetChild boolean
 --- @field public LockWhenWaning boolean
 --- @field public Parent CUnaryUpdateNode

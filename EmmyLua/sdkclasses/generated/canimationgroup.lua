@@ -2,7 +2,7 @@
 
 --- @class CAnimationGroup
 --- @field public Flags number
---- @field readonly public DecodeKey CAnimKeyData
+--- @field public DecodeKey CAnimKeyData
 canimationgroup = {}
 
 --- This is the constructor for CAnimationGroup class.

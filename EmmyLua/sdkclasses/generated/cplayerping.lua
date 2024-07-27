@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CPlayerPing
---- @field readonly public Player CCSPlayerPawn
---- @field readonly public PingedEntity CBaseEntity
+--- @field public Player CCSPlayerPawn
+--- @field public PingedEntity CBaseEntity
 --- @field public Type number
 --- @field public Urgent boolean
 --- @field public PlaceName string

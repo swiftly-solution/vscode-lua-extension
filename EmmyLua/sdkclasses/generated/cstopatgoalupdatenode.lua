@@ -5,7 +5,7 @@
 --- @field public InnerRadius number
 --- @field public MaxScale number
 --- @field public MinScale number
---- @field readonly public Damping CAnimInputDamping
+--- @field public Damping CAnimInputDamping
 --- @field public Parent CUnaryUpdateNode
 cstopatgoalupdatenode = {}
 

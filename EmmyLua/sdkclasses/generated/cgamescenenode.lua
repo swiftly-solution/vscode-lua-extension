@@ -5,7 +5,7 @@
 --- @field public Parent CGameSceneNode
 --- @field public Child CGameSceneNode
 --- @field public NextSibling CGameSceneNode
---- @field readonly public Origin CNetworkOriginCellCoordQuantizedVector
+--- @field public Origin CNetworkOriginCellCoordQuantizedVector
 --- @field public Rotation QAngle
 --- @field public Scale number
 --- @field public AbsOrigin Vector

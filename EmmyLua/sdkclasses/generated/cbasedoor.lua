@@ -3,7 +3,7 @@
 --- @class CBaseDoor
 --- @field public MoveEntitySpace QAngle
 --- @field public MoveDirParentSpace Vector
---- @field readonly public Ls locksound_t
+--- @field public Ls locksound_t
 --- @field public ForceClosed boolean
 --- @field public DoorGroup boolean
 --- @field public Locked boolean
@@ -15,15 +15,15 @@
 --- @field public NoiseMovingClosed string
 --- @field public NoiseArrivedClosed string
 --- @field public ChainTarget string
---- @field readonly public OnBlockedClosing CEntityIOOutput
---- @field readonly public OnBlockedOpening CEntityIOOutput
---- @field readonly public OnUnblockedClosing CEntityIOOutput
---- @field readonly public OnUnblockedOpening CEntityIOOutput
---- @field readonly public OnFullyClosed CEntityIOOutput
---- @field readonly public OnFullyOpen CEntityIOOutput
---- @field readonly public OnClose CEntityIOOutput
---- @field readonly public OnOpen CEntityIOOutput
---- @field readonly public OnLockedUse CEntityIOOutput
+--- @field public OnBlockedClosing CEntityIOOutput
+--- @field public OnBlockedOpening CEntityIOOutput
+--- @field public OnUnblockedClosing CEntityIOOutput
+--- @field public OnUnblockedOpening CEntityIOOutput
+--- @field public OnFullyClosed CEntityIOOutput
+--- @field public OnFullyOpen CEntityIOOutput
+--- @field public OnClose CEntityIOOutput
+--- @field public OnOpen CEntityIOOutput
+--- @field public OnLockedUse CEntityIOOutput
 --- @field public LoopMoveSound boolean
 --- @field public CreateNavObstacle boolean
 --- @field public IsChaining boolean

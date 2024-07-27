@@ -6,7 +6,7 @@
 --- @field public AssociatedRelayTargetName string
 --- @field public FixupNames boolean
 --- @field public LoadDynamic boolean
---- @field readonly public AssociatedRelayEntity CPointPrefab
+--- @field public AssociatedRelayEntity CPointPrefab
 --- @field public Parent CServerOnlyPointEntity
 cpointprefab = {}
 

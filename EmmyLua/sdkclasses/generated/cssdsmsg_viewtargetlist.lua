@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSSDSMsg_ViewTargetList
---- @field readonly public ViewId SceneViewId_t
+--- @field public ViewId SceneViewId_t
 --- @field public ViewName string
 --- @field public Targets table
 cssdsmsg_viewtargetlist = {}

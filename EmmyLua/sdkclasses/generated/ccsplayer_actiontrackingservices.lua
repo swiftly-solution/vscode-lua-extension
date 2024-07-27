@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CCSPlayer_ActionTrackingServices
---- @field readonly public LastWeaponBeforeC4AutoSwitch CBasePlayerWeapon
+--- @field public LastWeaponBeforeC4AutoSwitch CBasePlayerWeapon
 --- @field public IsRescuing boolean
---- @field readonly public WeaponPurchasesThisMatch WeaponPurchaseTracker_t
---- @field readonly public WeaponPurchasesThisRound WeaponPurchaseTracker_t
+--- @field public WeaponPurchasesThisMatch WeaponPurchaseTracker_t
+--- @field public WeaponPurchasesThisRound WeaponPurchaseTracker_t
 --- @field public Parent CPlayerPawnComponent
 ccsplayer_actiontrackingservices = {}
 

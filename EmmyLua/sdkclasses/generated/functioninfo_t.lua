@@ -4,7 +4,7 @@
 --- @field public Name string
 --- @field public NameToken number
 --- @field public ParamCount number
---- @field readonly public Index FuseFunctionIndex_t
+--- @field public Index FuseFunctionIndex_t
 --- @field public IsPure boolean
 functioninfo_t = {}
 

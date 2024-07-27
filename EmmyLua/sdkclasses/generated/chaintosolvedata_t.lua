@@ -2,8 +2,8 @@
 
 --- @class ChainToSolveData_t
 --- @field public ChainIndex number
---- @field readonly public SolverSettings IKSolverSettings_t
---- @field readonly public TargetSettings IKTargetSettings_t
+--- @field public SolverSettings IKSolverSettings_t
+--- @field public TargetSettings IKTargetSettings_t
 --- @field public DebugSetting number
 --- @field public DebugNormalizedValue number
 --- @field public DebugOffset Vector

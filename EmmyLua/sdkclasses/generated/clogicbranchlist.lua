@@ -2,10 +2,10 @@
 
 --- @class CLogicBranchList
 --- @field public LogicBranchNames table
---- @field readonly public LastState CLogicBranchList
---- @field readonly public OnAllTrue CEntityIOOutput
---- @field readonly public OnAllFalse CEntityIOOutput
---- @field readonly public OnMixed CEntityIOOutput
+--- @field public LastState CLogicBranchList
+--- @field public OnAllTrue CEntityIOOutput
+--- @field public OnAllFalse CEntityIOOutput
+--- @field public OnMixed CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogicbranchlist = {}
 

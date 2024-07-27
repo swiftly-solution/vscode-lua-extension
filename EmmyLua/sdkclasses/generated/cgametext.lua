@@ -2,7 +2,7 @@
 
 --- @class CGameText
 --- @field public Message string
---- @field readonly public TextParms hudtextparms_t
+--- @field public TextParms hudtextparms_t
 --- @field public Parent CRulePointEntity
 cgametext = {}
 

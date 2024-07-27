@@ -2,7 +2,7 @@
 
 --- @class NmSyncTrackTime_t
 --- @field public EventIdx number
---- @field readonly public PercentageThrough NmPercent_t
+--- @field public PercentageThrough NmPercent_t
 nmsynctracktime_t = {}
 
 --- This is the constructor for NmSyncTrackTime_t class.

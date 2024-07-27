@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CGameChoreoServices
---- @field readonly public Owner CBaseAnimGraph
---- @field readonly public ScriptedSequence CScriptedSequence
---- @field readonly public ScriptState IChoreoServices
---- @field readonly public ChoreoState IChoreoServices
+--- @field public Owner CBaseAnimGraph
+--- @field public ScriptedSequence CScriptedSequence
+--- @field public ScriptState IChoreoServices
+--- @field public ChoreoState IChoreoServices
 --- @field public TimeStartedState number
 --- @field public Parent IChoreoServices
 cgamechoreoservices = {}

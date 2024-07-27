@@ -10,8 +10,8 @@
 --- @field public AccountID number
 --- @field public InventoryPosition number
 --- @field public Initialized boolean
---- @field readonly public AttributeList CAttributeList
---- @field readonly public NetworkedDynamicAttributes CAttributeList
+--- @field public AttributeList CAttributeList
+--- @field public NetworkedDynamicAttributes CAttributeList
 --- @field public CustomName string
 --- @field public CustomNameOverride string
 --- @field public Parent IEconItemInterface

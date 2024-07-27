@@ -2,7 +2,7 @@
 
 --- @class CTriggerLerpObject
 --- @field public LerpTarget string
---- @field readonly public LerpTarget1 CBaseEntity
+--- @field public LerpTarget1 CBaseEntity
 --- @field public LerpTargetAttachment string
 --- @field public LerpDuration number
 --- @field public LerpRestoreMoveType boolean
@@ -11,9 +11,9 @@
 --- @field public LerpEffect string
 --- @field public LerpSound string
 --- @field public AttachTouchingObject boolean
---- @field readonly public EntityToWaitForDisconnect CBaseEntity
---- @field readonly public OnLerpStarted CEntityIOOutput
---- @field readonly public OnLerpFinished CEntityIOOutput
+--- @field public EntityToWaitForDisconnect CBaseEntity
+--- @field public OnLerpStarted CEntityIOOutput
+--- @field public OnLerpFinished CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggerlerpobject = {}
 

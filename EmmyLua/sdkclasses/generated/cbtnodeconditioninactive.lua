@@ -3,7 +3,7 @@
 --- @class CBtNodeConditionInactive
 --- @field public RoundStartThresholdSeconds number
 --- @field public SensorInactivityThresholdSeconds number
---- @field readonly public SensorInactivityTimer CountdownTimer
+--- @field public SensorInactivityTimer CountdownTimer
 --- @field public Parent CBtNodeCondition
 cbtnodeconditioninactive = {}
 

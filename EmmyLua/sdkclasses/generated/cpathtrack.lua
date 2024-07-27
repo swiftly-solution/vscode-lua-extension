@@ -9,7 +9,7 @@
 --- @field public AltName string
 --- @field public IterVal number
 --- @field public OrientationType number
---- @field readonly public OnPass CEntityIOOutput
+--- @field public OnPass CEntityIOOutput
 --- @field public Parent CPointEntity
 cpathtrack = {}
 

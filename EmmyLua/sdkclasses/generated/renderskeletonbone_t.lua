@@ -3,7 +3,7 @@
 --- @class RenderSkeletonBone_t
 --- @field public BoneName string
 --- @field public ParentName string
---- @field readonly public Bbox SkeletonBoneBounds_t
+--- @field public Bbox SkeletonBoneBounds_t
 --- @field public SphereRadius number
 renderskeletonbone_t = {}
 

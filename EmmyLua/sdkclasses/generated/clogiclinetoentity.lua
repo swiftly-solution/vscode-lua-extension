@@ -2,8 +2,8 @@
 
 --- @class CLogicLineToEntity
 --- @field public SourceName string
---- @field readonly public StartEntity CBaseEntity
---- @field readonly public EndEntity CBaseEntity
+--- @field public StartEntity CBaseEntity
+--- @field public EndEntity CBaseEntity
 --- @field public Parent CLogicalEntity
 clogiclinetoentity = {}
 

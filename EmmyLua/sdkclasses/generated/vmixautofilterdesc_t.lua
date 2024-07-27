@@ -4,7 +4,7 @@
 --- @field public EnvelopeAmount number
 --- @field public AttackTimeMS number
 --- @field public ReleaseTimeMS number
---- @field readonly public Filter VMixFilterDesc_t
+--- @field public Filter VMixFilterDesc_t
 --- @field public LFOAmount number
 --- @field public LFORate number
 --- @field public Phase number

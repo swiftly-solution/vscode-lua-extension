@@ -1,6 +1,6 @@
 ---@meta
 
----@class Weapons Manager
+---@class WeaponManager
 weaponmanager = {}
 
 --- Gives the specified weapon to player.

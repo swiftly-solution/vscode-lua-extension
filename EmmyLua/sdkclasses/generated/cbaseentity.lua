@@ -2,7 +2,7 @@
 
 --- @class CBaseEntity
 --- @field public CBodyComponent CBodyComponent
---- @field readonly public NetworkTransmitComponent CNetworkTransmitComponent
+--- @field public NetworkTransmitComponent CNetworkTransmitComponent
 --- @field public ThinkFunctions table
 --- @field public CurrentThinkContext number
 --- @field public LastThinkTick number
@@ -24,7 +24,7 @@
 --- @field public SlimeTouch number
 --- @field public RestoreInHierarchy boolean
 --- @field public Target string
---- @field readonly public DamageFilter CBaseFilter
+--- @field public DamageFilter CBaseFilter
 --- @field public DamageFilterName string
 --- @field public MoveDoneTime number
 --- @field public SubclassID number
@@ -42,17 +42,17 @@
 --- @field public Spawnflags number
 --- @field public NextThinkTick number
 --- @field public SimulationTick number
---- @field readonly public OnKilled CEntityIOOutput
+--- @field public OnKilled CEntityIOOutput
 --- @field public Flags number
 --- @field public AbsVelocity Vector
---- @field readonly public Velocity CNetworkVelocityVector
+--- @field public Velocity CNetworkVelocityVector
 --- @field public BaseVelocity Vector
 --- @field public PushEnumCount number
 --- @field public Collision CCollisionProperty
---- @field readonly public EffectEntity CBaseEntity
---- @field readonly public OwnerEntity CBaseEntity
+--- @field public EffectEntity CBaseEntity
+--- @field public OwnerEntity CBaseEntity
 --- @field public Effects number
---- @field readonly public GroundEntity CBaseEntity
+--- @field public GroundEntity CBaseEntity
 --- @field public GroundBodyIndex number
 --- @field public Friction number
 --- @field public Elasticity number
@@ -63,17 +63,17 @@
 --- @field public DisableLowViolence boolean
 --- @field public WaterType number
 --- @field public EFlags number
---- @field readonly public OnUser1 CEntityIOOutput
---- @field readonly public OnUser2 CEntityIOOutput
---- @field readonly public OnUser3 CEntityIOOutput
---- @field readonly public OnUser4 CEntityIOOutput
+--- @field public OnUser1 CEntityIOOutput
+--- @field public OnUser2 CEntityIOOutput
+--- @field public OnUser3 CEntityIOOutput
+--- @field public OnUser4 CEntityIOOutput
 --- @field public InitialTeamNum number
 --- @field public NavIgnoreUntilTime number
 --- @field public AngVelocity QAngle
 --- @field public NetworkQuantizeOriginAndAngles boolean
 --- @field public LagCompensate boolean
 --- @field public OverriddenFriction number
---- @field readonly public Blocker CBaseEntity
+--- @field public Blocker CBaseEntity
 --- @field public LocalTime number
 --- @field public VPhysicsUpdateLocalTime number
 --- @field public BloodType number

@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class PhysicsRagdollPose_t
---- @field readonly public __pChainEntity CNetworkVarChainer
---- @field readonly public Owner CBaseEntity
+--- @field public __pChainEntity CNetworkVarChainer
+--- @field public Owner CBaseEntity
 physicsragdollpose_t = {}
 
 --- This is the constructor for PhysicsRagdollPose_t class.

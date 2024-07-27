@@ -3,7 +3,7 @@
 --- @class CShatterGlassShardPhysics
 --- @field public Debris boolean
 --- @field public ParentShard number
---- @field readonly public ShardDesc shard_model_desc_t
+--- @field public ShardDesc shard_model_desc_t
 --- @field public Parent CPhysicsProp
 cshatterglassshardphysics = {}
 

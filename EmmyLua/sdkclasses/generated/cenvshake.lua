@@ -10,7 +10,7 @@
 --- @field public NextShake number
 --- @field public CurrentAmp number
 --- @field public MaxForce Vector
---- @field readonly public ShakeCallback CPhysicsShake
+--- @field public ShakeCallback CPhysicsShake
 --- @field public Parent CPointEntity
 cenvshake = {}
 

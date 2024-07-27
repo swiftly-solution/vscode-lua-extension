@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventClientProcessInput_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public RealTime number
 --- @field public TickInterval number
 --- @field public TickStartTime number

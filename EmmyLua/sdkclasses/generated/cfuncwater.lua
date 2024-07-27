@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFuncWater
---- @field readonly public BuoyancyHelper CBuoyancyHelper
+--- @field public BuoyancyHelper CBuoyancyHelper
 --- @field public Parent CBaseModelEntity
 cfuncwater = {}
 

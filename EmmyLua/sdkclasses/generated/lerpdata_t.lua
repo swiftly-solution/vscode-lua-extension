@@ -1,11 +1,11 @@
 --- @meta
 
 --- @class lerpdata_t
---- @field readonly public Ent CBaseEntity
+--- @field public Ent CBaseEntity
 --- @field public MoveType number
 --- @field public StartTime number
 --- @field public StartOrigin Vector
---- @field readonly public FXIndex ParticleIndex_t
+--- @field public FXIndex ParticleIndex_t
 lerpdata_t = {}
 
 --- This is the constructor for lerpdata_t class.

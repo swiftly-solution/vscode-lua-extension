@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class FollowAttachmentSettings_t
---- @field readonly public Attachment CAnimAttachment
+--- @field public Attachment CAnimAttachment
 --- @field public BoneIndex number
 --- @field public MatchTranslation boolean
 --- @field public MatchRotation boolean

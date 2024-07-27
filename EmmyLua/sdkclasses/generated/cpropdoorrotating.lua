@@ -17,7 +17,7 @@
 --- @field public BackBoundsMin Vector
 --- @field public BackBoundsMax Vector
 --- @field public AjarDoorShouldntAlwaysOpen boolean
---- @field readonly public EntityBlocker CEntityBlocker
+--- @field public EntityBlocker CEntityBlocker
 --- @field public Parent CBasePropDoor
 cpropdoorrotating = {}
 

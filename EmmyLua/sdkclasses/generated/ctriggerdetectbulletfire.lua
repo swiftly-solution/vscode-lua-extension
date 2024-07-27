@@ -2,7 +2,7 @@
 
 --- @class CTriggerDetectBulletFire
 --- @field public PlayerFireOnly boolean
---- @field readonly public OnDetectedBulletFire CEntityIOOutput
+--- @field public OnDetectedBulletFire CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggerdetectbulletfire = {}
 

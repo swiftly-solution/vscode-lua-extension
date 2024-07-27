@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CLogicGameEventListener
---- @field readonly public OnEventFired CEntityIOOutput
+--- @field public OnEventFired CEntityIOOutput
 --- @field public GameEventName string
 --- @field public GameEventItem string
 --- @field public Enabled boolean

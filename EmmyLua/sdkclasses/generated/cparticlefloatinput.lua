@@ -5,8 +5,8 @@
 --- @field public MapType number
 --- @field public LiteralValue number
 --- @field public ControlPoint number
---- @field readonly public ScalarAttribute ParticleAttributeIndex_t
---- @field readonly public VectorAttribute ParticleAttributeIndex_t
+--- @field public ScalarAttribute ParticleAttributeIndex_t
+--- @field public VectorAttribute ParticleAttributeIndex_t
 --- @field public VectorComponent number
 --- @field public RandomMin number
 --- @field public RandomMax number
@@ -17,7 +17,7 @@
 --- @field public LOD1 number
 --- @field public LOD2 number
 --- @field public LOD3 number
---- @field readonly public NoiseInputVectorAttribute ParticleAttributeIndex_t
+--- @field public NoiseInputVectorAttribute ParticleAttributeIndex_t
 --- @field public NoiseOutputMin number
 --- @field public NoiseOutputMax number
 --- @field public NoiseScale number

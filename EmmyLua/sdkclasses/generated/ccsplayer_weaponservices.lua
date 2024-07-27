@@ -4,7 +4,7 @@
 --- @field public NextAttack number
 --- @field public IsLookingAtWeapon boolean
 --- @field public IsHoldingLookAtWeapon boolean
---- @field readonly public SavedWeapon CBasePlayerWeapon
+--- @field public SavedWeapon CBasePlayerWeapon
 --- @field public TimeToMelee number
 --- @field public TimeToSecondary number
 --- @field public TimeToPrimary number

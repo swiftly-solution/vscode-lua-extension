@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CBtActionParachutePositioning
---- @field readonly public ActionTimer CountdownTimer
+--- @field public ActionTimer CountdownTimer
 --- @field public Parent CBtNode
 cbtactionparachutepositioning = {}
 

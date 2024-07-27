@@ -6,9 +6,9 @@
 --- @field public SyncEventOffsetOverrideNodeIdx number
 --- @field public StartBoneMaskNodeIdx number
 --- @field public Duration number
---- @field readonly public BoneMaskBlendInTimePercentage NmPercent_t
+--- @field public BoneMaskBlendInTimePercentage NmPercent_t
 --- @field public SyncEventOffset number
---- @field readonly public TransitionOptions CNmTransitionNode
+--- @field public TransitionOptions CNmTransitionNode
 --- @field public TargetSyncIDNodeIdx number
 --- @field public BlendWeightEasing number
 --- @field public RootMotionBlend number

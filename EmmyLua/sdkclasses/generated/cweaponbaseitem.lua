@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CWeaponBaseItem
---- @field readonly public SequenceCompleteTimer CountdownTimer
+--- @field public SequenceCompleteTimer CountdownTimer
 --- @field public Redraw boolean
 --- @field public Parent CCSWeaponBase
 cweaponbaseitem = {}

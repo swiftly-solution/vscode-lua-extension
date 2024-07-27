@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class RnCapsuleDesc_t
---- @field readonly public Capsule RnCapsule_t
+--- @field public Capsule RnCapsule_t
 --- @field public Parent RnShapeDesc_t
 rncapsuledesc_t = {}
 

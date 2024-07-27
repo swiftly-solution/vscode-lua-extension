@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CJumpHelperUpdateNode
---- @field readonly public TargetParam CAnimParamHandle
+--- @field public TargetParam CAnimParamHandle
 --- @field public OriginalJumpMovement Vector
 --- @field public OriginalJumpDuration number
 --- @field public JumpStartCycle number

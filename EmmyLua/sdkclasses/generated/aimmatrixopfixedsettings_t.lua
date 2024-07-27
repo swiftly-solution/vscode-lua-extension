@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class AimMatrixOpFixedSettings_t
---- @field readonly public Attachment CAnimAttachment
---- @field readonly public Damping CAnimInputDamping
+--- @field public Attachment CAnimAttachment
+--- @field public Damping CAnimInputDamping
 --- @field public PoseCacheHandles table
 --- @field public BlendMode number
 --- @field public MaxYawAngle number
@@ -13,7 +13,7 @@
 --- @field public UseBiasAndClamp boolean
 --- @field public BiasAndClampYawOffset number
 --- @field public BiasAndClampPitchOffset number
---- @field readonly public BiasAndClampBlendCurve CBlendCurve
+--- @field public BiasAndClampBlendCurve CBlendCurve
 aimmatrixopfixedsettings_t = {}
 
 --- This is the constructor for AimMatrixOpFixedSettings_t class.

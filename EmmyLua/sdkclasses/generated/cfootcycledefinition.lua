@@ -5,11 +5,11 @@
 --- @field public MidpointPositionMS Vector
 --- @field public StanceDirectionMS number
 --- @field public ToStrideStartPos Vector
---- @field readonly public StanceCycle CAnimCycle
---- @field readonly public FootLiftCycle CFootCycle
---- @field readonly public FootOffCycle CFootCycle
---- @field readonly public FootStrikeCycle CFootCycle
---- @field readonly public FootLandCycle CFootCycle
+--- @field public StanceCycle CAnimCycle
+--- @field public FootLiftCycle CFootCycle
+--- @field public FootOffCycle CFootCycle
+--- @field public FootStrikeCycle CFootCycle
+--- @field public FootLandCycle CFootCycle
 cfootcycledefinition = {}
 
 --- This is the constructor for CFootCycleDefinition class.

@@ -2,7 +2,7 @@
 
 --- @class CAnimComponentUpdater
 --- @field public Name string
---- @field readonly public Id AnimComponentID
+--- @field public Id AnimComponentID
 --- @field public NetworkMode number
 --- @field public StartEnabled boolean
 canimcomponentupdater = {}

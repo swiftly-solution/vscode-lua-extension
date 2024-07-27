@@ -8,7 +8,7 @@
 --- @field public ModDepth number
 --- @field public ModRate number
 --- @field public Parallel boolean
---- @field readonly public FilterType VMixFilterDesc_t
+--- @field public FilterType VMixFilterDesc_t
 --- @field public Width number
 --- @field public Height number
 --- @field public Depth number

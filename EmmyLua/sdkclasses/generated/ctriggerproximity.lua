@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerProximity
---- @field readonly public MeasureTarget CBaseEntity
+--- @field public MeasureTarget CBaseEntity
 --- @field public MeasureTarget1 string
 --- @field public Radius number
 --- @field public Touchers number

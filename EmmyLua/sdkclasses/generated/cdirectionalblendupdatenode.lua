@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CDirectionalBlendUpdateNode
---- @field readonly public Damping CAnimInputDamping
+--- @field public Damping CAnimInputDamping
 --- @field public BlendValueSource number
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public PlaybackSpeed number
 --- @field public Duration number
 --- @field public Loop boolean

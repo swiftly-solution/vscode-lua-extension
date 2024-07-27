@@ -1,13 +1,13 @@
 --- @meta
 
 --- @class CPhysicsProp
---- @field readonly public MotionEnabled CEntityIOOutput
---- @field readonly public OnAwakened CEntityIOOutput
---- @field readonly public OnAwake CEntityIOOutput
---- @field readonly public OnAsleep CEntityIOOutput
---- @field readonly public OnPlayerUse CEntityIOOutput
---- @field readonly public OnOutOfWorld CEntityIOOutput
---- @field readonly public OnPlayerPickup CEntityIOOutput
+--- @field public MotionEnabled CEntityIOOutput
+--- @field public OnAwakened CEntityIOOutput
+--- @field public OnAwake CEntityIOOutput
+--- @field public OnAsleep CEntityIOOutput
+--- @field public OnPlayerUse CEntityIOOutput
+--- @field public OnOutOfWorld CEntityIOOutput
+--- @field public OnPlayerPickup CEntityIOOutput
 --- @field public ForceNavIgnore boolean
 --- @field public NoNavmeshBlocker boolean
 --- @field public ForceNpcExclude boolean

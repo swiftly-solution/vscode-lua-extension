@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CFuncRotating
---- @field readonly public OnStopped CEntityIOOutput
---- @field readonly public OnStarted CEntityIOOutput
---- @field readonly public OnReachedStart CEntityIOOutput
+--- @field public OnStopped CEntityIOOutput
+--- @field public OnStarted CEntityIOOutput
+--- @field public OnReachedStart CEntityIOOutput
 --- @field public LocalRotationVector Vector
 --- @field public FanFriction number
 --- @field public Attenuation number

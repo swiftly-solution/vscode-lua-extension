@@ -9,8 +9,8 @@
 --- @field public CurrentSound string
 --- @field public BlockDamage number
 --- @field public StartPosition number
---- @field readonly public OnFullyOpen CEntityIOOutput
---- @field readonly public OnFullyClosed CEntityIOOutput
+--- @field public OnFullyOpen CEntityIOOutput
+--- @field public OnFullyClosed CEntityIOOutput
 --- @field public CreateMovableNavMesh boolean
 --- @field public CreateNavObstacle boolean
 --- @field public Parent CBaseToggle

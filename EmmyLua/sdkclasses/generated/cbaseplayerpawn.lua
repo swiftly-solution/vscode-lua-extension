@@ -15,13 +15,13 @@
 --- @field public _angle QAngle
 --- @field public _anglePrevious QAngle
 --- @field public HideHUD number
---- @field readonly public Skybox3d sky3dparams_t
+--- @field public Skybox3d sky3dparams_t
 --- @field public TimeLastHurt number
 --- @field public DeathTime number
 --- @field public NextSuicideTime number
 --- @field public InitHUD boolean
 --- @field public Expresser CAI_Expresser
---- @field readonly public Controller CBasePlayerController
+--- @field public Controller CBasePlayerController
 --- @field public HltvReplayDelay number
 --- @field public HltvReplayEnd number
 --- @field public HltvReplayEntity number

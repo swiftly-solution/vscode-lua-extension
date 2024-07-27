@@ -5,44 +5,44 @@
 --- @field public Name string
 --- @field public CombatRange number
 --- @field public IsRogue boolean
---- @field readonly public RogueTimer CountdownTimer
+--- @field public RogueTimer CountdownTimer
 --- @field public DiedLastRound boolean
 --- @field public SafeTime number
 --- @field public WasSafe boolean
 --- @field public BlindFire boolean
---- @field readonly public SurpriseTimer CountdownTimer
+--- @field public SurpriseTimer CountdownTimer
 --- @field public AllowActive boolean
 --- @field public IsFollowing boolean
---- @field readonly public Leader CCSPlayerPawn
+--- @field public Leader CCSPlayerPawn
 --- @field public FollowTimestamp number
 --- @field public AllowAutoFollowTime number
---- @field readonly public HurryTimer CountdownTimer
---- @field readonly public AlertTimer CountdownTimer
---- @field readonly public SneakTimer CountdownTimer
---- @field readonly public PanicTimer CountdownTimer
+--- @field public HurryTimer CountdownTimer
+--- @field public AlertTimer CountdownTimer
+--- @field public SneakTimer CountdownTimer
+--- @field public PanicTimer CountdownTimer
 --- @field public StateTimestamp number
 --- @field public IsAttacking boolean
 --- @field public IsOpeningDoor boolean
---- @field readonly public TaskEntity CBaseEntity
+--- @field public TaskEntity CBaseEntity
 --- @field public GoalPosition Vector
---- @field readonly public GoalEntity CBaseEntity
---- @field readonly public Avoid CBaseEntity
+--- @field public GoalEntity CBaseEntity
+--- @field public Avoid CBaseEntity
 --- @field public AvoidTimestamp number
 --- @field public IsStopping boolean
 --- @field public HasVisitedEnemySpawn boolean
---- @field readonly public StillTimer IntervalTimer
+--- @field public StillTimer IntervalTimer
 --- @field public EyeAnglesUnderPathFinderControl boolean
 --- @field public PathIndex number
 --- @field public AreaEnteredTimestamp number
---- @field readonly public RepathTimer CountdownTimer
---- @field readonly public AvoidFriendTimer CountdownTimer
+--- @field public RepathTimer CountdownTimer
+--- @field public AvoidFriendTimer CountdownTimer
 --- @field public IsFriendInTheWay boolean
---- @field readonly public PoliteTimer CountdownTimer
+--- @field public PoliteTimer CountdownTimer
 --- @field public IsWaitingBehindFriend boolean
 --- @field public PathLadderEnd number
---- @field readonly public MustRunTimer CountdownTimer
---- @field readonly public WaitTimer CountdownTimer
---- @field readonly public UpdateTravelDistanceTimer CountdownTimer
+--- @field public MustRunTimer CountdownTimer
+--- @field public WaitTimer CountdownTimer
+--- @field public UpdateTravelDistanceTimer CountdownTimer
 --- @field public PlayerTravelDistance table
 --- @field public TravelDistancePhase number
 --- @field public HostageEscortCount number
@@ -50,13 +50,13 @@
 --- @field public DesiredTeam number
 --- @field public HasJoined boolean
 --- @field public IsWaitingForHostage boolean
---- @field readonly public InhibitWaitingForHostageTimer CountdownTimer
---- @field readonly public WaitForHostageTimer CountdownTimer
+--- @field public InhibitWaitingForHostageTimer CountdownTimer
+--- @field public WaitForHostageTimer CountdownTimer
 --- @field public NoisePosition Vector
 --- @field public NoiseTravelDistance number
 --- @field public NoiseTimestamp number
 --- @field public NoiseSource CCSPlayerPawn
---- @field readonly public NoiseBendTimer CountdownTimer
+--- @field public NoiseBendTimer CountdownTimer
 --- @field public BentNoisePosition Vector
 --- @field public BendNoisePositionValid boolean
 --- @field public LookAroundStateTimestamp number
@@ -73,9 +73,9 @@
 --- @field public PeripheralTimestamp number
 --- @field public ApproachPointCount number
 --- @field public ApproachPointViewPosition Vector
---- @field readonly public ViewSteadyTimer IntervalTimer
---- @field readonly public TossGrenadeTimer CountdownTimer
---- @field readonly public IsAvoidingGrenade CountdownTimer
+--- @field public ViewSteadyTimer IntervalTimer
+--- @field public TossGrenadeTimer CountdownTimer
+--- @field public IsAvoidingGrenade CountdownTimer
 --- @field public SpotCheckTimestamp number
 --- @field public CheckedHidingSpotCount number
 --- @field public LookPitch number
@@ -91,8 +91,8 @@
 --- @field public AimFocus number
 --- @field public AimFocusInterval number
 --- @field public AimFocusNextUpdate number
---- @field readonly public IgnoreEnemiesTimer CountdownTimer
---- @field readonly public Enemy CCSPlayerPawn
+--- @field public IgnoreEnemiesTimer CountdownTimer
+--- @field public Enemy CCSPlayerPawn
 --- @field public IsEnemyVisible boolean
 --- @field public VisibleEnemyParts number
 --- @field public LastEnemyPosition Vector
@@ -103,32 +103,32 @@
 --- @field public FriendDeathTimestamp number
 --- @field public IsLastEnemyDead boolean
 --- @field public NearbyEnemyCount number
---- @field readonly public Bomber CCSPlayerPawn
+--- @field public Bomber CCSPlayerPawn
 --- @field public NearbyFriendCount number
---- @field readonly public ClosestVisibleFriend CCSPlayerPawn
---- @field readonly public ClosestVisibleHumanFriend CCSPlayerPawn
---- @field readonly public AttentionInterval IntervalTimer
---- @field readonly public Attacker CCSPlayerPawn
+--- @field public ClosestVisibleFriend CCSPlayerPawn
+--- @field public ClosestVisibleHumanFriend CCSPlayerPawn
+--- @field public AttentionInterval IntervalTimer
+--- @field public Attacker CCSPlayerPawn
 --- @field public AttackedTimestamp number
---- @field readonly public BurnedByFlamesTimer IntervalTimer
+--- @field public BurnedByFlamesTimer IntervalTimer
 --- @field public LastVictimID number
 --- @field public IsAimingAtEnemy boolean
 --- @field public IsRapidFiring boolean
---- @field readonly public EquipTimer IntervalTimer
---- @field readonly public ZoomTimer CountdownTimer
+--- @field public EquipTimer IntervalTimer
+--- @field public ZoomTimer CountdownTimer
 --- @field public FireWeaponTimestamp number
---- @field readonly public LookForWeaponsOnGroundTimer CountdownTimer
+--- @field public LookForWeaponsOnGroundTimer CountdownTimer
 --- @field public IsSleeping boolean
 --- @field public IsEnemySniperVisible boolean
---- @field readonly public SawEnemySniperTimer CountdownTimer
+--- @field public SawEnemySniperTimer CountdownTimer
 --- @field public EnemyQueueIndex number
 --- @field public EnemyQueueCount number
 --- @field public EnemyQueueAttendIndex number
 --- @field public IsStuck boolean
 --- @field public StuckTimestamp number
 --- @field public StuckSpot Vector
---- @field readonly public WiggleTimer CountdownTimer
---- @field readonly public StuckJumpTimer CountdownTimer
+--- @field public WiggleTimer CountdownTimer
+--- @field public StuckJumpTimer CountdownTimer
 --- @field public NextCleanupCheckTimestamp number
 --- @field public AvgVel table
 --- @field public AvgVelIndex number
@@ -136,7 +136,7 @@
 --- @field public LastOrigin Vector
 --- @field public LastRadioRecievedTimestamp number
 --- @field public LastRadioSentTimestamp number
---- @field readonly public RadioSubject CCSPlayerPawn
+--- @field public RadioSubject CCSPlayerPawn
 --- @field public RadioPosition Vector
 --- @field public VoiceEndTimestamp number
 --- @field public LastValidReactionQueueFrame number

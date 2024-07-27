@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPlayerControllerComponent
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 cplayercontrollercomponent = {}
 
 --- This is the constructor for CPlayerControllerComponent class.

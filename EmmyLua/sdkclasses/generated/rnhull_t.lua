@@ -3,7 +3,7 @@
 --- @class RnHull_t
 --- @field public Centroid Vector
 --- @field public MaxAngularRadius number
---- @field readonly public Bounds AABB_t
+--- @field public Bounds AABB_t
 --- @field public OrthographicAreas Vector
 --- @field public Volume number
 --- @field public SurfaceArea number

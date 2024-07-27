@@ -4,7 +4,7 @@
 --- @field public SubSceneObject number
 --- @field public DrawCallIndex number
 --- @field public AdditionalMeshDrawPrimitiveFlags number
---- @field readonly public ExtraBufferBinding CRenderBufferBinding
+--- @field public ExtraBufferBinding CRenderBufferBinding
 --- @field public Parent BaseSceneObjectOverride_t
 extravertexstreamoverride_t = {}
 

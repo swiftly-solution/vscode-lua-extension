@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CMomentaryRotButton
---- @field readonly public OnUnpressed CEntityIOOutput
---- @field readonly public OnFullyOpen CEntityIOOutput
---- @field readonly public OnFullyClosed CEntityIOOutput
---- @field readonly public OnReachedPosition CEntityIOOutput
+--- @field public OnUnpressed CEntityIOOutput
+--- @field public OnFullyOpen CEntityIOOutput
+--- @field public OnFullyClosed CEntityIOOutput
+--- @field public OnReachedPosition CEntityIOOutput
 --- @field public LastUsed number
 --- @field public Start QAngle
 --- @field public End QAngle

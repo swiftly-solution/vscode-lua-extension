@@ -9,8 +9,8 @@
 --- @field public Next number
 --- @field public IsGesture boolean
 --- @field public ShouldRemove boolean
---- @field readonly public Target CBaseEntity
---- @field readonly public SceneEventId SceneEventId_t
+--- @field public Target CBaseEntity
+--- @field public SceneEventId SceneEventId_t
 --- @field public ClientSide boolean
 --- @field public Started boolean
 csceneeventinfo = {}

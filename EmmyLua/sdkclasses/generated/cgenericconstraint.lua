@@ -46,9 +46,9 @@
 --- @field public MaxAngularImpulseX number
 --- @field public MaxAngularImpulseY number
 --- @field public MaxAngularImpulseZ number
---- @field readonly public NotifyForceReachedX CEntityIOOutput
---- @field readonly public NotifyForceReachedY CEntityIOOutput
---- @field readonly public NotifyForceReachedZ CEntityIOOutput
+--- @field public NotifyForceReachedX CEntityIOOutput
+--- @field public NotifyForceReachedY CEntityIOOutput
+--- @field public NotifyForceReachedZ CEntityIOOutput
 --- @field public Parent CPhysConstraint
 cgenericconstraint = {}
 

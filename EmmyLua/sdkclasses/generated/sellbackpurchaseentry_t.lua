@@ -5,7 +5,7 @@
 --- @field public Cost number
 --- @field public PrevArmor number
 --- @field public PrevHelmet boolean
---- @field readonly public Item CEntityInstance
+--- @field public Item CEntityInstance
 sellbackpurchaseentry_t = {}
 
 --- This is the constructor for SellbackPurchaseEntry_t class.

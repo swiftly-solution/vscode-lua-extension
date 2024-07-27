@@ -7,7 +7,7 @@
 --- @field public InnerRadius number
 --- @field public SpriteScale number
 --- @field public DamageForce number
---- @field readonly public Inflictor CBaseEntity
+--- @field public Inflictor CBaseEntity
 --- @field public CustomDamageType number
 --- @field public ExplosionType string
 --- @field public CustomEffectName string
@@ -15,7 +15,7 @@
 --- @field public ClassIgnore number
 --- @field public ClassIgnore2 number
 --- @field public EntityIgnoreName string
---- @field readonly public EntityIgnore CBaseEntity
+--- @field public EntityIgnore CBaseEntity
 --- @field public Parent CModelPointEntity
 cenvexplosion = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CGeneralRandomRotation
---- @field readonly public FieldOutput ParticleAttributeIndex_t
+--- @field public FieldOutput ParticleAttributeIndex_t
 --- @field public Degrees number
 --- @field public DegreesMin number
 --- @field public DegreesMax number

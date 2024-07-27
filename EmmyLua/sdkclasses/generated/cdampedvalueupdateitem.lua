@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CDampedValueUpdateItem
---- @field readonly public Damping CAnimInputDamping
---- @field readonly public ParamIn CAnimParamHandle
---- @field readonly public ParamOut CAnimParamHandle
+--- @field public Damping CAnimInputDamping
+--- @field public ParamIn CAnimParamHandle
+--- @field public ParamOut CAnimParamHandle
 cdampedvalueupdateitem = {}
 
 --- This is the constructor for CDampedValueUpdateItem class.

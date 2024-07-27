@@ -3,7 +3,7 @@
 --- @class CChangeLevel
 --- @field public MapName string
 --- @field public LandmarkName string
---- @field readonly public OnChangeLevel CEntityIOOutput
+--- @field public OnChangeLevel CEntityIOOutput
 --- @field public Touched boolean
 --- @field public NoTouch boolean
 --- @field public NewChapter boolean

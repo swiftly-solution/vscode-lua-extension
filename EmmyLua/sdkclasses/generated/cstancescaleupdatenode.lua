@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CStanceScaleUpdateNode
---- @field readonly public Param CAnimParamHandle
+--- @field public Param CAnimParamHandle
 --- @field public Parent CUnaryUpdateNode
 cstancescaleupdatenode = {}
 

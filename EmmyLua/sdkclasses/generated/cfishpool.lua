@@ -6,7 +6,7 @@
 --- @field public SwimDepth number
 --- @field public WaterLevel number
 --- @field public IsDormant boolean
---- @field readonly public VisTimer CountdownTimer
+--- @field public VisTimer CountdownTimer
 --- @field public Parent CBaseEntity
 cfishpool = {}
 

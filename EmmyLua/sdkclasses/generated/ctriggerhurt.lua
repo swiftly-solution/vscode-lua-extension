@@ -12,8 +12,8 @@
 --- @field public DamageForce Vector
 --- @field public ThinkAlways boolean
 --- @field public HurtThinkPeriod number
---- @field readonly public OnHurt CEntityIOOutput
---- @field readonly public OnHurtPlayer CEntityIOOutput
+--- @field public OnHurt CEntityIOOutput
+--- @field public OnHurtPlayer CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggerhurt = {}
 

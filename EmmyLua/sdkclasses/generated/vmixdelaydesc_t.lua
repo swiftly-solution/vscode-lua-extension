@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class VMixDelayDesc_t
---- @field readonly public FeedbackFilter VMixFilterDesc_t
+--- @field public FeedbackFilter VMixFilterDesc_t
 --- @field public EnableFilter boolean
 --- @field public Delay number
 --- @field public DirectGain number

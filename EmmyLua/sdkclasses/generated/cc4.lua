@@ -8,7 +8,7 @@
 --- @field public ArmedTime number
 --- @field public BombPlacedAnimation boolean
 --- @field public IsPlantingViaUse boolean
---- @field readonly public EntitySpottedState EntitySpottedState_t
+--- @field public EntitySpottedState EntitySpottedState_t
 --- @field public SpotRules number
 --- @field public PlayedArmingBeeps table
 --- @field public BombPlanted boolean

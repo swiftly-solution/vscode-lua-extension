@@ -8,12 +8,12 @@
 --- @field public Locked boolean
 --- @field public ClosedPosition Vector
 --- @field public ClosedAngles QAngle
---- @field readonly public Blocker CBaseEntity
+--- @field public Blocker CBaseEntity
 --- @field public FirstBlocked boolean
---- @field readonly public Ls locksound_t
+--- @field public Ls locksound_t
 --- @field public ForceClosed boolean
 --- @field public LatchWorldPosition Vector
---- @field readonly public Activator CBaseEntity
+--- @field public Activator CBaseEntity
 --- @field public SoundMoving string
 --- @field public SoundOpen string
 --- @field public SoundClose string
@@ -26,17 +26,17 @@
 --- @field public NumCloseAttempts number
 --- @field public PhysicsMaterial number
 --- @field public SlaveName string
---- @field readonly public Master CBasePropDoor
---- @field readonly public OnBlockedClosing CEntityIOOutput
---- @field readonly public OnBlockedOpening CEntityIOOutput
---- @field readonly public OnUnblockedClosing CEntityIOOutput
---- @field readonly public OnUnblockedOpening CEntityIOOutput
---- @field readonly public OnFullyClosed CEntityIOOutput
---- @field readonly public OnFullyOpen CEntityIOOutput
---- @field readonly public OnClose CEntityIOOutput
---- @field readonly public OnOpen CEntityIOOutput
---- @field readonly public OnLockedUse CEntityIOOutput
---- @field readonly public OnAjarOpen CEntityIOOutput
+--- @field public Master CBasePropDoor
+--- @field public OnBlockedClosing CEntityIOOutput
+--- @field public OnBlockedOpening CEntityIOOutput
+--- @field public OnUnblockedClosing CEntityIOOutput
+--- @field public OnUnblockedOpening CEntityIOOutput
+--- @field public OnFullyClosed CEntityIOOutput
+--- @field public OnFullyOpen CEntityIOOutput
+--- @field public OnClose CEntityIOOutput
+--- @field public OnOpen CEntityIOOutput
+--- @field public OnLockedUse CEntityIOOutput
+--- @field public OnAjarOpen CEntityIOOutput
 --- @field public Parent CDynamicProp
 cbasepropdoor = {}
 

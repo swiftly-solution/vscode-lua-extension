@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class fogplayerparams_t
---- @field readonly public Ctrl CFogController
+--- @field public Ctrl CFogController
 --- @field public TransitionTime number
 --- @field public OldColor Color
 --- @field public OldStart number

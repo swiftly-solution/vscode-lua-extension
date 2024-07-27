@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CSoundOpvarSetPointEntity
---- @field readonly public OnEnter CEntityIOOutput
---- @field readonly public OnExit CEntityIOOutput
+--- @field public OnEnter CEntityIOOutput
+--- @field public OnExit CEntityIOOutput
 --- @field public AutoDisable boolean
 --- @field public DistanceMin number
 --- @field public DistanceMax number
@@ -17,7 +17,7 @@
 --- @field public VisibilitySamples number
 --- @field public DynamicProxyPoint Vector
 --- @field public DynamicMaximumOcclusion number
---- @field readonly public DynamicEntity CEntityInstance
+--- @field public DynamicEntity CEntityInstance
 --- @field public DynamicEntityName string
 --- @field public PathingDistanceNormFactor number
 --- @field public PathingSourcePos Vector

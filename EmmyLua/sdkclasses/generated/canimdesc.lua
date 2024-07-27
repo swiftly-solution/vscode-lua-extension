@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CAnimDesc
---- @field readonly public Flags CAnimDesc_Flag
+--- @field public Flags CAnimDesc_Flag
 --- @field public Fps number
---- @field readonly public Data CAnimEncodedFrames
+--- @field public Data CAnimEncodedFrames
 --- @field public MovementArray table
 --- @field public EventArray table
 --- @field public ActivityArray table
@@ -13,7 +13,7 @@
 --- @field public RootMax Vector
 --- @field public BoneWorldMin table
 --- @field public BoneWorldMax table
---- @field readonly public SequenceParams CAnimSequenceParams
+--- @field public SequenceParams CAnimSequenceParams
 canimdesc = {}
 
 --- This is the constructor for CAnimDesc class.

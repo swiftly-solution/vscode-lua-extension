@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CFootAdjustmentUpdateNode
---- @field readonly public BasePoseCacheHandle CPoseHandle
---- @field readonly public FacingTarget CAnimParamHandle
+--- @field public BasePoseCacheHandle CPoseHandle
+--- @field public FacingTarget CAnimParamHandle
 --- @field public TurnTimeMin number
 --- @field public TurnTimeMax number
 --- @field public StepHeightMax number

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventSetTime_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public ClientOutputFrames number
 --- @field public RealTime number
 --- @field public RenderTime number

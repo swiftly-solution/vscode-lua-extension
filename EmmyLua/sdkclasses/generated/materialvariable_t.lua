@@ -2,7 +2,7 @@
 
 --- @class MaterialVariable_t
 --- @field public StrVariable string
---- @field readonly public VariableField ParticleAttributeIndex_t
+--- @field public VariableField ParticleAttributeIndex_t
 --- @field public Scale number
 materialvariable_t = {}
 

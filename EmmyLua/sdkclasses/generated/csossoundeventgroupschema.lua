@@ -6,8 +6,8 @@
 --- @field public IsBlocking boolean
 --- @field public BlockMaxCount number
 --- @field public InvertMatch boolean
---- @field readonly public MatchPattern CSosGroupMatchPattern
---- @field readonly public BranchPattern CSosGroupBranchPattern
+--- @field public MatchPattern CSosGroupMatchPattern
+--- @field public BranchPattern CSosGroupBranchPattern
 --- @field public LifeSpanTime number
 --- @field public Actions table
 csossoundeventgroupschema = {}

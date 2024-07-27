@@ -3,7 +3,7 @@
 --- @class CAnimParameterBase
 --- @field public Comment string
 --- @field public Group string
---- @field readonly public Id AnimParamID
+--- @field public Id AnimParamID
 --- @field public ComponentName string
 --- @field public NetworkingRequested boolean
 --- @field public IsReferenced boolean

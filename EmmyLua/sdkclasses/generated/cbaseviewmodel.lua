@@ -5,12 +5,12 @@
 --- @field public ViewModelIndex number
 --- @field public AnimationParity number
 --- @field public AnimationStartTime number
---- @field readonly public Weapon CBasePlayerWeapon
+--- @field public Weapon CBasePlayerWeapon
 --- @field public VMName string
 --- @field public AnimationPrefix string
 --- @field public OldLayer number
 --- @field public OldLayerStartTime number
---- @field readonly public ControlPanel CBaseEntity
+--- @field public ControlPanel CBaseEntity
 --- @field public Parent CBaseAnimGraph
 cbaseviewmodel = {}
 

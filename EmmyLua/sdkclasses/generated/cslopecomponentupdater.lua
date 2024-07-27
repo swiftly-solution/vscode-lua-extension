@@ -2,12 +2,12 @@
 
 --- @class CSlopeComponentUpdater
 --- @field public TraceDistance number
---- @field readonly public SlopeAngle CAnimParamHandle
---- @field readonly public SlopeAngleFront CAnimParamHandle
---- @field readonly public SlopeAngleSide CAnimParamHandle
---- @field readonly public SlopeHeading CAnimParamHandle
---- @field readonly public SlopeNormal CAnimParamHandle
---- @field readonly public SlopeNormal_WorldSpace CAnimParamHandle
+--- @field public SlopeAngle CAnimParamHandle
+--- @field public SlopeAngleFront CAnimParamHandle
+--- @field public SlopeAngleSide CAnimParamHandle
+--- @field public SlopeHeading CAnimParamHandle
+--- @field public SlopeNormal CAnimParamHandle
+--- @field public SlopeNormal_WorldSpace CAnimParamHandle
 --- @field public Parent CAnimComponentUpdater
 cslopecomponentupdater = {}
 

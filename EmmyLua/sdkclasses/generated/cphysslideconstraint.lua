@@ -10,7 +10,7 @@
 --- @field public MotorFrequency number
 --- @field public MotorDampingRatio number
 --- @field public UseEntityPivot boolean
---- @field readonly public SoundInfo ConstraintSoundInfo
+--- @field public SoundInfo ConstraintSoundInfo
 --- @field public Parent CPhysConstraint
 cphysslideconstraint = {}
 

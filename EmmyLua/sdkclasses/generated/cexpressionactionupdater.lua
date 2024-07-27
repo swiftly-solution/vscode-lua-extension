@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CExpressionActionUpdater
---- @field readonly public Param CAnimParamHandle
+--- @field public Param CAnimParamHandle
 --- @field public ParamType number
---- @field readonly public Script AnimScriptHandle
+--- @field public Script AnimScriptHandle
 --- @field public Parent CAnimActionUpdater
 cexpressionactionupdater = {}
 

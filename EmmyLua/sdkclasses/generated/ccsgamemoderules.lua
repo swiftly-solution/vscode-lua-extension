@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CCSGameModeRules
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 ccsgamemoderules = {}
 
 --- This is the constructor for CCSGameModeRules class.

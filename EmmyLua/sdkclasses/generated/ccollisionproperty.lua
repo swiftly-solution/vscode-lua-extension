@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CCollisionProperty
---- @field readonly public CollisionAttribute VPhysicsCollisionAttribute_t
+--- @field public CollisionAttribute VPhysicsCollisionAttribute_t
 --- @field public Mins Vector
 --- @field public Maxs Vector
 --- @field public SolidFlags number

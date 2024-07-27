@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CMotionGraphGroup
---- @field readonly public SearchDB CMotionSearchDB
+--- @field public SearchDB CMotionSearchDB
 --- @field public MotionGraphConfigs table
 --- @field public SampleToConfig table
---- @field readonly public IsActiveScript AnimScriptHandle
+--- @field public IsActiveScript AnimScriptHandle
 cmotiongraphgroup = {}
 
 --- This is the constructor for CMotionGraphGroup class.

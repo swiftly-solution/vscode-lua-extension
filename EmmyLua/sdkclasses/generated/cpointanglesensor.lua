@@ -3,14 +3,14 @@
 --- @class CPointAngleSensor
 --- @field public Disabled boolean
 --- @field public LookAtName string
---- @field readonly public TargetEntity CBaseEntity
---- @field readonly public LookAtEntity CBaseEntity
+--- @field public TargetEntity CBaseEntity
+--- @field public LookAtEntity CBaseEntity
 --- @field public Duration number
 --- @field public DotTolerance number
 --- @field public FacingTime number
 --- @field public Fired boolean
---- @field readonly public OnFacingLookat CEntityIOOutput
---- @field readonly public OnNotFacingLookat CEntityIOOutput
+--- @field public OnFacingLookat CEntityIOOutput
+--- @field public OnNotFacingLookat CEntityIOOutput
 --- @field public Parent CPointEntity
 cpointanglesensor = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPointClientUIDialog
---- @field readonly public Activator CBaseEntity
+--- @field public Activator CBaseEntity
 --- @field public StartEnabled boolean
 --- @field public Parent CBaseClientUIEntity
 cpointclientuidialog = {}

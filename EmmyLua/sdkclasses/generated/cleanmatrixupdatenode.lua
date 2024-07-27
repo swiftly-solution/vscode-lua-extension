@@ -2,9 +2,9 @@
 
 --- @class CLeanMatrixUpdateNode
 --- @field public Poses table
---- @field readonly public Damping CAnimInputDamping
+--- @field public Damping CAnimInputDamping
 --- @field public BlendSource number
---- @field readonly public ParamIndex CAnimParamHandle
+--- @field public ParamIndex CAnimParamHandle
 --- @field public VerticalAxis Vector
 --- @field public HorizontalAxis Vector
 --- @field public MaxValue number

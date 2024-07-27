@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CStateNodeStateData
---- @field readonly public Child CAnimUpdateNodeRef
+--- @field public Child CAnimUpdateNodeRef
 cstatenodestatedata = {}
 
 --- This is the constructor for CStateNodeStateData class.

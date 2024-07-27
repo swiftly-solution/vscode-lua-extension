@@ -4,11 +4,11 @@
 --- @field public CsViewPunchAngle QAngle
 --- @field public CsViewPunchAngleTick number
 --- @field public CsViewPunchAngleTickRatio number
---- @field readonly public PlayerFog fogplayerparams_t
---- @field readonly public ColorCorrectionCtrl CColorCorrection
---- @field readonly public ViewEntity CBaseEntity
---- @field readonly public TonemapController CTonemapController2
---- @field readonly public Audio audioparams_t
+--- @field public PlayerFog fogplayerparams_t
+--- @field public ColorCorrectionCtrl CColorCorrection
+--- @field public ViewEntity CBaseEntity
+--- @field public TonemapController CTonemapController2
+--- @field public Audio audioparams_t
 --- @field public PostProcessingVolumes table
 --- @field public OldPlayerZ number
 --- @field public OldPlayerViewOffsetZ number

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CMovementComponentUpdater
---- @field readonly public FacingDamping CAnimInputDamping
+--- @field public FacingDamping CAnimInputDamping
 --- @field public DefaultMotorIndex number
 --- @field public DefaultRunSpeed number
 --- @field public MoveVarsDisabled boolean

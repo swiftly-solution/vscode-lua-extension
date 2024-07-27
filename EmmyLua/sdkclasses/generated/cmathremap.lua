@@ -7,10 +7,10 @@
 --- @field public Out2 number
 --- @field public OldInValue number
 --- @field public Enabled boolean
---- @field readonly public OnRoseAboveMin CEntityIOOutput
---- @field readonly public OnRoseAboveMax CEntityIOOutput
---- @field readonly public OnFellBelowMin CEntityIOOutput
---- @field readonly public OnFellBelowMax CEntityIOOutput
+--- @field public OnRoseAboveMin CEntityIOOutput
+--- @field public OnRoseAboveMax CEntityIOOutput
+--- @field public OnFellBelowMin CEntityIOOutput
+--- @field public OnFellBelowMax CEntityIOOutput
 --- @field public Parent CLogicalEntity
 cmathremap = {}
 

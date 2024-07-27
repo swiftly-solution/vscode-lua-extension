@@ -1,17 +1,17 @@
 --- @meta
 
 --- @class CRagdollProp
---- @field readonly public Ragdoll ragdoll_t
+--- @field public Ragdoll ragdoll_t
 --- @field public StartDisabled boolean
 --- @field public RagPos table
 --- @field public RagAngles table
---- @field readonly public RagdollSource CBaseEntity
+--- @field public RagdollSource CBaseEntity
 --- @field public LastUpdateTickCount number
 --- @field public AllAsleep boolean
 --- @field public FirstCollisionAfterLaunch boolean
---- @field readonly public DamageEntity CBaseEntity
---- @field readonly public Killer CBaseEntity
---- @field readonly public PhysicsAttacker CBasePlayerPawn
+--- @field public DamageEntity CBaseEntity
+--- @field public Killer CBaseEntity
+--- @field public PhysicsAttacker CBasePlayerPawn
 --- @field public LastPhysicsInfluenceTime number
 --- @field public FadeOutStartTime number
 --- @field public FadeTime number

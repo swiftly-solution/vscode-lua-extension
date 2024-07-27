@@ -1,11 +1,11 @@
 --- @meta
 
 --- @class CMoverUpdateNode
---- @field readonly public Damping CAnimInputDamping
+--- @field public Damping CAnimInputDamping
 --- @field public FacingTarget number
---- @field readonly public MoveVecParam CAnimParamHandle
---- @field readonly public MoveHeadingParam CAnimParamHandle
---- @field readonly public TurnToFaceParam CAnimParamHandle
+--- @field public MoveVecParam CAnimParamHandle
+--- @field public MoveHeadingParam CAnimParamHandle
+--- @field public TurnToFaceParam CAnimParamHandle
 --- @field public TurnToFaceOffset number
 --- @field public TurnToFaceLimit number
 --- @field public Additive boolean

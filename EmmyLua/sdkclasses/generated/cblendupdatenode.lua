@@ -5,8 +5,8 @@
 --- @field public SortedOrder table
 --- @field public TargetValues table
 --- @field public BlendValueSource number
---- @field readonly public ParamIndex CAnimParamHandle
---- @field readonly public Damping CAnimInputDamping
+--- @field public ParamIndex CAnimParamHandle
+--- @field public Damping CAnimInputDamping
 --- @field public BlendKeyType number
 --- @field public LockBlendOnReset boolean
 --- @field public SyncCycles boolean

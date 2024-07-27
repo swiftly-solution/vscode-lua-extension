@@ -3,7 +3,7 @@
 --- @class CFeNamedJiggleBone
 --- @field public StrParentBone string
 --- @field public JiggleParent number
---- @field readonly public JiggleBone CFeJiggleBone
+--- @field public JiggleBone CFeJiggleBone
 cfenamedjigglebone = {}
 
 --- This is the constructor for CFeNamedJiggleBone class.

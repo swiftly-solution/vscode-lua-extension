@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CBodyComponentBaseAnimGraph
---- @field readonly public AnimationController CBaseAnimGraphController
+--- @field public AnimationController CBaseAnimGraphController
 --- @field public Parent CBodyComponentSkeletonInstance
 cbodycomponentbaseanimgraph = {}
 

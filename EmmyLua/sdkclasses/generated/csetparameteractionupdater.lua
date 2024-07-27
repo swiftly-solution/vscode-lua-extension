@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSetParameterActionUpdater
---- @field readonly public Param CAnimParamHandle
+--- @field public Param CAnimParamHandle
 --- @field public Parent CAnimActionUpdater
 csetparameteractionupdater = {}
 

@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class NmSyncTrackTimeRange_t
---- @field readonly public StartTime NmSyncTrackTime_t
---- @field readonly public EndTime NmSyncTrackTime_t
+--- @field public StartTime NmSyncTrackTime_t
+--- @field public EndTime NmSyncTrackTime_t
 nmsynctracktimerange_t = {}
 
 --- This is the constructor for NmSyncTrackTimeRange_t class.

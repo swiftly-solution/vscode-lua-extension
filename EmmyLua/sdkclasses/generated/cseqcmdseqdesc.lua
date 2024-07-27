@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CSeqCmdSeqDesc
---- @field readonly public Flags CSeqSeqDescFlag
---- @field readonly public Transition CSeqTransition
+--- @field public Flags CSeqSeqDescFlag
+--- @field public Transition CSeqTransition
 --- @field public FrameRangeSequence number
 --- @field public FrameCount number
 --- @field public FPS number

@@ -4,8 +4,8 @@
 --- @field public InTangentLocal Vector
 --- @field public OutTangentLocal Vector
 --- @field public ParentPathUniqueID string
---- @field readonly public OnPassThrough CEntityIOOutput
---- @field readonly public Mover CPathMover
+--- @field public OnPassThrough CEntityIOOutput
+--- @field public Mover CPathMover
 --- @field public Parent CPointEntity
 cmoverpathnode = {}
 

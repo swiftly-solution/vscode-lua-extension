@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSSDSMsg_LayerBase
---- @field readonly public ViewId SceneViewId_t
+--- @field public ViewId SceneViewId_t
 --- @field public ViewName string
 --- @field public LayerIndex number
 --- @field public LayerId number

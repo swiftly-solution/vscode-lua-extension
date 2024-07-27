@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CDemoSettingsComponentUpdater
---- @field readonly public Settings CAnimDemoCaptureSettings
+--- @field public Settings CAnimDemoCaptureSettings
 --- @field public Parent CAnimComponentUpdater
 cdemosettingscomponentupdater = {}
 

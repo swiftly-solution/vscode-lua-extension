@@ -2,8 +2,8 @@
 
 --- @class CBaseFilter
 --- @field public Negated boolean
---- @field readonly public OnPass CEntityIOOutput
---- @field readonly public OnFail CEntityIOOutput
+--- @field public OnPass CEntityIOOutput
+--- @field public OnFail CEntityIOOutput
 --- @field public Parent CLogicalEntity
 cbasefilter = {}
 

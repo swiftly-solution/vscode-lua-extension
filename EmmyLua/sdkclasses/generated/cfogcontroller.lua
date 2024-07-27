@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFogController
---- @field readonly public Fog fogparams_t
+--- @field public Fog fogparams_t
 --- @field public UseAngles boolean
 --- @field public ChangedVariables number
 --- @field public Parent CBaseEntity

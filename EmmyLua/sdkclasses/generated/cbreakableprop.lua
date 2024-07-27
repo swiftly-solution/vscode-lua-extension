@@ -1,16 +1,16 @@
 --- @meta
 
 --- @class CBreakableProp
---- @field readonly public CPropDataComponent CPropDataComponent
---- @field readonly public OnBreak CEntityIOOutput
---- @field readonly public OnTakeDamage CEntityIOOutput
+--- @field public CPropDataComponent CPropDataComponent
+--- @field public OnBreak CEntityIOOutput
+--- @field public OnTakeDamage CEntityIOOutput
 --- @field public ImpactEnergyScale number
 --- @field public MinHealthDmg number
 --- @field public PreferredCarryAngles QAngle
 --- @field public PressureDelay number
 --- @field public DefBurstScale number
 --- @field public DefBurstOffset Vector
---- @field readonly public Breaker CBaseEntity
+--- @field public Breaker CBaseEntity
 --- @field public PerformanceMode number
 --- @field public PreventDamageBeforeTime number
 --- @field public HasBreakPiecesOrCommands boolean
@@ -21,12 +21,12 @@
 --- @field public ExplosionCustomEffect string
 --- @field public ExplosionCustomSound string
 --- @field public ExplosionModifier string
---- @field readonly public PhysicsAttacker CBasePlayerPawn
+--- @field public PhysicsAttacker CBasePlayerPawn
 --- @field public LastPhysicsInfluenceTime number
 --- @field public OriginalBlockLOS boolean
 --- @field public DefaultFadeScale number
---- @field readonly public LastAttacker CBaseEntity
---- @field readonly public FlareEnt CBaseEntity
+--- @field public LastAttacker CBaseEntity
+--- @field public FlareEnt CBaseEntity
 --- @field public UsePuntSound boolean
 --- @field public PuntSound string
 --- @field public NoGhostCollision boolean

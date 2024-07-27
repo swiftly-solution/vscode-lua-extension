@@ -2,7 +2,7 @@
 
 --- @class CTonemapTrigger
 --- @field public TonemapControllerName string
---- @field readonly public TonemapController CEntityInstance
+--- @field public TonemapController CEntityInstance
 --- @field public Parent CBaseTrigger
 ctonemaptrigger = {}
 

@@ -1,12 +1,12 @@
 --- @meta
 
 --- @class CPhysHinge
---- @field readonly public SoundInfo ConstraintSoundInfo
---- @field readonly public NotifyMinLimitReached CEntityIOOutput
---- @field readonly public NotifyMaxLimitReached CEntityIOOutput
+--- @field public SoundInfo ConstraintSoundInfo
+--- @field public NotifyMinLimitReached CEntityIOOutput
+--- @field public NotifyMaxLimitReached CEntityIOOutput
 --- @field public AtMinLimit boolean
 --- @field public AtMaxLimit boolean
---- @field readonly public Hinge constraint_hingeparams_t
+--- @field public Hinge constraint_hingeparams_t
 --- @field public HingeFriction number
 --- @field public SystemLoadScale number
 --- @field public IsAxisLocal boolean
@@ -17,8 +17,8 @@
 --- @field public MotorDampingRatio number
 --- @field public AngleSpeed number
 --- @field public AngleSpeedThreshold number
---- @field readonly public OnStartMoving CEntityIOOutput
---- @field readonly public OnStopMoving CEntityIOOutput
+--- @field public OnStartMoving CEntityIOOutput
+--- @field public OnStopMoving CEntityIOOutput
 --- @field public Parent CPhysConstraint
 cphyshinge = {}
 

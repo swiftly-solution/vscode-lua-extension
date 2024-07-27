@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSingleFrameUpdateNode
---- @field readonly public PoseCacheHandle CPoseHandle
+--- @field public PoseCacheHandle CPoseHandle
 --- @field public Cycle number
 --- @field public Parent CLeafUpdateNode
 csingleframeupdatenode = {}

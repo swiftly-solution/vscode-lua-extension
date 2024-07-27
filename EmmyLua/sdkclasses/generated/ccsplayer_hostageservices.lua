@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CCSPlayer_HostageServices
---- @field readonly public CarriedHostage CBaseEntity
---- @field readonly public CarriedHostageProp CBaseEntity
+--- @field public CarriedHostage CBaseEntity
+--- @field public CarriedHostageProp CBaseEntity
 --- @field public Parent CPlayerPawnComponent
 ccsplayer_hostageservices = {}
 

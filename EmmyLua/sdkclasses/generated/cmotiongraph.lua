@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CMotionGraph
---- @field readonly public ParamSpans CParamSpanUpdater
+--- @field public ParamSpans CParamSpanUpdater
 --- @field public Tags table
 --- @field public ParameterCount number
 --- @field public ConfigStartIndex number

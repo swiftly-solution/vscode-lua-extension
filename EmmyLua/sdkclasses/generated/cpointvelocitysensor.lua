@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPointVelocitySensor
---- @field readonly public TargetEntity CBaseEntity
+--- @field public TargetEntity CBaseEntity
 --- @field public Axis Vector
 --- @field public Enabled boolean
 --- @field public PrevVelocity number

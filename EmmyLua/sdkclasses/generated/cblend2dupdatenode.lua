@@ -3,13 +3,13 @@
 --- @class CBlend2DUpdateNode
 --- @field public Items table
 --- @field public Tags table
---- @field readonly public ParamSpans CParamSpanUpdater
+--- @field public ParamSpans CParamSpanUpdater
 --- @field public NodeItemIndices table
---- @field readonly public Damping CAnimInputDamping
+--- @field public Damping CAnimInputDamping
 --- @field public BlendSourceX number
---- @field readonly public ParamX CAnimParamHandle
+--- @field public ParamX CAnimParamHandle
 --- @field public BlendSourceY number
---- @field readonly public ParamY CAnimParamHandle
+--- @field public ParamY CAnimParamHandle
 --- @field public BlendMode number
 --- @field public PlaybackSpeed number
 --- @field public Loop boolean

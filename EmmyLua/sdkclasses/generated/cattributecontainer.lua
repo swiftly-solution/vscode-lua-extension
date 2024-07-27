@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CAttributeContainer
---- @field readonly public Item CEconItemView
+--- @field public Item CEconItemView
 --- @field public Parent CAttributeManager
 cattributecontainer = {}
 

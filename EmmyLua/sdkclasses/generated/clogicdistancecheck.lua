@@ -5,9 +5,9 @@
 --- @field public EntityB string
 --- @field public Zone1Distance number
 --- @field public Zone2Distance number
---- @field readonly public InZone1 CEntityIOOutput
---- @field readonly public InZone2 CEntityIOOutput
---- @field readonly public InZone3 CEntityIOOutput
+--- @field public InZone1 CEntityIOOutput
+--- @field public InZone2 CEntityIOOutput
+--- @field public InZone3 CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogicdistancecheck = {}
 

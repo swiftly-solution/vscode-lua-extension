@@ -3,7 +3,7 @@
 --- @class CMotionGraphConfig
 --- @field public ParamValues table
 --- @field public Duration number
---- @field readonly public MotionIndex MotionIndex
+--- @field public MotionIndex MotionIndex
 --- @field public SampleStart number
 --- @field public SampleCount number
 cmotiongraphconfig = {}

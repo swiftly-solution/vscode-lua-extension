@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CHandleTest
---- @field readonly public Handle CBaseEntity
+--- @field public Handle CBaseEntity
 --- @field public SendHandle boolean
 --- @field public Parent CBaseEntity
 chandletest = {}

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class EventSimulate_t
---- @field readonly public LoopState EngineLoopState_t
+--- @field public LoopState EngineLoopState_t
 --- @field public FirstTick boolean
 --- @field public LastTick boolean
 eventsimulate_t = {}

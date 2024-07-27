@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CToggleComponentActionUpdater
---- @field readonly public ComponentID AnimComponentID
+--- @field public ComponentID AnimComponentID
 --- @field public SetEnabled boolean
 --- @field public Parent CAnimActionUpdater
 ctogglecomponentactionupdater = {}

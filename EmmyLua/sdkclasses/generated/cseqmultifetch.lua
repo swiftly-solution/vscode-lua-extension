@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSeqMultiFetch
---- @field readonly public Flags CSeqMultiFetchFlag
+--- @field public Flags CSeqMultiFetchFlag
 --- @field public LocalReferenceArray table
 --- @field public GroupSize table
 --- @field public LocalPose table

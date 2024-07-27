@@ -4,11 +4,11 @@
 --- @field public CreateNavObstacle boolean
 --- @field public UseHitboxesForRenderBox boolean
 --- @field public UseAnimGraph boolean
---- @field readonly public OutputAnimBegun CEntityIOOutput
---- @field readonly public OutputAnimOver CEntityIOOutput
---- @field readonly public OutputAnimLoopCycleOver CEntityIOOutput
---- @field readonly public OnAnimReachedStart CEntityIOOutput
---- @field readonly public OnAnimReachedEnd CEntityIOOutput
+--- @field public OutputAnimBegun CEntityIOOutput
+--- @field public OutputAnimOver CEntityIOOutput
+--- @field public OutputAnimLoopCycleOver CEntityIOOutput
+--- @field public OnAnimReachedStart CEntityIOOutput
+--- @field public OnAnimReachedEnd CEntityIOOutput
 --- @field public IdleAnim string
 --- @field public IdleAnimLoopMode number
 --- @field public RandomizeCycle boolean

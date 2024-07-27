@@ -6,7 +6,7 @@
 --- @field public Radius number
 --- @field public Delay number
 --- @field public StrTarget string
---- @field readonly public Activator CBaseEntity
+--- @field public Activator CBaseEntity
 --- @field public Parent CPointEntity
 cpointhurt = {}
 

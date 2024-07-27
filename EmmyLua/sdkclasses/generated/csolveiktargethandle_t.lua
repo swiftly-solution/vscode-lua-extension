@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CSolveIKTargetHandle_t
---- @field readonly public PositionHandle CAnimParamHandle
---- @field readonly public OrientationHandle CAnimParamHandle
+--- @field public PositionHandle CAnimParamHandle
+--- @field public OrientationHandle CAnimParamHandle
 csolveiktargethandle_t = {}
 
 --- This is the constructor for CSolveIKTargetHandle_t class.

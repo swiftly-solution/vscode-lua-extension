@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class RnMeshDesc_t
---- @field readonly public Mesh RnMesh_t
+--- @field public Mesh RnMesh_t
 --- @field public Parent RnShapeDesc_t
 rnmeshdesc_t = {}
 

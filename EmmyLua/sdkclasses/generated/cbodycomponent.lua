@@ -2,7 +2,7 @@
 
 --- @class CBodyComponent
 --- @field public SceneNode CGameSceneNode
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 --- @field public Parent CEntityComponent
 cbodycomponent = {}
 

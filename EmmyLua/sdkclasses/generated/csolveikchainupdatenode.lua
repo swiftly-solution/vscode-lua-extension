@@ -2,7 +2,7 @@
 
 --- @class CSolveIKChainUpdateNode
 --- @field public TargetHandles table
---- @field readonly public OpFixedData SolveIKChainPoseOpFixedSettings_t
+--- @field public OpFixedData SolveIKChainPoseOpFixedSettings_t
 --- @field public Parent CUnaryUpdateNode
 csolveikchainupdatenode = {}
 

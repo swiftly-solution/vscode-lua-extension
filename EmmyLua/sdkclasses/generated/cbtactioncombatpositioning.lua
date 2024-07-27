@@ -3,7 +3,7 @@
 --- @class CBtActionCombatPositioning
 --- @field public SensorInputKey string
 --- @field public IsAttackingKey string
---- @field readonly public ActionTimer CountdownTimer
+--- @field public ActionTimer CountdownTimer
 --- @field public Crouching boolean
 --- @field public Parent CBtNode
 cbtactioncombatpositioning = {}

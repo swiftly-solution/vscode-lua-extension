@@ -2,8 +2,8 @@
 
 --- @class CGunTarget
 --- @field public On boolean
---- @field readonly public TargetEnt CBaseEntity
---- @field readonly public OnDeath CEntityIOOutput
+--- @field public TargetEnt CBaseEntity
+--- @field public OnDeath CEntityIOOutput
 --- @field public Parent CBaseToggle
 cguntarget = {}
 

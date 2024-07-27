@@ -3,14 +3,14 @@
 --- @class CBaseTrigger
 --- @field public Disabled boolean
 --- @field public FilterName string
---- @field readonly public Filter CBaseFilter
---- @field readonly public OnStartTouch CEntityIOOutput
---- @field readonly public OnStartTouchAll CEntityIOOutput
---- @field readonly public OnEndTouch CEntityIOOutput
---- @field readonly public OnEndTouchAll CEntityIOOutput
---- @field readonly public OnTouching CEntityIOOutput
---- @field readonly public OnTouchingEachEntity CEntityIOOutput
---- @field readonly public OnNotTouching CEntityIOOutput
+--- @field public Filter CBaseFilter
+--- @field public OnStartTouch CEntityIOOutput
+--- @field public OnStartTouchAll CEntityIOOutput
+--- @field public OnEndTouch CEntityIOOutput
+--- @field public OnEndTouchAll CEntityIOOutput
+--- @field public OnTouching CEntityIOOutput
+--- @field public OnTouchingEachEntity CEntityIOOutput
+--- @field public OnNotTouching CEntityIOOutput
 --- @field public ClientSidePredicted boolean
 --- @field public Parent CBaseToggle
 cbasetrigger = {}

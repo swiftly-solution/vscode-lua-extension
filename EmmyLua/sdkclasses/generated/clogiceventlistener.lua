@@ -4,7 +4,7 @@
 --- @field public StrEventName string
 --- @field public IsEnabled boolean
 --- @field public Team number
---- @field readonly public OnEventFired CEntityIOOutput
+--- @field public OnEventFired CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogiceventlistener = {}
 

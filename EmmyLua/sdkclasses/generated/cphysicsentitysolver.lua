@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CPhysicsEntitySolver
---- @field readonly public MovingEntity CBaseEntity
---- @field readonly public PhysicsBlocker CBaseEntity
+--- @field public MovingEntity CBaseEntity
+--- @field public PhysicsBlocker CBaseEntity
 --- @field public SeparationDuration number
 --- @field public CancelTime number
 --- @field public Parent CLogicalEntity

@@ -1,13 +1,13 @@
 --- @meta
 
 --- @class CInstancedSceneEntity
---- @field readonly public Owner CBaseEntity
+--- @field public Owner CBaseEntity
 --- @field public HadOwner boolean
 --- @field public PostSpeakDelay number
 --- @field public PreDelay number
 --- @field public IsBackground boolean
 --- @field public RemoveOnCompletion boolean
---- @field readonly public Target CBaseEntity
+--- @field public Target CBaseEntity
 --- @field public Parent CSceneEntity
 cinstancedsceneentity = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CParticleFunction
---- @field readonly public OpStrength CParticleCollectionFloatInput
+--- @field public OpStrength CParticleCollectionFloatInput
 --- @field public OpEndCapState number
 --- @field public OpStartFadeInTime number
 --- @field public OpEndFadeInTime number

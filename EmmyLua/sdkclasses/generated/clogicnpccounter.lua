@@ -1,15 +1,15 @@
 --- @meta
 
 --- @class CLogicNPCCounter
---- @field readonly public OnMinCountAll CEntityIOOutput
---- @field readonly public OnMaxCountAll CEntityIOOutput
---- @field readonly public OnMinCount_1 CEntityIOOutput
---- @field readonly public OnMaxCount_1 CEntityIOOutput
---- @field readonly public OnMinCount_2 CEntityIOOutput
---- @field readonly public OnMaxCount_2 CEntityIOOutput
---- @field readonly public OnMinCount_3 CEntityIOOutput
---- @field readonly public OnMaxCount_3 CEntityIOOutput
---- @field readonly public Source CEntityInstance
+--- @field public OnMinCountAll CEntityIOOutput
+--- @field public OnMaxCountAll CEntityIOOutput
+--- @field public OnMinCount_1 CEntityIOOutput
+--- @field public OnMaxCount_1 CEntityIOOutput
+--- @field public OnMinCount_2 CEntityIOOutput
+--- @field public OnMaxCount_2 CEntityIOOutput
+--- @field public OnMinCount_3 CEntityIOOutput
+--- @field public OnMaxCount_3 CEntityIOOutput
+--- @field public Source CEntityInstance
 --- @field public SourceEntityName string
 --- @field public DistanceMax number
 --- @field public Disabled boolean

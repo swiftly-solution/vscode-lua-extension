@@ -20,7 +20,7 @@
 --- @field public ClipStyle number
 --- @field public TurnedOff boolean
 --- @field public EndPos Vector
---- @field readonly public EndEntity CBaseEntity
+--- @field public EndEntity CBaseEntity
 --- @field public DissolveType number
 --- @field public Parent CBaseModelEntity
 cbeam = {}

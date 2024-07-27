@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CTimerEntity
---- @field readonly public OnTimer CEntityIOOutput
---- @field readonly public OnTimerHigh CEntityIOOutput
---- @field readonly public OnTimerLow CEntityIOOutput
+--- @field public OnTimer CEntityIOOutput
+--- @field public OnTimerHigh CEntityIOOutput
+--- @field public OnTimerLow CEntityIOOutput
 --- @field public Disabled number
 --- @field public InitialDelay number
 --- @field public RefireTime number

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CCredits
---- @field readonly public OnCreditsDone CEntityIOOutput
+--- @field public OnCreditsDone CEntityIOOutput
 --- @field public RolledOutroCredits boolean
 --- @field public LogoLength number
 --- @field public Parent CPointEntity

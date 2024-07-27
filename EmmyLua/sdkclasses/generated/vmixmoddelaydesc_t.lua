@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class VMixModDelayDesc_t
---- @field readonly public FeedbackFilter VMixFilterDesc_t
+--- @field public FeedbackFilter VMixFilterDesc_t
 --- @field public PhaseInvert boolean
 --- @field public GlideTime number
 --- @field public Delay number

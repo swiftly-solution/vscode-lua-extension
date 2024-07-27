@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CEnvSoundscape
---- @field readonly public OnPlay CEntityIOOutput
+--- @field public OnPlay CEntityIOOutput
 --- @field public Radius number
 --- @field public SoundscapeName string
 --- @field public SoundEventName string
@@ -10,7 +10,7 @@
 --- @field public SoundscapeEntityListId number
 --- @field public SoundEventHash number
 --- @field public PositionNames table
---- @field readonly public ProxySoundscape CEnvSoundscape
+--- @field public ProxySoundscape CEnvSoundscape
 --- @field public Disabled boolean
 --- @field public Parent CServerOnlyEntity
 cenvsoundscape = {}

@@ -2,7 +2,7 @@
 
 --- @class CMotionSearchNode
 --- @field public Children table
---- @field readonly public Quantizer CVectorQuantizer
+--- @field public Quantizer CVectorQuantizer
 --- @field public SelectableSamples table
 cmotionsearchnode = {}
 

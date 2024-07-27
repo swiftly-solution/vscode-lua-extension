@@ -13,7 +13,7 @@
 --- @field public SceneObjectLayerIndices table
 --- @field public OverlayLayerIndices table
 --- @field public GrassFileName string
---- @field readonly public NodeLightingInfo BakedLightingInfo_t
+--- @field public NodeLightingInfo BakedLightingInfo_t
 worldnode_t = {}
 
 --- This is the constructor for WorldNode_t class.

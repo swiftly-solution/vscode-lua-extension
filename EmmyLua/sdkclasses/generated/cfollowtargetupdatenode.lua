@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CFollowTargetUpdateNode
---- @field readonly public OpFixedData FollowTargetOpFixedSettings_t
---- @field readonly public ParameterPosition CAnimParamHandle
---- @field readonly public ParameterOrientation CAnimParamHandle
+--- @field public OpFixedData FollowTargetOpFixedSettings_t
+--- @field public ParameterPosition CAnimParamHandle
+--- @field public ParameterOrientation CAnimParamHandle
 --- @field public Parent CUnaryUpdateNode
 cfollowtargetupdatenode = {}
 

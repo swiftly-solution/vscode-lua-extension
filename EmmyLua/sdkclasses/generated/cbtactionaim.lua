@@ -9,9 +9,9 @@
 --- @field public NextLookTargetLerpTime number
 --- @field public PenaltyReductionRatio number
 --- @field public NextLookTarget QAngle
---- @field readonly public AimTimer CountdownTimer
---- @field readonly public SniperHoldTimer CountdownTimer
---- @field readonly public FocusIntervalTimer CountdownTimer
+--- @field public AimTimer CountdownTimer
+--- @field public SniperHoldTimer CountdownTimer
+--- @field public FocusIntervalTimer CountdownTimer
 --- @field public Acquired boolean
 --- @field public Parent CBtNode
 cbtactionaim = {}

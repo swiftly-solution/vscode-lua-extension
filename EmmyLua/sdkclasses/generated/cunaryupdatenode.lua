@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CUnaryUpdateNode
---- @field readonly public ChildNode CAnimUpdateNodeRef
+--- @field public ChildNode CAnimUpdateNodeRef
 --- @field public Parent CAnimUpdateNodeBase
 cunaryupdatenode = {}
 

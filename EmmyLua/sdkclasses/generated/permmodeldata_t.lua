@@ -2,7 +2,7 @@
 
 --- @class PermModelData_t
 --- @field public Name string
---- @field readonly public ModelInfo PermModelInfo_t
+--- @field public ModelInfo PermModelInfo_t
 --- @field public ExtParts table
 --- @field public RefMeshGroupMasks table
 --- @field public RefPhysGroupMasks table
@@ -11,7 +11,7 @@
 --- @field public MeshGroups table
 --- @field public MaterialGroups table
 --- @field public DefaultMeshGroupMask number
---- @field readonly public ModelSkeleton ModelSkeletonData_t
+--- @field public ModelSkeleton ModelSkeletonData_t
 --- @field public RemappingTable table
 --- @field public RemappingTableStarts table
 --- @field public BoneFlexDrivers table

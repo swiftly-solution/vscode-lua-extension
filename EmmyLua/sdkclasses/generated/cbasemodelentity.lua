@@ -2,17 +2,17 @@
 
 --- @class CBaseModelEntity
 --- @field public CRenderComponent CRenderComponent
---- @field readonly public CHitboxComponent CHitboxComponent
+--- @field public CHitboxComponent CHitboxComponent
 --- @field public DissolveStartTime number
---- @field readonly public OnIgnite CEntityIOOutput
+--- @field public OnIgnite CEntityIOOutput
 --- @field public RenderMode number
 --- @field public RenderFX number
 --- @field public AllowFadeInView boolean
 --- @field public Render Color
 --- @field public RenderAttributes table
 --- @field public RenderToCubemaps boolean
---- @field readonly public Collision CCollisionProperty
---- @field readonly public Glow CGlowProperty
+--- @field public Collision CCollisionProperty
+--- @field public Glow CGlowProperty
 --- @field public GlowBackfaceMult number
 --- @field public FadeMinDist number
 --- @field public FadeMaxDist number
@@ -25,7 +25,7 @@
 --- @field public DecalHealBloodRate number
 --- @field public DecalHealHeightRate number
 --- @field public ConfigEntitiesToPropagateMaterialDecalsTo table
---- @field readonly public ViewOffset CNetworkViewOffsetVector
+--- @field public ViewOffset CNetworkViewOffsetVector
 --- @field public Parent CBaseEntity
 cbasemodelentity = {}
 

@@ -6,7 +6,7 @@
 --- @field public MessageAttenuation number
 --- @field public Radius number
 --- @field public Noise string
---- @field readonly public OnShowMessage CEntityIOOutput
+--- @field public OnShowMessage CEntityIOOutput
 --- @field public Parent CPointEntity
 cmessage = {}
 

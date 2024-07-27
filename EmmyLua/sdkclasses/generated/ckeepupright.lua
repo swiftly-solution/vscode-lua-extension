@@ -4,7 +4,7 @@
 --- @field public WorldGoalAxis Vector
 --- @field public LocalTestAxis Vector
 --- @field public NameAttach string
---- @field readonly public AttachedObject CBaseEntity
+--- @field public AttachedObject CBaseEntity
 --- @field public AngularLimit number
 --- @field public Active boolean
 --- @field public DampAllRotation boolean

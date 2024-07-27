@@ -5,7 +5,7 @@
 --- @field public Origin Vector
 --- @field public Clip3DSkyBoxNearToWorldFar boolean
 --- @field public Clip3DSkyBoxNearToWorldFarOffset number
---- @field readonly public Fog fogparams_t
+--- @field public Fog fogparams_t
 --- @field public WorldGroupID number
 sky3dparams_t = {}
 

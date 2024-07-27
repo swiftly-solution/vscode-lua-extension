@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerSoundscape
---- @field readonly public Soundscape CEnvSoundscapeTriggerable
+--- @field public Soundscape CEnvSoundscapeTriggerable
 --- @field public SoundscapeName string
 --- @field public Parent CBaseTrigger
 ctriggersoundscape = {}

@@ -1,16 +1,16 @@
 --- @meta
 
 --- @class CLogicAuto
---- @field readonly public OnMapSpawn CEntityIOOutput
---- @field readonly public OnDemoMapSpawn CEntityIOOutput
---- @field readonly public OnNewGame CEntityIOOutput
---- @field readonly public OnLoadGame CEntityIOOutput
---- @field readonly public OnMapTransition CEntityIOOutput
---- @field readonly public OnBackgroundMap CEntityIOOutput
---- @field readonly public OnMultiNewMap CEntityIOOutput
---- @field readonly public OnMultiNewRound CEntityIOOutput
---- @field readonly public OnVREnabled CEntityIOOutput
---- @field readonly public OnVRNotEnabled CEntityIOOutput
+--- @field public OnMapSpawn CEntityIOOutput
+--- @field public OnDemoMapSpawn CEntityIOOutput
+--- @field public OnNewGame CEntityIOOutput
+--- @field public OnLoadGame CEntityIOOutput
+--- @field public OnMapTransition CEntityIOOutput
+--- @field public OnBackgroundMap CEntityIOOutput
+--- @field public OnMultiNewMap CEntityIOOutput
+--- @field public OnMultiNewRound CEntityIOOutput
+--- @field public OnVREnabled CEntityIOOutput
+--- @field public OnVRNotEnabled CEntityIOOutput
 --- @field public Globalstate string
 --- @field public Parent CBaseEntity
 clogicauto = {}

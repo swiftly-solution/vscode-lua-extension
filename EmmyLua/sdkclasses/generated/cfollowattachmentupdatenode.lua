@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFollowAttachmentUpdateNode
---- @field readonly public OpFixedData FollowAttachmentSettings_t
+--- @field public OpFixedData FollowAttachmentSettings_t
 --- @field public Parent CUnaryUpdateNode
 cfollowattachmentupdatenode = {}
 

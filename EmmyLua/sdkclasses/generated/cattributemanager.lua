@@ -2,7 +2,7 @@
 
 --- @class CAttributeManager
 --- @field public ReapplyProvisionParity number
---- @field readonly public Outer CBaseEntity
+--- @field public Outer CBaseEntity
 --- @field public PreventLoopback boolean
 --- @field public ProviderType number
 --- @field public CachedResults table

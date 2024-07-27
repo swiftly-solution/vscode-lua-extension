@@ -1,13 +1,13 @@
 --- @meta
 
 --- @class CPointEntityFinder
---- @field readonly public Entity CBaseEntity
+--- @field public Entity CBaseEntity
 --- @field public FilterName string
---- @field readonly public Filter CBaseFilter
+--- @field public Filter CBaseFilter
 --- @field public RefName string
---- @field readonly public Reference CBaseEntity
+--- @field public Reference CBaseEntity
 --- @field public FindMethod number
---- @field readonly public OnFoundEntity CEntityIOOutput
+--- @field public OnFoundEntity CEntityIOOutput
 --- @field public Parent CBaseEntity
 cpointentityfinder = {}
 

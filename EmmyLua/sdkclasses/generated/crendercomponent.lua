@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CRenderComponent
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 --- @field public IsRenderingWithViewModels boolean
 --- @field public SplitscreenFlags number
 --- @field public EnableRendering boolean

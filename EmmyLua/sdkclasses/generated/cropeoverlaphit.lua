@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CRopeOverlapHit
---- @field readonly public Entity CBaseEntity
+--- @field public Entity CBaseEntity
 --- @field public OverlappingLinks table
 cropeoverlaphit = {}
 

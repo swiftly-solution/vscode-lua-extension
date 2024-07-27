@@ -2,10 +2,10 @@
 
 --- @class AmmoTypeInfo_t
 --- @field public MaxCarry number
---- @field readonly public SplashSize CRangeInt
+--- @field public SplashSize CRangeInt
 --- @field public Flags number
 --- @field public Mass number
---- @field readonly public Speed CRangeFloat
+--- @field public Speed CRangeFloat
 ammotypeinfo_t = {}
 
 --- This is the constructor for AmmoTypeInfo_t class.

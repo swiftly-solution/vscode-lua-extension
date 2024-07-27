@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CAnimUpdateSharedData
---- @field readonly public Settings CAnimGraphSettingsManager
---- @field readonly public RootNodePath CAnimNodePath
+--- @field public Settings CAnimGraphSettingsManager
+--- @field public RootNodePath CAnimNodePath
 canimupdateshareddata = {}
 
 --- This is the constructor for CAnimUpdateSharedData class.

@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CCommentaryAuto
---- @field readonly public OnCommentaryNewGame CEntityIOOutput
---- @field readonly public OnCommentaryMidGame CEntityIOOutput
---- @field readonly public OnCommentaryMultiplayerSpawn CEntityIOOutput
+--- @field public OnCommentaryNewGame CEntityIOOutput
+--- @field public OnCommentaryMidGame CEntityIOOutput
+--- @field public OnCommentaryMultiplayerSpawn CEntityIOOutput
 --- @field public Parent CBaseEntity
 ccommentaryauto = {}
 

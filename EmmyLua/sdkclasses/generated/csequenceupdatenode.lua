@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSequenceUpdateNode
---- @field readonly public ParamSpans CParamSpanUpdater
+--- @field public ParamSpans CParamSpanUpdater
 --- @field public Tags table
 --- @field public PlaybackSpeed number
 --- @field public Duration number

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerLook
---- @field readonly public LookTarget CBaseEntity
+--- @field public LookTarget CBaseEntity
 --- @field public FieldOfView number
 --- @field public LookTime number
 --- @field public LookTimeTotal number
@@ -12,9 +12,9 @@
 --- @field public 2DFOV boolean
 --- @field public UseVelocity boolean
 --- @field public TestOcclusion boolean
---- @field readonly public OnTimeout CEntityIOOutput
---- @field readonly public OnStartLook CEntityIOOutput
---- @field readonly public OnEndLook CEntityIOOutput
+--- @field public OnTimeout CEntityIOOutput
+--- @field public OnStartLook CEntityIOOutput
+--- @field public OnEndLook CEntityIOOutput
 --- @field public Parent CTriggerOnce
 ctriggerlook = {}
 

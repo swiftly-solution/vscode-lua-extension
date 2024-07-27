@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CSound
---- @field readonly public Owner CBaseEntity
---- @field readonly public Target CBaseEntity
+--- @field public Owner CBaseEntity
+--- @field public Target CBaseEntity
 --- @field public Volume number
 --- @field public OcclusionScale number
 --- @field public NextAudible number

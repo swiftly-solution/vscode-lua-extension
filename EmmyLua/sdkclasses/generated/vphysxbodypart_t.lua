@@ -3,7 +3,7 @@
 --- @class VPhysXBodyPart_t
 --- @field public Flags number
 --- @field public Mass number
---- @field readonly public RnShape VPhysics2ShapeDef_t
+--- @field public RnShape VPhysics2ShapeDef_t
 --- @field public CollisionAttributeIndex number
 --- @field public Reserved number
 --- @field public InertiaScale number

@@ -4,8 +4,8 @@
 --- @field public ShardHandle number
 --- @field public PanelVertices table
 --- @field public LocalPanelSpaceOrigin Vector2D
---- @field readonly public PhysicsEntity CShatterGlassShardPhysics
---- @field readonly public ParentPanel CFuncShatterglass
+--- @field public PhysicsEntity CShatterGlassShardPhysics
+--- @field public ParentPanel CFuncShatterglass
 --- @field public ParentShard number
 --- @field public ShatterStressType number
 --- @field public StressVelocity Vector
@@ -28,7 +28,7 @@
 --- @field public FlaggedForRemoval boolean
 --- @field public PhysicsEntitySpawnedAtTime number
 --- @field public ShatterRateLimited boolean
---- @field readonly public EntityHittingMe CBaseEntity
+--- @field public EntityHittingMe CBaseEntity
 --- @field public Neighbors table
 cshatterglassshard = {}
 

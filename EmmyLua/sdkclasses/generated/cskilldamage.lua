@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSkillDamage
---- @field readonly public Damage CSkillFloat
+--- @field public Damage CSkillFloat
 --- @field public NPCDamageScalarVsNPC number
 --- @field public PhysicsForceDamage number
 cskilldamage = {}

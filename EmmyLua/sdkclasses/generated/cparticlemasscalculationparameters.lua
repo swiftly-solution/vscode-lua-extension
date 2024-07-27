@@ -2,9 +2,9 @@
 
 --- @class CParticleMassCalculationParameters
 --- @field public MassMode number
---- @field readonly public Radius CPerParticleFloatInput
---- @field readonly public NominalRadius CPerParticleFloatInput
---- @field readonly public Scale CPerParticleFloatInput
+--- @field public Radius CPerParticleFloatInput
+--- @field public NominalRadius CPerParticleFloatInput
+--- @field public Scale CPerParticleFloatInput
 cparticlemasscalculationparameters = {}
 
 --- This is the constructor for CParticleMassCalculationParameters class.

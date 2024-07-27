@@ -4,7 +4,7 @@
 --- @field public Frames number
 --- @field public FramesPerBlock number
 --- @field public FrameblockArray table
---- @field readonly public UsageDifferences CAnimEncodeDifference
+--- @field public UsageDifferences CAnimEncodeDifference
 canimencodedframes = {}
 
 --- This is the constructor for CAnimEncodedFrames class.

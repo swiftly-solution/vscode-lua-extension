@@ -2,8 +2,8 @@
 
 --- @class CLogicBranch
 --- @field public InValue boolean
---- @field readonly public OnTrue CEntityIOOutput
---- @field readonly public OnFalse CEntityIOOutput
+--- @field public OnTrue CEntityIOOutput
+--- @field public OnFalse CEntityIOOutput
 --- @field public Parent CLogicalEntity
 clogicbranch = {}
 

@@ -6,9 +6,9 @@
 --- @field public BaseNameHash number
 --- @field public Hidden boolean
 --- @field public Description string
---- @field readonly public Physics CPhysSurfacePropertiesPhysics
---- @field readonly public AudioSounds CPhysSurfacePropertiesSoundNames
---- @field readonly public AudioParams CPhysSurfacePropertiesAudio
+--- @field public Physics CPhysSurfacePropertiesPhysics
+--- @field public AudioSounds CPhysSurfacePropertiesSoundNames
+--- @field public AudioParams CPhysSurfacePropertiesAudio
 cphyssurfaceproperties = {}
 
 --- This is the constructor for CPhysSurfaceProperties class.

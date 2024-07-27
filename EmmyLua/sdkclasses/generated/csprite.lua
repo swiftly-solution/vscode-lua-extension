@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSprite
---- @field readonly public AttachedToEntity CBaseEntity
+--- @field public AttachedToEntity CBaseEntity
 --- @field public SpriteFramerate number
 --- @field public Frame number
 --- @field public DieTime number

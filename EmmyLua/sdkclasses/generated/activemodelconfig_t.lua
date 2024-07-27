@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class ActiveModelConfig_t
---- @field readonly public Handle ModelConfigHandle_t
+--- @field public Handle ModelConfigHandle_t
 --- @field public Name string
 --- @field public AssociatedEntities table
 --- @field public AssociatedEntityNames table

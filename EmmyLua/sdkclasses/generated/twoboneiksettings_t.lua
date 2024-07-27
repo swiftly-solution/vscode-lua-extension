@@ -2,12 +2,12 @@
 
 --- @class TwoBoneIKSettings_t
 --- @field public EndEffectorType number
---- @field readonly public EndEffectorAttachment CAnimAttachment
+--- @field public EndEffectorAttachment CAnimAttachment
 --- @field public TargetType number
---- @field readonly public TargetAttachment CAnimAttachment
+--- @field public TargetAttachment CAnimAttachment
 --- @field public TargetBoneIndex number
---- @field readonly public PositionParam CAnimParamHandle
---- @field readonly public RotationParam CAnimParamHandle
+--- @field public PositionParam CAnimParamHandle
+--- @field public RotationParam CAnimParamHandle
 --- @field public AlwaysUseFallbackHinge boolean
 --- @field public LsFallbackHingeAxis Vector
 --- @field public FixedBoneIndex number

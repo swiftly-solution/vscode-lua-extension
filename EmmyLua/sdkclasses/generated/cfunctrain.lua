@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CFuncTrain
---- @field readonly public CurrentTarget CBaseEntity
+--- @field public CurrentTarget CBaseEntity
 --- @field public Activated boolean
---- @field readonly public Enemy CBaseEntity
+--- @field public Enemy CBaseEntity
 --- @field public BlockDamage number
 --- @field public NextBlockTime number
 --- @field public LastTarget string

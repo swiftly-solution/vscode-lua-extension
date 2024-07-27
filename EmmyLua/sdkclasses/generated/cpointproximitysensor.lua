@@ -2,7 +2,7 @@
 
 --- @class CPointProximitySensor
 --- @field public Disabled boolean
---- @field readonly public TargetEntity CBaseEntity
+--- @field public TargetEntity CBaseEntity
 --- @field public Parent CPointEntity
 cpointproximitysensor = {}
 

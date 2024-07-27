@@ -2,8 +2,8 @@
 
 --- @class CStanceOverrideUpdateNode
 --- @field public FootStanceInfo table
---- @field readonly public StanceSourceNode CAnimUpdateNodeRef
---- @field readonly public Parameter CAnimParamHandle
+--- @field public StanceSourceNode CAnimUpdateNodeRef
+--- @field public Parameter CAnimParamHandle
 --- @field public Mode number
 --- @field public Parent CUnaryUpdateNode
 cstanceoverrideupdatenode = {}

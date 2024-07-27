@@ -2,9 +2,9 @@
 
 --- @class IKTargetSettings_t
 --- @field public TargetSource number
---- @field readonly public Bone IKBoneNameAndIndex_t
---- @field readonly public AnimgraphParameterNamePosition AnimParamID
---- @field readonly public AnimgraphParameterNameOrientation AnimParamID
+--- @field public Bone IKBoneNameAndIndex_t
+--- @field public AnimgraphParameterNamePosition AnimParamID
+--- @field public AnimgraphParameterNameOrientation AnimParamID
 --- @field public TargetCoordSystem number
 iktargetsettings_t = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CEnvProjectedTexture
---- @field readonly public TargetEntity CBaseEntity
+--- @field public TargetEntity CBaseEntity
 --- @field public State boolean
 --- @field public AlwaysUpdate boolean
 --- @field public LightFOV number

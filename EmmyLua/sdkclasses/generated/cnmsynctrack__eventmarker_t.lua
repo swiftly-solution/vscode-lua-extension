@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CNmSyncTrack__EventMarker_t
---- @field readonly public StartTime NmPercent_t
+--- @field public StartTime NmPercent_t
 cnmsynctrack__eventmarker_t = {}
 
 --- This is the constructor for CNmSyncTrack__EventMarker_t class.

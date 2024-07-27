@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CStateMachineComponentUpdater
---- @field readonly public StateMachine CAnimStateMachineUpdater
+--- @field public StateMachine CAnimStateMachineUpdater
 --- @field public Parent CAnimComponentUpdater
 cstatemachinecomponentupdater = {}
 

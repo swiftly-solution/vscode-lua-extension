@@ -48,27 +48,27 @@
 --- @field public Interruptable boolean
 --- @field public SequenceStarted boolean
 --- @field public PositionRelativeToOtherEntity boolean
---- @field readonly public TargetEnt CBaseEntity
---- @field readonly public NextCine CScriptedSequence
+--- @field public TargetEnt CBaseEntity
+--- @field public NextCine CScriptedSequence
 --- @field public Thinking boolean
 --- @field public InitiatedSelfDelete boolean
 --- @field public IsTeleportingDueToMoveTo boolean
 --- @field public AllowCustomInterruptConditions boolean
---- @field readonly public ForcedTarget CBaseAnimGraph
+--- @field public ForcedTarget CBaseAnimGraph
 --- @field public DontCancelOtherSequences boolean
 --- @field public ForceSynch boolean
 --- @field public PreventUpdateYawOnFinish boolean
 --- @field public EnsureOnNavmeshOnFinish boolean
 --- @field public OnDeathBehavior number
 --- @field public ConflictResponse number
---- @field readonly public OnBeginSequence CEntityIOOutput
---- @field readonly public OnActionStartOrLoop CEntityIOOutput
---- @field readonly public OnEndSequence CEntityIOOutput
---- @field readonly public OnPostIdleEndSequence CEntityIOOutput
---- @field readonly public OnCancelSequence CEntityIOOutput
---- @field readonly public OnCancelFailedSequence CEntityIOOutput
+--- @field public OnBeginSequence CEntityIOOutput
+--- @field public OnActionStartOrLoop CEntityIOOutput
+--- @field public OnEndSequence CEntityIOOutput
+--- @field public OnPostIdleEndSequence CEntityIOOutput
+--- @field public OnCancelSequence CEntityIOOutput
+--- @field public OnCancelFailedSequence CEntityIOOutput
 --- @field public OnScriptEvent table
---- @field readonly public InteractionMainEntity CBaseEntity
+--- @field public InteractionMainEntity CBaseEntity
 --- @field public PlayerDeathBehavior number
 --- @field public Parent CBaseEntity
 cscriptedsequence = {}

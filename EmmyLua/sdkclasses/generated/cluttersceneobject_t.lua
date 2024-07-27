@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class ClutterSceneObject_t
---- @field readonly public Bounds AABB_t
+--- @field public Bounds AABB_t
 --- @field public Flags number
 --- @field public Layer number
 --- @field public InstancePositions table

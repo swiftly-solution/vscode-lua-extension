@@ -16,9 +16,9 @@
 --- @field public Radius number
 --- @field public TouchType number
 --- @field public FilterName string
---- @field readonly public Filter CBaseEntity
+--- @field public Filter CBaseEntity
 --- @field public Decal string
---- @field readonly public OnTouchedByEntity CEntityIOOutput
+--- @field public OnTouchedByEntity CEntityIOOutput
 --- @field public Parent CBeam
 cenvbeam = {}
 

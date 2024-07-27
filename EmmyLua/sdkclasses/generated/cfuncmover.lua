@@ -2,9 +2,9 @@
 
 --- @class CFuncMover
 --- @field public PathName string
---- @field readonly public PathMover CPathMover
+--- @field public PathMover CPathMover
 --- @field public PathNodeStart string
---- @field readonly public MoveType CFuncMover
+--- @field public MoveType CFuncMover
 --- @field public IsReversing boolean
 --- @field public Target Vector
 --- @field public StartSpeed number
@@ -20,7 +20,7 @@
 --- @field public TimeToReachZeroSpeed number
 --- @field public TimeMovementStart number
 --- @field public TimeMovementStop number
---- @field readonly public StopAtNode CMoverPathNode
+--- @field public StopAtNode CMoverPathNode
 --- @field public PathLocationToBeginStop number
 --- @field public MatchPathNodeUp boolean
 --- @field public FacePlayer boolean

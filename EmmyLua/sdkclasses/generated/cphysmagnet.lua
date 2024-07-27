@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CPhysMagnet
---- @field readonly public OnMagnetAttach CEntityIOOutput
---- @field readonly public OnMagnetDetach CEntityIOOutput
+--- @field public OnMagnetAttach CEntityIOOutput
+--- @field public OnMagnetDetach CEntityIOOutput
 --- @field public MassScale number
 --- @field public ForceLimit number
 --- @field public TorqueLimit number

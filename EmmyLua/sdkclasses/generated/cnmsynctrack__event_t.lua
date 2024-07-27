@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CNmSyncTrack__Event_t
---- @field readonly public StartTime NmPercent_t
---- @field readonly public Duration NmPercent_t
+--- @field public StartTime NmPercent_t
+--- @field public Duration NmPercent_t
 cnmsynctrack__event_t = {}
 
 --- This is the constructor for CNmSyncTrack__Event_t class.

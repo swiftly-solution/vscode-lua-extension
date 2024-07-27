@@ -5,7 +5,7 @@
 --- @field public Range number
 --- @field public Importance number
 --- @field public LightChoice number
---- @field readonly public Light CBaseEntity
+--- @field public Light CBaseEntity
 --- @field public Parent CPointEntity
 cinfodynamicshadowhint = {}
 

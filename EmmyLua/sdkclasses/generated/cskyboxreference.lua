@@ -2,7 +2,7 @@
 
 --- @class CSkyboxReference
 --- @field public WorldGroupId number
---- @field readonly public SkyCamera CSkyCamera
+--- @field public SkyCamera CSkyCamera
 --- @field public Parent CBaseEntity
 cskyboxreference = {}
 

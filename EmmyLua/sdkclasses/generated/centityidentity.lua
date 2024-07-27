@@ -7,7 +7,7 @@
 --- @field public Flags number
 --- @field public WorldGroupId number
 --- @field public DataObjectTypes number
---- @field readonly public PathIndex ChangeAccessorFieldPathIndex_t
+--- @field public PathIndex ChangeAccessorFieldPathIndex_t
 --- @field public Prev CEntityIdentity
 --- @field public Next CEntityIdentity
 --- @field public PrevByClass CEntityIdentity

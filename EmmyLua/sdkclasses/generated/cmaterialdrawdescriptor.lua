@@ -11,7 +11,7 @@
 --- @field public VertexCount number
 --- @field public StartIndex number
 --- @field public IndexCount number
---- @field readonly public IndexBuffer CRenderBufferBinding
+--- @field public IndexBuffer CRenderBufferBinding
 cmaterialdrawdescriptor = {}
 
 --- This is the constructor for CMaterialDrawDescriptor class.

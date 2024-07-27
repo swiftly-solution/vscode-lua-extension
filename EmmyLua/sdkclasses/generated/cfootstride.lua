@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CFootStride
---- @field readonly public Definition CFootCycleDefinition
---- @field readonly public Trajectories CFootTrajectories
+--- @field public Definition CFootCycleDefinition
+--- @field public Trajectories CFootTrajectories
 cfootstride = {}
 
 --- This is the constructor for CFootStride class.

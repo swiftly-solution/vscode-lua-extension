@@ -3,8 +3,8 @@
 --- @class CPhysConstraint
 --- @field public NameAttach1 string
 --- @field public NameAttach2 string
---- @field readonly public Attach1 CBaseEntity
---- @field readonly public Attach2 CBaseEntity
+--- @field public Attach1 CBaseEntity
+--- @field public Attach2 CBaseEntity
 --- @field public NameAttachment1 string
 --- @field public NameAttachment2 string
 --- @field public BreakSound string
@@ -13,7 +13,7 @@
 --- @field public TeleportTick number
 --- @field public MinTeleportDistance number
 --- @field public SnapObjectPositions boolean
---- @field readonly public OnBreak CEntityIOOutput
+--- @field public OnBreak CEntityIOOutput
 --- @field public Parent CLogicalEntity
 cphysconstraint = {}
 

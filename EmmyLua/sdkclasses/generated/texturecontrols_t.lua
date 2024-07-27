@@ -1,13 +1,13 @@
 --- @meta
 
 --- @class TextureControls_t
---- @field readonly public FinalTextureScaleU CParticleCollectionRendererFloatInput
---- @field readonly public FinalTextureScaleV CParticleCollectionRendererFloatInput
---- @field readonly public FinalTextureOffsetU CParticleCollectionRendererFloatInput
---- @field readonly public FinalTextureOffsetV CParticleCollectionRendererFloatInput
---- @field readonly public FinalTextureUVRotation CParticleCollectionRendererFloatInput
---- @field readonly public ZoomScale CParticleCollectionRendererFloatInput
---- @field readonly public Distortion CParticleCollectionRendererFloatInput
+--- @field public FinalTextureScaleU CParticleCollectionRendererFloatInput
+--- @field public FinalTextureScaleV CParticleCollectionRendererFloatInput
+--- @field public FinalTextureOffsetU CParticleCollectionRendererFloatInput
+--- @field public FinalTextureOffsetV CParticleCollectionRendererFloatInput
+--- @field public FinalTextureUVRotation CParticleCollectionRendererFloatInput
+--- @field public ZoomScale CParticleCollectionRendererFloatInput
+--- @field public Distortion CParticleCollectionRendererFloatInput
 --- @field public RandomizeOffsets boolean
 --- @field public ClampUVs boolean
 --- @field public PerParticleBlend number

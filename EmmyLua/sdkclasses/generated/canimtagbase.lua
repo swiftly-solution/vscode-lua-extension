@@ -2,7 +2,7 @@
 
 --- @class CAnimTagBase
 --- @field public Comment string
---- @field readonly public TagID AnimTagID
+--- @field public TagID AnimTagID
 --- @field public IsReferenced boolean
 canimtagbase = {}
 

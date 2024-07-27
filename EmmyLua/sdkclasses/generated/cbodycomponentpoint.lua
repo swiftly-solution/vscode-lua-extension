@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CBodyComponentPoint
---- @field readonly public SceneNode CGameSceneNode
+--- @field public SceneNode CGameSceneNode
 --- @field public Parent CBodyComponent
 cbodycomponentpoint = {}
 

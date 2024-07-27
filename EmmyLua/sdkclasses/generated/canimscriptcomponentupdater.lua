@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CAnimScriptComponentUpdater
---- @field readonly public Script AnimScriptHandle
+--- @field public Script AnimScriptHandle
 --- @field public Parent CAnimComponentUpdater
 canimscriptcomponentupdater = {}
 

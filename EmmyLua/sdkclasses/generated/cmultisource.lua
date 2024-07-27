@@ -3,7 +3,7 @@
 --- @class CMultiSource
 --- @field public RgEntities table
 --- @field public RgTriggered table
---- @field readonly public OnTrigger CEntityIOOutput
+--- @field public OnTrigger CEntityIOOutput
 --- @field public Total number
 --- @field public Globalstate string
 --- @field public Parent CLogicalEntity

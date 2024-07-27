@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class magnetted_objects_t
---- @field readonly public Entity CBaseEntity
+--- @field public Entity CBaseEntity
 magnetted_objects_t = {}
 
 --- This is the constructor for magnetted_objects_t class.

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CSkeletonInstance
---- @field readonly public ModelState CModelState
+--- @field public ModelState CModelState
 --- @field public IsAnimationEnabled boolean
 --- @field public UseParentRenderBounds boolean
 --- @field public DisableSolidCollisionsForHierarchy boolean

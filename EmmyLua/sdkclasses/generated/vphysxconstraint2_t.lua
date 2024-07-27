@@ -4,7 +4,7 @@
 --- @field public Flags number
 --- @field public Parent number
 --- @field public Child number
---- @field readonly public Params VPhysXConstraintParams_t
+--- @field public Params VPhysXConstraintParams_t
 vphysxconstraint2_t = {}
 
 --- This is the constructor for VPhysXConstraint2_t class.

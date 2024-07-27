@@ -8,9 +8,9 @@
 --- @field public AutoLookAdjust boolean
 --- @field public ComputePath boolean
 --- @field public DamagingAreasPenaltyCost number
---- @field readonly public CheckApproximateCornersTimer CountdownTimer
---- @field readonly public CheckHighPriorityItem CountdownTimer
---- @field readonly public RepathTimer CountdownTimer
+--- @field public CheckApproximateCornersTimer CountdownTimer
+--- @field public CheckHighPriorityItem CountdownTimer
+--- @field public RepathTimer CountdownTimer
 --- @field public ArrivalEpsilon number
 --- @field public AdditionalArrivalEpsilon2D number
 --- @field public HidingSpotCheckDistanceThreshold number

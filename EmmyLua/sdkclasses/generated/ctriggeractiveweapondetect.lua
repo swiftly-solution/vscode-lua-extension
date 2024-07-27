@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerActiveWeaponDetect
---- @field readonly public OnTouchedActiveWeapon CEntityIOOutput
+--- @field public OnTouchedActiveWeapon CEntityIOOutput
 --- @field public WeaponClassName string
 --- @field public Parent CBaseTrigger
 ctriggeractiveweapondetect = {}

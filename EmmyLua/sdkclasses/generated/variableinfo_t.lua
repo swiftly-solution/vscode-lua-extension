@@ -3,7 +3,7 @@
 --- @class VariableInfo_t
 --- @field public Name string
 --- @field public NameToken number
---- @field readonly public Index FuseVariableIndex_t
+--- @field public Index FuseVariableIndex_t
 --- @field public NumComponents number
 --- @field public VarType number
 --- @field public Access number

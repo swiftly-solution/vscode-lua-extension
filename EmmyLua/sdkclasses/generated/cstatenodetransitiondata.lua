@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CStateNodeTransitionData
---- @field readonly public Curve CBlendCurve
+--- @field public Curve CBlendCurve
 cstatenodetransitiondata = {}
 
 --- This is the constructor for CStateNodeTransitionData class.

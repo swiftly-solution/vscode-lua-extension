@@ -1,9 +1,9 @@
 --- @meta
 
 --- @class CTriggerBrush
---- @field readonly public OnStartTouch CEntityIOOutput
---- @field readonly public OnEndTouch CEntityIOOutput
---- @field readonly public OnUse CEntityIOOutput
+--- @field public OnStartTouch CEntityIOOutput
+--- @field public OnEndTouch CEntityIOOutput
+--- @field public OnUse CEntityIOOutput
 --- @field public InputFilter number
 --- @field public DontMessageParent number
 --- @field public Parent CBaseModelEntity

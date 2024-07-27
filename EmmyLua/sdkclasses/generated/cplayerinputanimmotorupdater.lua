@@ -4,8 +4,8 @@
 --- @field public SampleTimes table
 --- @field public SpringConstant number
 --- @field public AnticipationDistance number
---- @field readonly public AnticipationPosParam CAnimParamHandle
---- @field readonly public AnticipationHeadingParam CAnimParamHandle
+--- @field public AnticipationPosParam CAnimParamHandle
+--- @field public AnticipationHeadingParam CAnimParamHandle
 --- @field public UseAcceleration boolean
 --- @field public Parent CAnimMotorUpdaterBase
 cplayerinputanimmotorupdater = {}

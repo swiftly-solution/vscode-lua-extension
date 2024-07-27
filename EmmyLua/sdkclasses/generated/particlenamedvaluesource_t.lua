@@ -4,7 +4,7 @@
 --- @field public Name string
 --- @field public IsPublic boolean
 --- @field public ValueType number
---- @field readonly public DefaultConfig ParticleNamedValueConfiguration_t
+--- @field public DefaultConfig ParticleNamedValueConfiguration_t
 --- @field public NamedConfigs table
 particlenamedvaluesource_t = {}
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerBuoyancy
---- @field readonly public BuoyancyHelper CBuoyancyHelper
+--- @field public BuoyancyHelper CBuoyancyHelper
 --- @field public FluidDensity number
 --- @field public Parent CBaseTrigger
 ctriggerbuoyancy = {}

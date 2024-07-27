@@ -3,7 +3,7 @@
 --- @class ClutterTile_t
 --- @field public FirstInstance number
 --- @field public LastInstance number
---- @field readonly public BoundsWs AABB_t
+--- @field public BoundsWs AABB_t
 cluttertile_t = {}
 
 --- This is the constructor for ClutterTile_t class.

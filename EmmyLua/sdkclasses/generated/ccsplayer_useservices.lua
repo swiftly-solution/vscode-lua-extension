@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CCSPlayer_UseServices
---- @field readonly public LastKnownUseEntity CBaseEntity
+--- @field public LastKnownUseEntity CBaseEntity
 --- @field public LastUseTimeStamp number
 --- @field public TimeLastUsedWindow number
 --- @field public Parent CPlayer_UseServices

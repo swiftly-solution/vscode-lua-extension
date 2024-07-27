@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class FootFixedSettings
---- @field readonly public TraceSettings TraceSettings_t
+--- @field public TraceSettings TraceSettings_t
 --- @field public FootBaseBindPosePositionMS Vector
 --- @field public FootBaseLength number
 --- @field public MaxRotationLeft number

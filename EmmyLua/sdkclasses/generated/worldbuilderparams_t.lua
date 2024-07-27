@@ -3,7 +3,7 @@
 --- @class WorldBuilderParams_t
 --- @field public MinDrawVolumeSize number
 --- @field public BuildBakedLighting boolean
---- @field readonly public BakedLightingInfo BakedLightingInfo_t
+--- @field public BakedLightingInfo BakedLightingInfo_t
 --- @field public CompileTimestamp number
 --- @field public CompileFingerprint number
 worldbuilderparams_t = {}

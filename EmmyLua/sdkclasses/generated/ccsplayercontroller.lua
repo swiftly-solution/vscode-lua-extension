@@ -33,7 +33,7 @@
 --- @field public CompetitiveRankingPredicted_Tie number
 --- @field public EndMatchNextMapVote number
 --- @field public ActiveQuestId number
---- @field readonly public QuestProgressReason QuestProgress
+--- @field public QuestProgressReason QuestProgress
 --- @field public PlayerTvControlFlags number
 --- @field public DraftIndex number
 --- @field public MsQueuedModeDisconnectionTimestamp number
@@ -50,10 +50,10 @@
 --- @field public HasBeenControlledByPlayerThisRound boolean
 --- @field public BotsControlledThisRound number
 --- @field public CanControlObservedBot boolean
---- @field readonly public PlayerPawn CCSPlayerPawn
---- @field readonly public ObserverPawn CCSObserverPawn
+--- @field public PlayerPawn CCSPlayerPawn
+--- @field public ObserverPawn CCSObserverPawn
 --- @field public DesiredObserverMode number
---- @field readonly public DesiredObserverTarget CEntityInstance
+--- @field public DesiredObserverTarget CEntityInstance
 --- @field public PawnIsAlive boolean
 --- @field public PawnHealth number
 --- @field public PawnArmor number
@@ -63,7 +63,7 @@
 --- @field public PawnLifetimeStart number
 --- @field public PawnLifetimeEnd number
 --- @field public PawnBotDifficulty number
---- @field readonly public OriginalControllerOfCurrentPawn CCSPlayerController
+--- @field public OriginalControllerOfCurrentPawn CCSPlayerController
 --- @field public Score number
 --- @field public RoundScore number
 --- @field public RoundsWon number
@@ -75,7 +75,7 @@
 --- @field public MVPs number
 --- @field public UpdateCounter number
 --- @field public SmoothedPing number
---- @field readonly public LastHeldVoteTimer IntervalTimer
+--- @field public LastHeldVoteTimer IntervalTimer
 --- @field public ShowHints boolean
 --- @field public NextTimeCheck number
 --- @field public JustDidTeamKill boolean

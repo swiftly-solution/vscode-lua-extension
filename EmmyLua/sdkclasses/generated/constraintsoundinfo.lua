@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class ConstraintSoundInfo
---- @field readonly public Sampler VelocitySampler
---- @field readonly public SoundProfile SimpleConstraintSoundProfile
+--- @field public Sampler VelocitySampler
+--- @field public SoundProfile SimpleConstraintSoundProfile
 --- @field public ForwardAxis Vector
 --- @field public TravelSoundFwd string
 --- @field public TravelSoundBack string

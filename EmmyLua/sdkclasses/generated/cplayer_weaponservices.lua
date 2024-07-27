@@ -2,8 +2,8 @@
 
 --- @class CPlayer_WeaponServices
 --- @field public MyWeapons table
---- @field readonly public ActiveWeapon CBasePlayerWeapon
---- @field readonly public LastWeapon CBasePlayerWeapon
+--- @field public ActiveWeapon CBasePlayerWeapon
+--- @field public LastWeapon CBasePlayerWeapon
 --- @field public Ammo table
 --- @field public PreventWeaponPickup boolean
 --- @field public Parent CPlayerPawnComponent

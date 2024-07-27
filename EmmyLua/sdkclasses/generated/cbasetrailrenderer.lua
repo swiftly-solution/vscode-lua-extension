@@ -5,8 +5,8 @@
 --- @field public OrientationControlPoint number
 --- @field public MinSize number
 --- @field public MaxSize number
---- @field readonly public StartFadeSize CParticleCollectionRendererFloatInput
---- @field readonly public EndFadeSize CParticleCollectionRendererFloatInput
+--- @field public StartFadeSize CParticleCollectionRendererFloatInput
+--- @field public EndFadeSize CParticleCollectionRendererFloatInput
 --- @field public ClampV boolean
 --- @field public Parent CBaseRendererSource2
 cbasetrailrenderer = {}

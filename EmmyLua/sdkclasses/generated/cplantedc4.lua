@@ -5,11 +5,11 @@
 --- @field public C4Blow number
 --- @field public BombSite number
 --- @field public SourceSoundscapeHash number
---- @field readonly public OnBombDefused CEntityIOOutput
---- @field readonly public OnBombBeginDefuse CEntityIOOutput
---- @field readonly public OnBombDefuseAborted CEntityIOOutput
+--- @field public OnBombDefused CEntityIOOutput
+--- @field public OnBombBeginDefuse CEntityIOOutput
+--- @field public OnBombDefuseAborted CEntityIOOutput
 --- @field public CannotBeDefused boolean
---- @field readonly public EntitySpottedState EntitySpottedState_t
+--- @field public EntitySpottedState EntitySpottedState_t
 --- @field public SpotRules number
 --- @field public TrainingPlacedByPlayer boolean
 --- @field public HasExploded boolean
@@ -19,8 +19,8 @@
 --- @field public DefuseLength number
 --- @field public DefuseCountDown number
 --- @field public BombDefused boolean
---- @field readonly public BombDefuser CCSPlayerPawn
---- @field readonly public ControlPanel CBaseEntity
+--- @field public BombDefuser CCSPlayerPawn
+--- @field public ControlPanel CBaseEntity
 --- @field public ProgressBarTime number
 --- @field public VoiceAlertFired boolean
 --- @field public VoiceAlertPlayed table

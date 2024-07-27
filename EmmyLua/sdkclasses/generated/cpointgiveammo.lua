@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPointGiveAmmo
---- @field readonly public Activator CBaseEntity
+--- @field public Activator CBaseEntity
 --- @field public Parent CPointEntity
 cpointgiveammo = {}
 

@@ -2,7 +2,7 @@
 
 --- @class ParamSpan_t
 --- @field public Samples table
---- @field readonly public Param CAnimParamHandle
+--- @field public Param CAnimParamHandle
 --- @field public ParamType number
 --- @field public StartCycle number
 --- @field public EndCycle number

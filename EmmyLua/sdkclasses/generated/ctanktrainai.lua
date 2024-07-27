@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CTankTrainAI
---- @field readonly public Train CFuncTrackTrain
---- @field readonly public TargetEntity CBaseEntity
+--- @field public Train CFuncTrackTrain
+--- @field public TargetEntity CBaseEntity
 --- @field public SoundPlaying number
 --- @field public StartSoundName string
 --- @field public EngineSoundName string

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CStateMachineUpdateNode
---- @field readonly public StateMachine CAnimStateMachineUpdater
+--- @field public StateMachine CAnimStateMachineUpdater
 --- @field public StateData table
 --- @field public TransitionData table
 --- @field public BlockWaningTags boolean

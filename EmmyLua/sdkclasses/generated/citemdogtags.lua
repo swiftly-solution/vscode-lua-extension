@@ -1,8 +1,8 @@
 --- @meta
 
 --- @class CItemDogtags
---- @field readonly public OwningPlayer CCSPlayerPawn
---- @field readonly public KillingPlayer CCSPlayerPawn
+--- @field public OwningPlayer CCSPlayerPawn
+--- @field public KillingPlayer CCSPlayerPawn
 --- @field public Parent CItem
 citemdogtags = {}
 

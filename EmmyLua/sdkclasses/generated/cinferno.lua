@@ -12,19 +12,19 @@
 --- @field public InPostEffectTime boolean
 --- @field public FiresExtinguishCount number
 --- @field public WasCreatedInSmoke boolean
---- @field readonly public Extent Extent
---- @field readonly public DamageTimer CountdownTimer
---- @field readonly public DamageRampTimer CountdownTimer
+--- @field public Extent Extent
+--- @field public DamageTimer CountdownTimer
+--- @field public DamageRampTimer CountdownTimer
 --- @field public SplashVelocity Vector
 --- @field public InitialSplashVelocity Vector
 --- @field public StartPos Vector
 --- @field public OriginalSpawnLocation Vector
---- @field readonly public ActiveTimer IntervalTimer
+--- @field public ActiveTimer IntervalTimer
 --- @field public FireSpawnOffset number
 --- @field public MaxFlames number
 --- @field public SpreadCount number
---- @field readonly public BookkeepingTimer CountdownTimer
---- @field readonly public NextSpreadTimer CountdownTimer
+--- @field public BookkeepingTimer CountdownTimer
+--- @field public NextSpreadTimer CountdownTimer
 --- @field public SourceItemDefIndex number
 --- @field public Parent CBaseModelEntity
 cinferno = {}

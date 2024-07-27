@@ -3,9 +3,9 @@
 --- @class CReplicationParameters
 --- @field public ReplicationMode number
 --- @field public ScaleChildParticleRadii boolean
---- @field readonly public MinRandomRadiusScale CParticleCollectionFloatInput
---- @field readonly public MaxRandomRadiusScale CParticleCollectionFloatInput
---- @field readonly public ModellingScale CParticleCollectionFloatInput
+--- @field public MinRandomRadiusScale CParticleCollectionFloatInput
+--- @field public MaxRandomRadiusScale CParticleCollectionFloatInput
+--- @field public ModellingScale CParticleCollectionFloatInput
 creplicationparameters = {}
 
 --- This is the constructor for CReplicationParameters class.

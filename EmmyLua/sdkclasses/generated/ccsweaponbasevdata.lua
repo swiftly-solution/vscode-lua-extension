@@ -21,21 +21,21 @@
 --- @field public CrosshairDeltaDistance number
 --- @field public IsFullAuto boolean
 --- @field public NumBullets number
---- @field readonly public CycleTime CFiringModeFloat
---- @field readonly public MaxSpeed CFiringModeFloat
---- @field readonly public Spread CFiringModeFloat
---- @field readonly public InaccuracyCrouch CFiringModeFloat
---- @field readonly public InaccuracyStand CFiringModeFloat
---- @field readonly public InaccuracyJump CFiringModeFloat
---- @field readonly public InaccuracyLand CFiringModeFloat
---- @field readonly public InaccuracyLadder CFiringModeFloat
---- @field readonly public InaccuracyFire CFiringModeFloat
---- @field readonly public InaccuracyMove CFiringModeFloat
---- @field readonly public RecoilAngle CFiringModeFloat
---- @field readonly public RecoilAngleVariance CFiringModeFloat
---- @field readonly public RecoilMagnitude CFiringModeFloat
---- @field readonly public RecoilMagnitudeVariance CFiringModeFloat
---- @field readonly public TracerFrequency CFiringModeInt
+--- @field public CycleTime CFiringModeFloat
+--- @field public MaxSpeed CFiringModeFloat
+--- @field public Spread CFiringModeFloat
+--- @field public InaccuracyCrouch CFiringModeFloat
+--- @field public InaccuracyStand CFiringModeFloat
+--- @field public InaccuracyJump CFiringModeFloat
+--- @field public InaccuracyLand CFiringModeFloat
+--- @field public InaccuracyLadder CFiringModeFloat
+--- @field public InaccuracyFire CFiringModeFloat
+--- @field public InaccuracyMove CFiringModeFloat
+--- @field public RecoilAngle CFiringModeFloat
+--- @field public RecoilAngleVariance CFiringModeFloat
+--- @field public RecoilMagnitude CFiringModeFloat
+--- @field public RecoilMagnitudeVariance CFiringModeFloat
+--- @field public TracerFrequency CFiringModeInt
 --- @field public InaccuracyJumpInitial number
 --- @field public InaccuracyJumpApex number
 --- @field public InaccuracyReload number

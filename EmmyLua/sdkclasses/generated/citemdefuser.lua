@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CItemDefuser
---- @field readonly public EntitySpottedState EntitySpottedState_t
+--- @field public EntitySpottedState EntitySpottedState_t
 --- @field public SpotRules number
 --- @field public Parent CItem
 citemdefuser = {}

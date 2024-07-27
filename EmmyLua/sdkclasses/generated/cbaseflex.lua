@@ -6,7 +6,7 @@
 --- @field public Blinktoggle boolean
 --- @field public AllowResponsesEndTime number
 --- @field public LastFlexAnimationTime number
---- @field readonly public NextSceneEventId SceneEventId_t
+--- @field public NextSceneEventId SceneEventId_t
 --- @field public UpdateLayerPriorities boolean
 --- @field public Parent CBaseAnimGraph
 cbaseflex = {}

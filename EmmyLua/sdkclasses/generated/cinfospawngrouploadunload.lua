@@ -1,10 +1,10 @@
 --- @meta
 
 --- @class CInfoSpawnGroupLoadUnload
---- @field readonly public OnSpawnGroupLoadStarted CEntityIOOutput
---- @field readonly public OnSpawnGroupLoadFinished CEntityIOOutput
---- @field readonly public OnSpawnGroupUnloadStarted CEntityIOOutput
---- @field readonly public OnSpawnGroupUnloadFinished CEntityIOOutput
+--- @field public OnSpawnGroupLoadStarted CEntityIOOutput
+--- @field public OnSpawnGroupLoadFinished CEntityIOOutput
+--- @field public OnSpawnGroupUnloadStarted CEntityIOOutput
+--- @field public OnSpawnGroupUnloadFinished CEntityIOOutput
 --- @field public SpawnGroupName string
 --- @field public SpawnGroupFilterName string
 --- @field public LandmarkName string

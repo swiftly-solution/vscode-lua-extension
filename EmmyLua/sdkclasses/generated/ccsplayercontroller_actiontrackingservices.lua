@@ -2,7 +2,7 @@
 
 --- @class CCSPlayerController_ActionTrackingServices
 --- @field public PerRoundStats table
---- @field readonly public MatchStats CSMatchStats_t
+--- @field public MatchStats CSMatchStats_t
 --- @field public NumRoundKills number
 --- @field public NumRoundKillsHeadshots number
 --- @field public TotalRoundDamageDealt number

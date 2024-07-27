@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTriggerDetectExplosion
---- @field readonly public OnDetectedExplosion CEntityIOOutput
+--- @field public OnDetectedExplosion CEntityIOOutput
 --- @field public Parent CBaseTrigger
 ctriggerdetectexplosion = {}
 

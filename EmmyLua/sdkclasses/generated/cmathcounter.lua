@@ -6,10 +6,10 @@
 --- @field public HitMin boolean
 --- @field public HitMax boolean
 --- @field public Disabled boolean
---- @field readonly public OnHitMin CEntityIOOutput
---- @field readonly public OnHitMax CEntityIOOutput
---- @field readonly public OnChangedFromMin CEntityIOOutput
---- @field readonly public OnChangedFromMax CEntityIOOutput
+--- @field public OnHitMin CEntityIOOutput
+--- @field public OnHitMax CEntityIOOutput
+--- @field public OnChangedFromMin CEntityIOOutput
+--- @field public OnChangedFromMax CEntityIOOutput
 --- @field public Parent CLogicalEntity
 cmathcounter = {}
 

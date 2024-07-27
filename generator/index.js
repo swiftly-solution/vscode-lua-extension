@@ -3,7 +3,7 @@ const { dirname } = require('path')
 
 let data = JSON.parse(readFileSync("data.json").toString())
 data.events.data.function.data.addeventhandler.params.eventName = "GameEvent"
-data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any):integer"
+data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any):integer|nil"
 data.database.data.query.params.callback = "fun(err:string,result:table)|nil"
 data.commands.data.register.params.callback = "fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)"
 data.utils.data.json.data.encode.params.options = "table|nil"
@@ -30,7 +30,7 @@ const ProcessParameters = (params) => {
 const GenerateClassProperties = (properties) => {
     const props = []
     for (const [propertyName, propertyValues] of Object.entries(properties)) {
-        props.push(`--- @field${propertyValues.writable == false ? " readonly" : ""} public ${propertyName} ${propertyValues.type}`)
+        props.push(`--- @field public ${propertyName} ${propertyValues.type}`)
     }
 
     if (props.length == 0) return "";
@@ -63,7 +63,7 @@ const ProcessData = async (data, subfolder, className) => {
 
                     writeFileSync(subfolder + ".lua", (data[key].variable["lua"].split(":").length >= 2 || data[key].variable["lua"].split(".").length >= 2) ? `---@meta
 
----@class ${className}
+---@class ${className == "Weapons Manager" ? "WeaponManager" : className}
 ${classVariable} = {}` : `---@meta`)
                 }
 

@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class RnHullDesc_t
---- @field readonly public Hull RnHull_t
+--- @field public Hull RnHull_t
 --- @field public Parent RnShapeDesc_t
 rnhulldesc_t = {}
 

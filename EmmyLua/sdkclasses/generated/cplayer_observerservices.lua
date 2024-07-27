@@ -2,7 +2,7 @@
 
 --- @class CPlayer_ObserverServices
 --- @field public ObserverMode number
---- @field readonly public ObserverTarget CBaseEntity
+--- @field public ObserverTarget CBaseEntity
 --- @field public ObserverLastMode number
 --- @field public ForcedObserverMode boolean
 --- @field public Parent CPlayerPawnComponent

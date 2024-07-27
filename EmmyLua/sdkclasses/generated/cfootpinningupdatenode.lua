@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CFootPinningUpdateNode
---- @field readonly public PoseOpFixedData FootPinningPoseOpFixedData_t
+--- @field public PoseOpFixedData FootPinningPoseOpFixedData_t
 --- @field public TimingSource number
 --- @field public Params table
 --- @field public ResetChild boolean

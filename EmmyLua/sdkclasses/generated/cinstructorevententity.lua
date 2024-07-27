@@ -3,7 +3,7 @@
 --- @class CInstructorEventEntity
 --- @field public Name string
 --- @field public HintTargetEntity string
---- @field readonly public TargetPlayer CBasePlayerPawn
+--- @field public TargetPlayer CBasePlayerPawn
 --- @field public Parent CPointEntity
 cinstructorevententity = {}
 

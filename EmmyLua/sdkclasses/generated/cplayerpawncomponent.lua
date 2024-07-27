@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CPlayerPawnComponent
---- @field readonly public __pChainEntity CNetworkVarChainer
+--- @field public __pChainEntity CNetworkVarChainer
 cplayerpawncomponent = {}
 
 --- This is the constructor for CPlayerPawnComponent class.

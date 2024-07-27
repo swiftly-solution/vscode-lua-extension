@@ -7,8 +7,8 @@
 --- @field public TargetLevel number
 --- @field public TargetTime number
 --- @field public LevelTime number
---- @field readonly public OnHeatLevelStart CEntityIOOutput
---- @field readonly public OnHeatLevelEnd CEntityIOOutput
+--- @field public OnHeatLevelStart CEntityIOOutput
+--- @field public OnHeatLevelEnd CEntityIOOutput
 --- @field public Parent CBaseEntity
 cenvfiresensor = {}
 

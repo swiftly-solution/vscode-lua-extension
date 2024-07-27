@@ -12,7 +12,7 @@
 --- @field public Angle1 QAngle
 --- @field public Angle2 QAngle
 --- @field public Height number
---- @field readonly public Activator CBaseEntity
+--- @field public Activator CBaseEntity
 --- @field public FinalDest Vector
 --- @field public FinalAngle QAngle
 --- @field public MovementType number

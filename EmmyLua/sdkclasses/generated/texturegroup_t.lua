@@ -6,8 +6,8 @@
 --- @field public TextureType number
 --- @field public TextureChannels number
 --- @field public TextureBlendMode number
---- @field readonly public TextureBlend CParticleCollectionRendererFloatInput
---- @field readonly public TextureControls TextureControls_t
+--- @field public TextureBlend CParticleCollectionRendererFloatInput
+--- @field public TextureControls TextureControls_t
 texturegroup_t = {}
 
 --- This is the constructor for TextureGroup_t class.

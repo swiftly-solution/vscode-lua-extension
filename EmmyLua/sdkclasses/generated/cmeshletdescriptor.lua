@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CMeshletDescriptor
---- @field readonly public CullingData CDrawCullingData
+--- @field public CullingData CDrawCullingData
 cmeshletdescriptor = {}
 
 --- This is the constructor for CMeshletDescriptor class.

@@ -11,14 +11,14 @@
 --- @field public Target6 string
 --- @field public Target7 string
 --- @field public Target8 string
---- @field readonly public Target11 CBaseEntity
---- @field readonly public Target21 CBaseEntity
---- @field readonly public Target31 CBaseEntity
---- @field readonly public Target41 CBaseEntity
---- @field readonly public Target51 CBaseEntity
---- @field readonly public Target61 CBaseEntity
---- @field readonly public Target71 CBaseEntity
---- @field readonly public Target81 CBaseEntity
+--- @field public Target11 CBaseEntity
+--- @field public Target21 CBaseEntity
+--- @field public Target31 CBaseEntity
+--- @field public Target41 CBaseEntity
+--- @field public Target51 CBaseEntity
+--- @field public Target61 CBaseEntity
+--- @field public Target71 CBaseEntity
+--- @field public Target81 CBaseEntity
 --- @field public TargetAttachment string
 --- @field public IsPlayingBack boolean
 --- @field public Paused boolean
@@ -33,7 +33,7 @@
 --- @field public AutomatedAction number
 --- @field public AutomationDelay number
 --- @field public AutomationTime number
---- @field readonly public WaitingForThisResumeScene CBaseEntity
+--- @field public WaitingForThisResumeScene CBaseEntity
 --- @field public WaitingForResumeScene boolean
 --- @field public PausedViaInput boolean
 --- @field public PauseAtNextInterrupt boolean
@@ -45,13 +45,13 @@
 --- @field public ActorList table
 --- @field public SceneFlushCounter number
 --- @field public SceneStringIndex number
---- @field readonly public OnStart CEntityIOOutput
---- @field readonly public OnCompletion CEntityIOOutput
---- @field readonly public OnCanceled CEntityIOOutput
---- @field readonly public OnPaused CEntityIOOutput
---- @field readonly public OnResumed CEntityIOOutput
+--- @field public OnStart CEntityIOOutput
+--- @field public OnCompletion CEntityIOOutput
+--- @field public OnCanceled CEntityIOOutput
+--- @field public OnPaused CEntityIOOutput
+--- @field public OnResumed CEntityIOOutput
 --- @field public OnTrigger table
---- @field readonly public InterruptScene CSceneEntity
+--- @field public InterruptScene CSceneEntity
 --- @field public InterruptCount number
 --- @field public SceneMissing boolean
 --- @field public Interrupted boolean
@@ -60,8 +60,8 @@
 --- @field public Restoring boolean
 --- @field public SoundName string
 --- @field public SequenceName string
---- @field readonly public Actor CBaseFlex
---- @field readonly public Activator CBaseEntity
+--- @field public Actor CBaseFlex
+--- @field public Activator CBaseEntity
 --- @field public BusyActor number
 --- @field public PlayerDeathBehavior number
 --- @field public Parent CPointEntity

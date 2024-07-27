@@ -1,7 +1,7 @@
 --- @meta
 
 --- @class CTwoBoneIKUpdateNode
---- @field readonly public OpFixedData TwoBoneIKSettings_t
+--- @field public OpFixedData TwoBoneIKSettings_t
 --- @field public Parent CUnaryUpdateNode
 ctwoboneikupdatenode = {}
 

@@ -2,7 +2,7 @@
 
 --- @class CPlayer_MovementServices
 --- @field public Impulse number
---- @field readonly public Buttons CInButtonState
+--- @field public Buttons CInButtonState
 --- @field public QueuedButtonDownMask number
 --- @field public QueuedButtonChangeMask number
 --- @field public ButtonDoublePressed number

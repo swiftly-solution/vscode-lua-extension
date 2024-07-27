@@ -2,7 +2,7 @@
 
 --- @class CTriggerVolume
 --- @field public FilterName string
---- @field readonly public Filter CBaseFilter
+--- @field public Filter CBaseFilter
 --- @field public Parent CBaseModelEntity
 ctriggervolume = {}
 

@@ -2,8 +2,8 @@
 
 --- @class CRenderMesh
 --- @field public Constraints table
---- @field readonly public Skeleton CRenderSkeleton
---- @field readonly public MeshDeformParams DynamicMeshDeformParams_t
+--- @field public Skeleton CRenderSkeleton
+--- @field public MeshDeformParams DynamicMeshDeformParams_t
 --- @field public GroomData CRenderGroom
 crendermesh = {}
 

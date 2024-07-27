@@ -2,7 +2,7 @@
 
 --- @class BlendItem_t
 --- @field public Tags table
---- @field readonly public Child CAnimUpdateNodeRef
+--- @field public Child CAnimUpdateNodeRef
 --- @field public Pos Vector2D
 --- @field public Duration number
 --- @field public UseCustomDuration boolean
