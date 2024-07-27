@@ -28,7 +28,7 @@ function player:CCSPlayerPawn() end
 function player:CCSPlayerPawnBase() end
 
 --- Drops the client from the server.
---- @param reason DisconnectReason
+--- @param reason number
 --- @return nil
 function player:Drop(reason) end
 
@@ -137,13 +137,13 @@ function player:Kill() end
 function player:Respawn() end
 
 --- Sends a message to the players.
---- @param msgType MessageType
+--- @param msgType number
 --- @param text string
 --- @return nil
 function player:SendMsg(msgType, text) end
 
 --- Switches the player's team.
---- @param team Team
+--- @param team number
 --- @return nil
 function player:SwitchTeam(team) end
 
@@ -154,7 +154,7 @@ function player:GetListening(id) end
 
 --- Sets the listening override of a specific player.
 --- @param id number
---- @param override ListenOverride
+--- @param override number
 --- @return nil
 function player:SetListening(id, override) end
 

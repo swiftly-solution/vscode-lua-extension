@@ -14,6 +14,11 @@ function GetCurrentPluginName() end
 --- @return string
 function GetPluginPath(plugin_name) end
 
+--- Returns the state of a plugin.
+--- @param plugin_name string
+--- @return PluginState_t
+function GetPluginState(plugin_name) end
+
 --- Returns a string table generated from provided arguments.
 --- @param data table
 --- @return string

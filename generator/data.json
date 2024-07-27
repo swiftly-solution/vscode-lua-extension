@@ -51,6 +51,21 @@
                 },
                 "additional": {}
             },
+            "getpluginstate": {
+                "title": "GetPluginState",
+                "description": "Returns the state of a plugin.",
+                "template": "function-syntax",
+                "variable": {
+                    "lua": "GetPluginState"
+                },
+                "return": {
+                    "lua": "PluginState_t"
+                },
+                "params": {
+                    "plugin_name": "string"
+                },
+                "additional": {}
+            },
             "createtexttable": {
                 "title": "CreateTextTable",
                 "description": "Returns a string table generated from provided arguments.",

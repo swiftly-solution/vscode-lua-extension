@@ -12,7 +12,7 @@ function playermanager:GetPlayerCount() end
 function playermanager:GetPlayerCap() end
 
 --- Sends a message to all the online players.
---- @param msgType MessageType
+--- @param msgType number
 --- @param text string
 --- @return nil
 function playermanager:SendMsg(msgType, text) end

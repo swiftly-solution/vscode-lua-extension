@@ -1,8 +1,11 @@
 ---@meta
 
+---@class JSON
+json = {}
+
 --- Encodes a value into a json string.
 --- @param value any
---- @param options table (optional)
+--- @param options table|nil
 --- @return string
 function json.encode(value, options) end
 

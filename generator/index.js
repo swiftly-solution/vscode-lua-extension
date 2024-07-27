@@ -4,14 +4,24 @@ const { dirname } = require('path')
 let data = JSON.parse(readFileSync("data.json").toString())
 data.events.data.function.data.addeventhandler.params.eventName = "GameEvent"
 data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any):integer"
-data.database.data.query.params.callback = "fun(error:string,result:table)|nil"
+data.database.data.query.params.callback = "fun(err:string,result:table)|nil"
 data.commands.data.register.params.callback = "fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)"
+data.utils.data.json.data.encode.params.options = "table|nil"
+
+const GetType = (type) => {
+    if (data.types.data.core.data[type.toLowerCase()]) {
+        if (Object.keys(data.types.data.core.data[type.toLowerCase()].values).length == 0) return type
+        return "number"
+    }
+    else if (data.types.data.generated.data[type.toLowerCase()]) return "number"
+    else return type
+}
 
 const ProcessParameters = (params) => {
     const returnParams = [];
     for (const paramkey of Object.keys(params)) {
         let name = paramkey
-        returnParams.push(`--- @param ${name} ${params[paramkey]}`)
+        returnParams.push(`--- @param ${name} ${GetType(params[paramkey])}`)
     }
     if (returnParams.length == 0) return "";
     return `\n${returnParams.join("\n")}`;
@@ -48,10 +58,10 @@ const ProcessData = async (data, subfolder, className) => {
             if (!existsSync(dirname(dir))) mkdirSync(dirname(dir))
             if (data[key].template == "function-syntax") {
                 if (!existsSync(subfolder + ".lua")) {
-                    let classVariable = data[key].variable["lua"].split(":")[0]
+                    let classVariable = data[key].variable["lua"].split(":")[0].split(".")[0]
                     if (classVariable.includes('[')) classVariable = classVariable.split('[')[0]
 
-                    writeFileSync(subfolder + ".lua", data[key].variable["lua"].split(":").length >= 2 ? `---@meta
+                    writeFileSync(subfolder + ".lua", (data[key].variable["lua"].split(":").length >= 2 || data[key].variable["lua"].split(".").length >= 2) ? `---@meta
 
 ---@class ${className}
 ${classVariable} = {}` : `---@meta`)
