@@ -3,7 +3,9 @@ const { dirname } = require('path')
 
 let data = JSON.parse(readFileSync("data.json").toString())
 data.events.data.function.data.addeventhandler.params.eventName = "GameEvent"
-data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any)"
+data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any):integer"
+data.database.data.query.params.callback = "fun(error:string,result:table)|nil"
+data.commands.data.register.params.callback = "fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)"
 
 const ProcessParameters = (params) => {
     const returnParams = [];
@@ -56,7 +58,12 @@ ${classVariable} = {}` : `---@meta`)
                 }
 
                 if (data[key].variable['lua'].includes("[")) continue;
-                appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua']))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
+                if (subfolder.endsWith("database")) {
+                    if (!readFileSync(subfolder + ".lua").toString().includes("function Database")) {
+                        appendFileSync(subfolder + ".lua", `\n\n--- This is the constructor for Database class.${ProcessParameters({ database_name: "string" })}\n--- @return Database\nfunction Database(database_name) end`)
+                    }
+                }
+                appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua'].replace(/ \/ /g, "|")))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
             } else if (data[key].template == "types-syntax") {
                 if (!existsSync(subfolder)) mkdirSync(subfolder)
                 writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)

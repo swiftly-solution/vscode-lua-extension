@@ -5,7 +5,7 @@ convar = {}
 
 --- Returns the convar value.
 --- @param name string
---- @return string / number / boolean
+--- @return string|number|boolean
 function convar:Get(name) end
 
 --- Returns the convar type.

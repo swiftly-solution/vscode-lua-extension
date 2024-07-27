@@ -2,7 +2,7 @@
 
 --- Adds a new event handler for the specified event.
 --- @param eventName GameEvent
---- @param callback fun(event:Event,...:any)
+--- @param callback fun(event:Event,...:any):integer
 --- @return EventHandler
 function AddEventHandler(eventName, callback) end
 

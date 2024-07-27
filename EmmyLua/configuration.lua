@@ -15,7 +15,7 @@ function config:FetchArraySize(key) end
 
 --- Returns the configuration value for the specified key.
 --- @param key string
---- @return string / number / boolean
+--- @return string|number|boolean
 function config:Fetch(key) end
 
 --- Returns if the configuration key exists.

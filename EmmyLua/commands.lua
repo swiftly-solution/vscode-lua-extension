@@ -5,7 +5,7 @@ commands = {}
 
 --- Registers a new command through Swiftly Commands.
 --- @param commandName string
---- @param callback function
+--- @param callback fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)
 --- @return nil
 function commands:Register(commandName, callback) end
 
