@@ -22,3 +22,10 @@ function db:IsConnected() end
 --- @param callback fun(err:string,result:table)|nil
 --- @return nil
 function db:Query(query, callback) end
+
+--- Returns a Database Query Result inside the callback which can be used to iterate through the return values. Formats the query string using params
+--- @param query string
+--- @param params table
+--- @param callback function
+--- @return nil
+function db:QueryParams(query, params, callback) end

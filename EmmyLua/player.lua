@@ -96,6 +96,10 @@ function player:GetSlot() end
 --- @return number
 function player:GetSteamID() end
 
+--- Returns the connected time of the player.
+--- @return number
+function player:GetConnectedTime() end
+
 --- Returns the SteamID of the player.
 --- @return string
 function player:GetSteamID2() end

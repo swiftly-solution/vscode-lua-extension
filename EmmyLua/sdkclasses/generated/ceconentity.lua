@@ -18,6 +18,7 @@ ceconentity = {}
 --- @return CEconEntity
 function CEconEntity(ptr) end
 
+
 --- @return string
 function ceconentity:ToPtr() end
 

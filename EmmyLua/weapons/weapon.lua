@@ -19,6 +19,10 @@ function weapon:CBasePlayerWeaponVData() end
 --- @return CCSWeaponBaseVData
 function weapon:CCSWeaponBaseVData() end
 
+--- Sets the default attributes to the weapon based on it's specifications.
+--- @return nil
+function weapon:SetDefaultAttributes() end
+
 --- Removes the weapon from the server.
 --- @return nil
 function weapon:Remove() end

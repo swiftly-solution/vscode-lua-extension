@@ -346,6 +346,25 @@
                 "additional": {
                     "lua": "> [!info]\n> If database is not connected it will never execute.\n\n### Callback\nThe callback has the following arguments:\n```lua\ncb(err --[[ string ]], result --[[ table ]])\n```"
                 }
+            },
+            "queryparams": {
+                "title": "QueryParams",
+                "template": "function-syntax",
+                "description": "Returns a Database Query Result inside the callback which can be used to iterate through the return values. Formats the query string using params",
+                "variable": {
+                    "lua": "db:QueryParams"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "query": "string",
+                    "params": "table",
+                    "callback": "function"
+                },
+                "additional": {
+                    "lua": "> [!info]\n> If database is not connected it will never execute.\n\n### Params\nThe parameters can be used by the following format inside the query string:\n```\n@key\n[key]\n{key}```\nInside the parameters value it needs to be the following format\n```lua\n{\n    [\"key\"] = value,\n    [\"key2\"] = value,\n    -- ...\n}```\nThe values can be a string, a number or a boolean. It will automatically convert to string form and perform EscapeString to it so that there would be no chance for SQL Injection.\n\n### Callback\nThe callback has the following arguments:\n```lua\ncb(err --[[ string ]], result --[[ table ]])\n```"
+                }
             }
         }
     },
@@ -9324,6 +9343,19 @@
                 "description": "Returns the SteamID64 of the player.",
                 "variable": {
                     "lua": "player:GetSteamID"
+                },
+                "return": {
+                    "lua": "number"
+                },
+                "params": {},
+                "additional": {}
+            },
+            "getconnectedtime": {
+                "title": "GetConnectedTime",
+                "template": "function-syntax",
+                "description": "Returns the connected time of the player.",
+                "variable": {
+                    "lua": "player:GetConnectedTime"
                 },
                 "return": {
                     "lua": "number"
@@ -92297,6 +92329,19 @@
                         },
                         "return": {
                             "lua": "CCSWeaponBaseVData"
+                        },
+                        "params": {},
+                        "additional": {}
+                    },
+                    "setdefaultattributes": {
+                        "title": "SetDefaultAttributes",
+                        "template": "function-syntax",
+                        "description": "Sets the default attributes to the weapon based on it's specifications.",
+                        "variable": {
+                            "lua": "weapon:SetDefaultAttributes"
+                        },
+                        "return": {
+                            "lua": "void"
                         },
                         "params": {},
                         "additional": {}
