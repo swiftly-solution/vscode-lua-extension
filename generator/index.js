@@ -7,6 +7,7 @@ data.events.data.function.data.addeventhandler.params.callback = "fun(event:Even
 data.database.data.query.params.callback = "fun(err:string,result:table)|nil"
 data.commands.data.register.params.callback = "fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)"
 data.utils.data.json.data.encode.params.options = "table|nil"
+data.utils.data.targetselector.data.getplayer.return.lua = "Player|nil"
 
 const GetType = (type) => {
     if (data.types.data.core.data[type.toLowerCase()]) {

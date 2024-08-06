@@ -8347,7 +8347,9 @@
                     "content": "string",
                     "hasdate": "boolean"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "createdirectory": {
                 "title": "CreateDirectory",
@@ -8362,7 +8364,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "delete": {
                 "title": "Delete",
@@ -8377,7 +8381,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "existspath": {
                 "title": "ExistsPath",
@@ -8392,7 +8398,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "fetchdirectories": {
                 "title": "FetchDirectories",
@@ -8407,7 +8415,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "fetchfilenames": {
                 "title": "FetchFileNames",
@@ -8422,7 +8432,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "getbase": {
                 "title": "GetBase",
@@ -8437,7 +8449,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "isdirectory": {
                 "title": "IsDirectory",
@@ -8452,7 +8466,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "read": {
                 "title": "Read",
@@ -8467,7 +8483,9 @@
                 "params": {
                     "path": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "write": {
                 "title": "Write",
@@ -8484,7 +8502,9 @@
                     "content": "string",
                     "hasdate": "boolean"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "compress": {
                 "title": "Compress",
@@ -8500,7 +8520,9 @@
                     "path": "string",
                     "output": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             },
             "decompress": {
                 "title": "Decompress",
@@ -8516,7 +8538,9 @@
                     "path": "string",
                     "output": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "> [!info]\n> The root of the Files API is located in `game/csgo`.\n"
+                }
             }
         }
     },
