@@ -14,6 +14,12 @@ function commands:Register(commandName, callback) end
 --- @return nil
 function commands:Unregister(commandName) end
 
+--- Registers a raw alias (without sw_ in console) for a command registered through Swiftly Commands.
+--- @param commandName string
+--- @param alias string
+--- @return nil
+function commands:RegisterRawAlias(commandName, alias) end
+
 --- Registers an alias for a command registered through Swiftly Commands.
 --- @param commandName string
 --- @param alias string

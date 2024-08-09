@@ -3,6 +3,12 @@
 ---@class Configuration
 config = {}
 
+--- Creates the plugin configuration file.
+--- @param config_key string
+--- @param value table
+--- @return nil
+function config:Create(config_key, value) end
+
 --- Reloads the configuration for the specified key.
 --- @param key string
 --- @return nil

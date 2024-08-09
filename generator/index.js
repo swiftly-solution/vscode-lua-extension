@@ -5,6 +5,7 @@ let data = JSON.parse(readFileSync("data.json").toString())
 data.events.data.function.data.addeventhandler.params.eventName = "GameEvent"
 data.events.data.function.data.addeventhandler.params.callback = "fun(event:Event,...:any):integer|nil"
 data.database.data.query.params.callback = "fun(err:string,result:table)|nil"
+data.database.data.queryparams.params.callback = "fun(err:string,result:table)|nil"
 data.commands.data.register.params.callback = "fun(playerid:number,args:table,argc:number,silent:boolean,prefix:string)"
 data.utils.data.json.data.encode.params.options = "table|nil"
 data.utils.data.targetselector.data.getplayer.return.lua = "Player|nil"
