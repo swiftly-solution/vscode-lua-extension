@@ -162,6 +162,15 @@ function player:GetListening(id) end
 --- @return nil
 function player:SetListening(id, override) end
 
+--- Returns if the player can bunnyhop.
+--- @return boolean
+function player:GetBunnyhop() end
+
+--- Sets the ability to bunnyhop to the player.
+--- @param state boolean
+--- @return nil
+function player:SetBunnyhop(state) end
+
 --- Returns the voice flags of the player.
 --- @return number
 function player:GetVoiceFlags() end

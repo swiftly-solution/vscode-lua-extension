@@ -3,6 +3,10 @@
 ---@class Memory
 memory = {}
 
+--- This is the constructor for Memory class.
+--- @return Memory
+function Memory() end
+
 --- Set the boolean value to the memory address.
 --- @param value boolean
 --- @return nil

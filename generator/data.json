@@ -9609,6 +9609,34 @@
                 },
                 "additional": {}
             },
+            "getbunnyhop": {
+                "title": "GetBunnyhop",
+                "template": "function-syntax",
+                "description": "Returns if the player can bunnyhop.",
+                "variable": {
+                    "lua": "player:GetBunnyhop"
+                },
+                "return": {
+                    "lua": "boolean"
+                },
+                "params": {},
+                "additional": {}
+            },
+            "setbunnyhop": {
+                "title": "SetBunnyhop",
+                "template": "function-syntax",
+                "description": "Sets the ability to bunnyhop to the player.",
+                "variable": {
+                    "lua": "player:SetBunnyhop"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "state": "boolean"
+                },
+                "additional": {}
+            },
             "getvoiceflags": {
                 "title": "GetVoiceFlags",
                 "template": "function-syntax",

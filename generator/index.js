@@ -75,6 +75,11 @@ ${classVariable} = {}` : `---@meta`)
                         appendFileSync(subfolder + ".lua", `\n\n--- This is the constructor for Database class.${ProcessParameters({ database_name: "string" })}\n--- @return Database\nfunction Database(database_name) end`)
                     }
                 }
+                if (subfolder.endsWith("memory")) {
+                    if (!readFileSync(subfolder + ".lua").toString().includes("function Memory")) {
+                        appendFileSync(subfolder + ".lua", `\n\n--- This is the constructor for Memory class.\n--- @return Memory\nfunction Memory() end`)
+                    }
+                }
                 appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua'].replace(/ \/ /g, "|")))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
             } else if (data[key].template == "types-syntax") {
                 if (!existsSync(subfolder)) mkdirSync(subfolder)
