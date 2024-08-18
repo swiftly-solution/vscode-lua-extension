@@ -20,6 +20,7 @@
   ],
   "activationEvents": [
     "onStartupFinished"
+    
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -33,6 +34,10 @@
         "command": "swiftly---cs2-autocomplete.enableAnnotations",
         "title": "Enable Annotations",
         "category": "SwiftlyCS2 - Lua Autocomplete"
+      },
+      {
+        "command": "swiftly---cs2-autocomplete.commands.generatePlugin",
+        "title": "SwiftlyCS2 - Generate Plugin"
       }
     ]
   },
