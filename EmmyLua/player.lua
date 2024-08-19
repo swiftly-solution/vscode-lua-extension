@@ -3,6 +3,10 @@
 ---@class Player
 player = {}
 
+--- Checks if it's a valid player.
+--- @return boolean
+function player:IsValid() end
+
 --- Returns the player's CBaseEntity based of CCSPlayerPawn.
 --- @return CBaseEntity
 function player:CBaseEntity() end

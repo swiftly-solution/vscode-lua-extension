@@ -1,4 +1,4 @@
-# SwiftlyCS2 - Lua Autocomplete
+# Swiftly - CS2 Lua Extension
 
 This extension is adding autocomplete for lua scripts on Swiftly - Counter Strike 2.
 

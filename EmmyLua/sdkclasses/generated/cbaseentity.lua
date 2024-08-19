@@ -89,9 +89,8 @@ function CBaseEntity(ptr) end
 --- @param sound_name string
 --- @param pitch number
 --- @param volume number
---- @param delay number
 --- @return nil
-function cbaseentity:EmitSound(sound_name, pitch, volume, delay) end
+function cbaseentity:EmitSound(sound_name, pitch, volume) end
 
 --- @return CBaseEntity
 function cbaseentity:EHandle() end
@@ -117,8 +116,9 @@ function cbaseentity:GetClassname() end
 function cbaseentity:GetVData() end
 
 --- @param value Vector
+--- @param angle QAngle
 --- @return nil
-function cbaseentity:Teleport(value) end
+function cbaseentity:Teleport(value, angle) end
 
 --- @return string
 function cbaseentity:ToPtr() end

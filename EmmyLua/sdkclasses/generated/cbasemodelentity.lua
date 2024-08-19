@@ -39,6 +39,10 @@ function CBaseModelEntity(ptr) end
 --- @return nil
 function cbasemodelentity:SetModel(model) end
 
+--- @param solidType number
+--- @return nil
+function cbasemodelentity:SetSolidType(solidType) end
+
 --- @return string
 function cbasemodelentity:ToPtr() end
 

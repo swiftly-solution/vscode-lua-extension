@@ -7,6 +7,15 @@ memory = {}
 --- @return Memory
 function Memory() end
 
+--- Returns if the memory is in the VTable.
+--- @return boolean
+function memory:AccessedVTable() end
+
+--- Accesses the VTable at the specified offset.
+--- @param offset number
+--- @return nil
+function memory:AccessVTable(offset) end
+
 --- Set the boolean value to the memory address.
 --- @param value boolean
 --- @return nil
@@ -76,9 +85,10 @@ function memory:GetInt64() end
 function memory:LoadFromAddress(address) end
 
 --- Loads the memory from the provided signature.
+--- @param library string
 --- @param signature string
 --- @return nil
-function memory:LoadFromSignature(signature) end
+function memory:LoadFromSignature(library, signature) end
 
 --- Loads the memory from the provided signature from `signatures.json`.
 --- @param signature string

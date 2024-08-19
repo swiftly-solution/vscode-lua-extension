@@ -1,13 +1,13 @@
 {
   "name": "swiftly---cs2-autocomplete",
-  "displayName": "Swiftly - CS2 Autocomplete",
+  "displayName": "Swiftly - CS2 Lua Extension",
   "icon": "img/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/swiftly-solution/vscode-lua-extension"
   },
   "description": "",
-  "version": "1.0.22",
+  "version": "1.0.31",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -20,10 +20,27 @@
   ],
   "activationEvents": [
     "onStartupFinished"
-    
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "documentation-lua",
+          "title": "SwiftlyCS2 - Lua Documentation",
+          "icon": "assets/swiftly-logo.png",
+          "description": "hello there"
+        }
+      ]
+    },
+    "views": {
+      "documentation-lua": [
+        {
+          "id": "documentation",
+          "name": "Documentation"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "swiftly---cs2-autocomplete.disableAnnotations",
@@ -38,6 +55,14 @@
       {
         "command": "swiftly---cs2-autocomplete.commands.generatePlugin",
         "title": "SwiftlyCS2 - Generate Plugin"
+      },
+      {
+        "command": "swiftly---cs2-autocomplete.commands.openPagePreview",
+        "title": "SwiftlyCS2 - Open Page Preview"
+      },
+      {
+        "command": "swiftly---cs2-autocomplete.commands.openUpSearch",
+        "title": "SwiftlyCS2 - Open Documentation Search"
       }
     ]
   },
@@ -56,16 +81,25 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.77.0",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
+    "@types/vscode": "^1.77.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "esbuild": "^0.21.5",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "esbuild": "^0.21.5",
+    "eslint": "^8.57.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "axios": "^1.7.4",
+    "highlight.js": "^11.10.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-table": "^4.1.1",
+    "marked": "^14.0.0",
+    "nested-property": "^4.0.0"
   }
 }

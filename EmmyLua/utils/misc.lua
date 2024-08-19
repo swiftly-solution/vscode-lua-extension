@@ -1,5 +1,18 @@
 ---@meta
 
+--- Updates the state of a specific field.
+--- @param ptr string
+--- @param classname string
+--- @param field string
+--- @param isStruct boolean
+--- @return nil
+function StateUpdate(ptr, classname, field, isStruct) end
+
+--- Returns the user message from uuid.
+--- @param uuid string
+--- @return UserMessage
+function GetUserMessage(uuid) end
+
 --- Generates an UUID v4.
 --- @return string
 function uuid() end

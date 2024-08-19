@@ -237,7 +237,7 @@
                     "lua": "config:Fetch"
                 },
                 "return": {
-                    "lua": "string / number / boolean"
+                    "lua": "string / number / boolean / table"
                 },
                 "params": {
                     "key": "string"
@@ -270,6 +270,41 @@
         "order": 3,
         "icon": "puzzle-piece",
         "data": {
+            "createfake": {
+                "title": "CreateFake",
+                "template": "function-syntax",
+                "description": "Creates a fake convar.",
+                "variable": {
+                    "lua": "convar:CreateFake"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "name": "string",
+                    "cvartype": "EConVarType",
+                    "defaultValue": "any",
+                    "protected": "boolean"
+                },
+                "additional": {
+                    "lua": "If the protected is set to true, no data will be sent by the server to the client about this convar."
+                }
+            },
+            "deletefake": {
+                "title": "DeleteFake",
+                "template": "function-syntax",
+                "description": "Deletes a fake convar.",
+                "variable": {
+                    "lua": "convar:DeleteFake"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "name": "string"
+                },
+                "additional": {}
+            },
             "get": {
                 "title": "Get",
                 "template": "function-syntax",
@@ -397,7 +432,7 @@
                     "callback": "function"
                 },
                 "additional": {
-                    "lua": "> [!info]\n> If database is not connected it will never execute.\n\n### Params\nThe parameters can be used by the following format inside the query string:\n```\n@key\n[key]\n{key}```\nInside the parameters value it needs to be the following format\n```lua\n{\n    [\"key\"] = value,\n    [\"key2\"] = value,\n    -- ...\n}```\nThe values can be a string, a number or a boolean. It will automatically convert to string form and perform EscapeString to it so that there would be no chance for SQL Injection.\n\n### Callback\nThe callback has the following arguments:\n```lua\ncb(err --[[ string ]], result --[[ table ]])\n```"
+                    "lua": "> [!info]\n> If database is not connected it will never execute.\n\n### Params\nThe parameters can be used by the following format inside the query string:\n```\n@key\n[key]\n{key}\n```\n\nInside the parameters value it needs to be the following format\n```lua\n{\n    [\"key\"] = value,\n    [\"key2\"] = value,\n    -- ...\n}\n```\n\nThe values can be a string, a number or a boolean. It will automatically convert to string form and perform EscapeString to it so that there would be no chance for SQL Injection.\n\n### Callback\nThe callback has the following arguments:\n```lua\ncb(err --[[ string ]], result --[[ table ]])\n```"
                 }
             }
         }
@@ -1152,6 +1187,22 @@
                             "teamonly": "boolean"
                         },
                         "additional": {}
+                    },
+                    "onusermessagesend": {
+                        "title": "OnUserMessageSend",
+                        "template": "core-event-syntax",
+                        "description": "This game event is triggered when a user message is being sent to a player.",
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "playerid": "number",
+                            "usermessage_uuid": "string",
+                            "isreliable": "boolean"
+                        },
+                        "additional": {
+                            "lua": "> [!info]\n> To cancel the user message, you need to return `EventResult.Stop`. This will block the user message from being sent.\n\n#### How can I get the UserMessage?\nTo get the user message object, you need to use [GetUserMessage](https://swiftlycs2.net/docs/scripting/utils/misc/getusermessage.html) along with the `usermessage_uuid` parameter."
+                        }
                     }
                 }
             },
@@ -8281,7 +8332,9 @@
                     "className": "string",
                     "output": "string"
                 },
-                "additional": {}
+                "additional": {
+                    "lua": "#### Example\nTo hook an entity output, you need to specify the classname and the output you want, add an [AddPreHookListener](https://swiftlycs2.net/docs/scripting/hooks/addprehooklistener.html) or an [AddPostHookListener](https://swiftlycs2.net/docs/scripting/hooks/addposthooklistener.html) using the following event callback\n```lua\nlocal hookoutput = AddHookEntityOutput(\"weapon_knife\", \"*\")\nAddPreHookListener(hookoutput, function(event --[[ Event ]], iooutput_ptr --[[ string ]], event_output --[[ string ]], activator_ptr --[[ string ]], caller_ptr --[[ string ]], delay --[[ number ]])\n    -- In this example we're listening to all the outputs of weapon_knife.\n    return EventResult.Continue\nend)\n```"
+                }
             },
             "findentitiesbyclassname": {
                 "title": "FindEntitiesByClassname",
@@ -8799,6 +8852,34 @@
         "order": 3,
         "icon": "memory",
         "data": {
+            "accessedvtable": {
+                "title": "AccessedVTable",
+                "template": "function-syntax",
+                "description": "Returns if the memory is in the VTable.",
+                "variable": {
+                    "lua": "memory:AccessedVTable"
+                },
+                "return": {
+                    "lua": "boolean"
+                },
+                "params": {},
+                "additional": {}
+            },
+            "accessvtable": {
+                "title": "AccessVTable",
+                "template": "function-syntax",
+                "description": "Accesses the VTable at the specified offset.",
+                "variable": {
+                    "lua": "memory:AccessVTable"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "offset": "number"
+                },
+                "additional": {}
+            },
             "setbool": {
                 "title": "SetBool",
                 "template": "function-syntax",
@@ -9021,6 +9102,7 @@
                     "lua": "void"
                 },
                 "params": {
+                    "library": "string",
                     "signature": "string"
                 },
                 "additional": {}
@@ -9118,6 +9200,19 @@
         "order": 3,
         "icon": "user",
         "data": {
+            "isvalid": {
+                "title": "IsValid",
+                "template": "function-syntax",
+                "description": "Checks if it's a valid player.",
+                "variable": {
+                    "lua": "player:IsValid"
+                },
+                "return": {
+                    "lua": "boolean"
+                },
+                "params": {},
+                "additional": {}
+            },
             "cbaseentity": {
                 "title": "CBaseEntity",
                 "template": "function-syntax",
@@ -10833,8 +10928,7 @@
                                 "params": {
                                     "sound_name": "string",
                                     "pitch": "number",
-                                    "volume": "number",
-                                    "delay": "number"
+                                    "volume": "number"
                                 }
                             },
                             "EHandle": {
@@ -10884,7 +10978,8 @@
                                     "lua": "void"
                                 },
                                 "params": {
-                                    "value": "Vector"
+                                    "value": "Vector",
+                                    "angle": "QAngle"
                                 }
                             },
                             "ToPtr": {
@@ -11289,6 +11384,14 @@
                                 },
                                 "params": {
                                     "model": "string"
+                                }
+                            },
+                            "SetSolidType": {
+                                "return": {
+                                    "lua": "void"
+                                },
+                                "params": {
+                                    "solidType": "number"
                                 }
                             },
                             "ToPtr": {
@@ -91494,6 +91597,39 @@
                 "order": 3,
                 "icon": "laptop-code",
                 "data": {
+                    "stateupdate": {
+                        "title": "StateUpdate",
+                        "template": "function-syntax",
+                        "description": "Updates the state of a specific field.",
+                        "variable": {
+                            "lua": "StateUpdate"
+                        },
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "ptr": "string",
+                            "classname": "string",
+                            "field": "string",
+                            "isStruct": "boolean"
+                        },
+                        "additional": {}
+                    },
+                    "getusermessage": {
+                        "title": "GetUserMessage",
+                        "template": "function-syntax",
+                        "description": "Returns the user message from uuid.",
+                        "variable": {
+                            "lua": "GetUserMessage"
+                        },
+                        "return": {
+                            "lua": "UserMessage"
+                        },
+                        "params": {
+                            "uuid": "string"
+                        },
+                        "additional": {}
+                    },
                     "uuid": {
                         "title": "UUID",
                         "template": "function-syntax",
