@@ -2,7 +2,7 @@
 
 --- @class PulseDomainValueType_t
 PulseDomainValueType_t = {
-    INVALID = 0xffffffffffffffff,
+    INVALID = 0xffffffff,
     ENTITY_NAME = 0x0,
     PANEL_ID = 0x1,
     COUNT = 0x2

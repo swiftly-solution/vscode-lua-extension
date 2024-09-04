@@ -2,17 +2,17 @@
 
 --- @class EMidiNote
 EMidiNote = {
-    C = 0x0,
-    C_Sharp = 0x1,
-    D = 0x2,
-    D_Sharp = 0x3,
-    E = 0x4,
-    F = 0x5,
-    F_Sharp = 0x6,
-    G = 0x7,
-    G_Sharp = 0x8,
-    A = 0x9,
-    A_Sharp = 0xa,
-    B = 0xb,
-    Count = 0xc
+    C = 0,
+    C_Sharp = 1,
+    D = 2,
+    D_Sharp = 3,
+    E = 4,
+    F = 5,
+    F_Sharp = 6,
+    G = 7,
+    G_Sharp = 8,
+    A = 9,
+    A_Sharp = 10,
+    B = 11,
+    Count = 12
 }

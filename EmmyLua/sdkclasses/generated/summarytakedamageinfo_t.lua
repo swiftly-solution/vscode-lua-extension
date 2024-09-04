@@ -4,7 +4,6 @@
 --- @field public SummarisedCount number
 --- @field public Info CTakeDamageInfo
 --- @field public Result CTakeDamageResult
---- @field public Target CBaseEntity
 summarytakedamageinfo_t = {}
 
 --- This is the constructor for SummaryTakeDamageInfo_t class.

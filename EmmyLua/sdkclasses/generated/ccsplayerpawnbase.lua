@@ -20,7 +20,6 @@
 --- @field public ProgressBarStartTime number
 --- @field public ProgressBarDuration number
 --- @field public EyeAngles QAngle
---- @field public NumEnemiesAtRoundStart number
 --- @field public WasNotKilledNaturally boolean
 --- @field public CommittingSuicideOnTeamChange boolean
 --- @field public OriginalController CCSPlayerController

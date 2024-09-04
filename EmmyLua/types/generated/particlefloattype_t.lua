@@ -2,7 +2,7 @@
 
 --- @class ParticleFloatType_t
 ParticleFloatType_t = {
-    PF_TYPE_INVALID = 0xffffffffffffffff,
+    PF_TYPE_INVALID = 0xffffffff,
     PF_TYPE_LITERAL = 0x0,
     PF_TYPE_NAMED_VALUE = 0x1,
     PF_TYPE_RANDOM_UNIFORM = 0x2,

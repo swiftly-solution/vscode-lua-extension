@@ -100,7 +100,6 @@
 --- @field public RoundStartEquipmentValue number
 --- @field public FreezetimeEndEquipmentValue number
 --- @field public LastWeaponFireUsercmd number
---- @field public LastFriendlyFireDamageReductionRatio number
 --- @field public IsSpawning boolean
 --- @field public DeathFlags number
 --- @field public HasDeathInfo boolean
@@ -116,6 +115,8 @@
 --- @field public ShootAngleHistory table
 --- @field public ThrowPositionHistory table
 --- @field public VelocityHistory table
+--- @field public PredictedDamageTags table
+--- @field public HighestAppliedDamageTagTick number
 --- @field public Parent CCSPlayerPawnBase
 ccsplayerpawn = {}
 

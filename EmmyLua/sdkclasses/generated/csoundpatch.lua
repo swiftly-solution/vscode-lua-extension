@@ -6,7 +6,6 @@
 --- @field public ShutdownTime number
 --- @field public LastTime number
 --- @field public SoundScriptName string
---- @field public Ent CBaseEntity
 --- @field public SoundEntityIndex number
 --- @field public SoundOrigin Vector
 --- @field public IsPlaying number

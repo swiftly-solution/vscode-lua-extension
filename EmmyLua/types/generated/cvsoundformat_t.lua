@@ -2,8 +2,8 @@
 
 --- @class CVSoundFormat_t
 CVSoundFormat_t = {
-    PCM16 = 0x0,
-    PCM8 = 0x1,
-    MP3 = 0x2,
-    ADPCM = 0x3
+    PCM16 = 0,
+    PCM8 = 1,
+    MP3 = 2,
+    ADPCM = 3
 }

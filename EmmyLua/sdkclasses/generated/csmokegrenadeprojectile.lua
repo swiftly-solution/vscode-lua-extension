@@ -9,6 +9,7 @@
 --- @field public VoxelFrameData table
 --- @field public LastBounce number
 --- @field public FllastSimulationTime number
+--- @field public ExplodeFromInferno boolean
 --- @field public Parent CBaseCSGrenadeProjectile
 csmokegrenadeprojectile = {}
 

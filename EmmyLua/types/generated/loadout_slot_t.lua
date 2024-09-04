@@ -2,8 +2,8 @@
 
 --- @class loadout_slot_t
 loadout_slot_t = {
-    LOADOUT_SLOT_PROMOTED = 0xfffffffffffffffe,
-    LOADOUT_SLOT_INVALID = 0xffffffffffffffff,
+    LOADOUT_SLOT_PROMOTED = 0xfffffffe,
+    LOADOUT_SLOT_INVALID = 0xffffffff,
     LOADOUT_SLOT_MELEE = 0x0,
     LOADOUT_SLOT_C4 = 0x1,
     LOADOUT_SLOT_FIRST_AUTO_BUY_WEAPON = 0x0,

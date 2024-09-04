@@ -155,6 +155,11 @@ function player:SendMsg(msgType, text) end
 --- @return nil
 function player:SwitchTeam(team) end
 
+--- Changes the player's team.
+--- @param team number
+--- @return nil
+function player:ChangeTeam(team) end
+
 --- Returns the listening override of a specific player.
 --- @param id number
 --- @return ListenOverride

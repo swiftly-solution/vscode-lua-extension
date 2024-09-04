@@ -35,6 +35,11 @@ cbasemodelentity = {}
 function CBaseModelEntity(ptr) end
 
 
+--- @param str string
+--- @param val value
+--- @return nil
+function cbasemodelentity:SetBodygroup(str, val) end
+
 --- @param model string
 --- @return nil
 function cbasemodelentity:SetModel(model) end

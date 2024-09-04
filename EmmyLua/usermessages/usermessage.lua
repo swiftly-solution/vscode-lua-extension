@@ -256,7 +256,7 @@ function usermessage:GetString(fieldName) end
 function usermessage:SetString(fieldName, value) end
 
 --- @param fieldName string
---- @param index string
+--- @param index number
 --- @return string
 function usermessage:GetRepeatedString(fieldName, index) end
 

@@ -5,9 +5,6 @@
 --- @field public DamagePosition Vector
 --- @field public ReportedPosition Vector
 --- @field public DamageDirection Vector
---- @field public Inflictor CBaseEntity
---- @field public Attacker CBaseEntity
---- @field public Ability CBaseEntity
 --- @field public Damage number
 --- @field public TotalledDamage number
 --- @field public BitsDamageType number
@@ -18,6 +15,7 @@
 --- @field public ShouldSpark boolean
 --- @field public DamageFlags number
 --- @field public NumObjectsPenetrated number
+--- @field public FriendlyFireDamageReductionRatio number
 --- @field public InTakeDamageFlow boolean
 ctakedamageinfo = {}
 

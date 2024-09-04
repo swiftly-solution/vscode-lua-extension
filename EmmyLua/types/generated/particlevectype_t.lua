@@ -2,7 +2,7 @@
 
 --- @class ParticleVecType_t
 ParticleVecType_t = {
-    PVEC_TYPE_INVALID = 0xffffffffffffffff,
+    PVEC_TYPE_INVALID = 0xffffffff,
     PVEC_TYPE_LITERAL = 0x0,
     PVEC_TYPE_LITERAL_COLOR = 0x1,
     PVEC_TYPE_NAMED_VALUE = 0x2,

@@ -2,7 +2,7 @@
 
 --- @class PulseValueType_t
 PulseValueType_t = {
-    PVAL_INVALID = 0xffffffffffffffff,
+    PVAL_INVALID = 0xffffffff,
     PVAL_BOOL = 0x0,
     PVAL_INT = 0x1,
     PVAL_FLOAT = 0x2,

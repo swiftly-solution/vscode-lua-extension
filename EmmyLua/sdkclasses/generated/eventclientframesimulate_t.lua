@@ -4,7 +4,7 @@
 --- @field public LoopState EngineLoopState_t
 --- @field public RealTime number
 --- @field public FrameTime number
---- @field public WhenScheduleSendTickPacket number
+--- @field public ScheduleSendTickPacket boolean
 eventclientframesimulate_t = {}
 
 --- This is the constructor for EventClientFrameSimulate_t class.

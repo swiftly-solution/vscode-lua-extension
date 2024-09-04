@@ -2,7 +2,7 @@
 
 --- @class VectorExpressionType_t
 VectorExpressionType_t = {
-    VECTOR_EXPRESSION_UNINITIALIZED = 0xffffffffffffffff,
+    VECTOR_EXPRESSION_UNINITIALIZED = 0xffffffff,
     VECTOR_EXPRESSION_ADD = 0x0,
     VECTOR_EXPRESSION_SUBTRACT = 0x1,
     VECTOR_EXPRESSION_MUL = 0x2,

@@ -16,6 +16,11 @@ function memory:AccessedVTable() end
 --- @return nil
 function memory:AccessVTable(offset) end
 
+--- Accesses the VTable at the specified offset from `offsets.json`.
+--- @param offsetName string
+--- @return nil
+function memory:AccessVTableFromOffset(offsetName) end
+
 --- Set the boolean value to the memory address.
 --- @param value boolean
 --- @return nil
@@ -104,6 +109,16 @@ function memory:AddOffset(offset) end
 --- @param offset number
 --- @return nil
 function memory:RemoveOffset(offset) end
+
+--- Adds an offset to the pointer which is being hold by the name provided from `offsets.json`.
+--- @param offsetName string
+--- @return nil
+function memory:AddOffsetByName(offsetName) end
+
+--- Removes an offset to the pointer which is being hold by the name provided from `offsets.json`.
+--- @param offsetName string
+--- @return nil
+function memory:RemoveOffsetByName(offsetName) end
 
 --- Clears the pointer which is being hold by the class.
 --- @return nil

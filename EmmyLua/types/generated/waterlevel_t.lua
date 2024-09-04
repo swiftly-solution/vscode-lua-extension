@@ -2,11 +2,11 @@
 
 --- @class WaterLevel_t
 WaterLevel_t = {
-    WL_NotInWater = 0x0,
-    WL_Feet = 0x1,
-    WL_Knees = 0x2,
-    WL_Waist = 0x3,
-    WL_Chest = 0x4,
-    WL_FullyUnderwater = 0x5,
-    WL_Count = 0x6
+    WL_NotInWater = 0,
+    WL_Feet = 1,
+    WL_Knees = 2,
+    WL_Waist = 3,
+    WL_Chest = 4,
+    WL_FullyUnderwater = 5,
+    WL_Count = 6
 }

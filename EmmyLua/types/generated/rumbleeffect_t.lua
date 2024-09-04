@@ -2,7 +2,7 @@
 
 --- @class RumbleEffect_t
 RumbleEffect_t = {
-    RUMBLE_INVALID = 0xffffffffffffffff,
+    RUMBLE_INVALID = 0xffffffff,
     RUMBLE_STOP_ALL = 0x0,
     RUMBLE_PISTOL = 0x1,
     RUMBLE_357 = 0x2,

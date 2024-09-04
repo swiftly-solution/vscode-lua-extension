@@ -17,8 +17,6 @@
 --- @field public AutoKickDisabled boolean
 --- @field public IsLowViolence boolean
 --- @field public GamePaused boolean
---- @field public LastRealCommandNumberExecuted number
---- @field public LastLateCommandExecuted number
 --- @field public IgnoreGlobalChat number
 --- @field public LastPlayerTalkTime number
 --- @field public LastEntitySteadyState number

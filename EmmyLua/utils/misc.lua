@@ -35,6 +35,11 @@ function ComputePrettyTime(seconds) end
 --- @return table
 function string.split(str, delimiter) end
 
+--- Trims a string.
+--- @param str string
+--- @return string
+function string.trim(str) end
+
 --- Returns the CCSGameRules of the server.
 --- @return CCSGameRules
 function GetCCSGameRules() end

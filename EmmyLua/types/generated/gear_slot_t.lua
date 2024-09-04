@@ -2,7 +2,7 @@
 
 --- @class gear_slot_t
 gear_slot_t = {
-    GEAR_SLOT_INVALID = 0xffffffffffffffff,
+    GEAR_SLOT_INVALID = 0xffffffff,
     GEAR_SLOT_RIFLE = 0x0,
     GEAR_SLOT_PISTOL = 0x1,
     GEAR_SLOT_KNIFE = 0x2,

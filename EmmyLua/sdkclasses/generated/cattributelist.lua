@@ -11,6 +11,11 @@ cattributelist = {}
 function CAttributeList(ptr) end
 
 
+--- @param str string
+--- @param value number
+--- @return nil
+function cattributelist:SetOrAddAttributeValueByName(str, value) end
+
 --- @return string
 function cattributelist:ToPtr() end
 
