@@ -10,6 +10,9 @@ cplayerpawncomponent = {}
 function CPlayerPawnComponent(ptr) end
 
 
+--- @return CBasePlayerPawn
+function cplayerpawncomponent:GetPawn() end
+
 --- @return string
 function cplayerpawncomponent:ToPtr() end
 

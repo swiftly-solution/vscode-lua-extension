@@ -380,6 +380,19 @@ function usermessage:RemoveRepeatedFieldValue(fieldName, index) end
 --- @return number
 function usermessage:GetRepeatedFieldCount(fieldName) end
 
+--- @param fieldName string
+--- @return UserMessage
+function usermessage:GetMessage(fieldName) end
+
+--- @param fieldName string
+--- @param index number
+--- @return UserMessage
+function usermessage:GetRepeatedMessage(fieldName, index) end
+
+--- @param fieldName string
+--- @return UserMessage
+function usermessage:AddMessage(fieldName) end
+
 --- @param playerid number
 --- @return nil
 function usermessage:SendToPlayer(playerid) end

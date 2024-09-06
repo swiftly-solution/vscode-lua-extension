@@ -31,6 +31,9 @@ cgamescenenode = {}
 function CGameSceneNode(ptr) end
 
 
+--- @return CSkeletonInstance
+function cgamescenenode:GetSkeletonInstance() end
+
 --- @return string
 function cgamescenenode:ToPtr() end
 

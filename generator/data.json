@@ -13590,6 +13590,12 @@
                             }
                         },
                         "functions": {
+                            "GetSkeletonInstance": {
+                                "return": {
+                                    "lua": "CSkeletonInstance"
+                                },
+                                "params": {}
+                            },
                             "ToPtr": {
                                 "return": {
                                     "lua": "string"
@@ -75880,6 +75886,12 @@
                             }
                         },
                         "functions": {
+                            "GetPawn": {
+                                "return": {
+                                    "lua": "CBasePlayerPawn"
+                                },
+                                "params": {}
+                            },
                             "ToPtr": {
                                 "return": {
                                     "lua": "string"
@@ -91077,7 +91089,8 @@
                     "lua": "string"
                 },
                 "params": {
-                    "key": "string"
+                    "key": "string",
+                    "playerid": "number/nil"
                 },
                 "additional": {}
             }
@@ -96861,6 +96874,31 @@
                     "GetRepeatedFieldCount": {
                         "return": {
                             "lua": "number"
+                        },
+                        "params": {
+                            "fieldName": "string"
+                        }
+                    },
+                    "GetMessage": {
+                        "return": {
+                            "lua": "UserMessage"
+                        },
+                        "params": {
+                            "fieldName": "string"
+                        }
+                    },
+                    "GetRepeatedMessage": {
+                        "return": {
+                            "lua": "UserMessage"
+                        },
+                        "params": {
+                            "fieldName": "string",
+                            "index": "number"
+                        }
+                    },
+                    "AddMessage": {
+                        "return": {
+                            "lua": "UserMessage"
                         },
                         "params": {
                             "fieldName": "string"
