@@ -23,7 +23,7 @@ const ProcessParameters = (params) => {
     const returnParams = [];
     for (const paramkey of Object.keys(params)) {
         let name = paramkey
-        returnParams.push(`--- @param ${name} ${GetType(params[paramkey])}`)
+        returnParams.push(`--- @param ${name} ${GetType(params[paramkey]).replace(/\//g, "|")}`)
     }
     if (returnParams.length == 0) return "";
     return `\n${returnParams.join("\n")}`;
