@@ -7,7 +7,7 @@
     "url": "https://github.com/swiftly-solution/vscode-lua-extension"
   },
   "description": "",
-  "version": "1.0.35",
+  "version": "1.0.39",
   "engines": {
     "vscode": "^1.77.0"
   },

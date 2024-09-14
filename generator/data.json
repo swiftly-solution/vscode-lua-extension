@@ -451,6 +451,23 @@
                 "icon": "code",
                 "order": 1,
                 "data": {
+                    "constructor": {
+                        "title": "Constructor",
+                        "template": "function-syntax",
+                        "description": "Generates an event object to trigger a game event from Counter Strike: 2.",
+                        "variable": {
+                            "lua": "Event"
+                        },
+                        "return": {
+                            "lua": "Event"
+                        },
+                        "params": {
+                            "event_name": "string"
+                        },
+                        "additional": {
+                            "lua": "The event names are being listed inside [Game Events](https://swiftlycs2.net/docs/scripting/events/gameevents/)."
+                        }
+                    },
                     "getinvokingplugin": {
                         "title": "GetInvokingPlugin",
                         "template": "function-syntax",
@@ -1188,6 +1205,22 @@
                         },
                         "additional": {}
                     },
+                    "onplayerdamage": {
+                        "title": "OnPlayerDamage",
+                        "template": "core-event-syntax",
+                        "description": "This game event is triggered when a player receives damage.",
+                        "return": {
+                            "lua": "boolean"
+                        },
+                        "params": {
+                            "playerid": "number",
+                            "attackerid": "number",
+                            "damageinfo_ptr": "string",
+                            "inflictor_ptr": "string",
+                            "ability_ptr": "string"
+                        },
+                        "additional": {}
+                    },
                     "onusermessagesend": {
                         "title": "OnUserMessageSend",
                         "template": "core-event-syntax",
@@ -1196,12 +1229,11 @@
                             "lua": "void"
                         },
                         "params": {
-                            "playerid": "number",
                             "usermessage_uuid": "string",
                             "isreliable": "boolean"
                         },
                         "additional": {
-                            "lua": "> [!info]\n> To cancel the user message, you need to return `EventResult.Stop`. This will block the user message from being sent.\n\n#### How can I get the UserMessage?\nTo get the user message object, you need to use [GetUserMessage](https://swiftlycs2.net/docs/scripting/utils/misc/getusermessage.html) along with the `usermessage_uuid` parameter."
+                            "lua": "> [!info]\n> The methods to get the clients are preset in [UserMessage](https://swiftlycs2.net/docs/scripting/usermessages/usermessage.html) class: AddClient, RemoveClient, ClearClients, AddClients and GetClients.\n\n#### How can I stop the execution of a User Message?\nSimply return `EventResult.Stop` and it will be blocked.\n\n#### How can I get the UserMessage?\nTo get the user message object, you need to use [GetUserMessage](https://swiftlycs2.net/docs/scripting/utils/misc/getusermessage.html) along with the `usermessage_uuid` parameter."
                         }
                     }
                 }
@@ -10718,6 +10750,12 @@
                                     "pitch": "number",
                                     "volume": "number"
                                 }
+                            },
+                            "CollisionRulesChanged": {
+                                "return": {
+                                    "lua": "void"
+                                },
+                                "params": {}
                             },
                             "EHandle": {
                                 "return": {
@@ -96917,11 +96955,43 @@
                             "lua": "void"
                         },
                         "params": {}
+                    },
+                    "AddClient": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "playerid": "number"
+                        }
+                    },
+                    "RemoveClient": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "playerid": "number"
+                        }
+                    },
+                    "ClearClients": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {}
+                    },
+                    "AddClients": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {}
+                    },
+                    "GetClients": {
+                        "return": {
+                            "lua": "table"
+                        },
+                        "params": {}
                     }
                 },
-                "additional": {
-                    "lua": "This class supports doing operations on them: addition, division, multiplication, substraction."
-                }
+                "additional": {}
             },
             "list": {
                 "title": "User Messages List",

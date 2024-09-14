@@ -92,6 +92,9 @@ function CBaseEntity(ptr) end
 --- @return nil
 function cbaseentity:EmitSound(sound_name, pitch, volume) end
 
+--- @return nil
+function cbaseentity:CollisionRulesChanged() end
+
 --- @return CBaseEntity
 function cbaseentity:EHandle() end
 

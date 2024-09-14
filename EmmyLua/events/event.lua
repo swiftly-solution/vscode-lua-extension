@@ -1,7 +1,9 @@
 ---@meta
 
----@class Event
-event = {}
+--- Generates an event object to trigger a game event from Counter Strike: 2.
+--- @param event_name string
+--- @return Event
+function Event(event_name) end
 
 --- Returns the invoking plugin of the event.
 --- @return string

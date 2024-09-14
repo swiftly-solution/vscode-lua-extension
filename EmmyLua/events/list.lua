@@ -14,6 +14,7 @@
 --- |"OnClientKeyStateChange"
 --- |"OnClientCommand"
 --- |"OnClientChat"
+--- |"OnPlayerDamage"
 --- |"OnUserMessageSend"
 --- |"OnGameuiHidden"
 --- |"OnPostGameuiHidden"

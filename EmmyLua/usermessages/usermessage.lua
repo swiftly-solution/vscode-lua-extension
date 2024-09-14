@@ -399,3 +399,20 @@ function usermessage:SendToPlayer(playerid) end
 
 --- @return nil
 function usermessage:SendToAllPlayers() end
+
+--- @param playerid number
+--- @return nil
+function usermessage:AddClient(playerid) end
+
+--- @param playerid number
+--- @return nil
+function usermessage:RemoveClient(playerid) end
+
+--- @return nil
+function usermessage:ClearClients() end
+
+--- @return nil
+function usermessage:AddClients() end
+
+--- @return table
+function usermessage:GetClients() end
