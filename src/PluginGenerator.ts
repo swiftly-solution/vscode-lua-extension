@@ -17,21 +17,43 @@ export class PluginGenerator {
         this.pluginWebsite = pluginWebsite;
     }
 
-    public generateStructure(manifestFileName: string, createFolder: boolean): void {
+    public generateStructure(pluginName: string, manifestFileName: string, createFolder: boolean): void {
         const pluginPath = createFolder ? path.join(this.rootPath, this.pluginName) : this.rootPath;
 
-        const files: { [key: string]: string } = {
-            [`${manifestFileName}.lua`]: this.getLuaPluginInfo()
+        const files: { [key: string]: { [key: string]: any } } = {
+            'plugins': {
+                [this.pluginName]: {
+                    [`${manifestFileName}.lua`]: this.getLuaPluginInfo()
+                }
+            },
+            'configs': {
+                'plugins': {
+                    [`${pluginName}.json`]: this.getPluginConfig()
+                }
+            },
+            'translations': {
+                [`translation.${pluginName}.json`]: this.getPluginTranslation()
+            }
         };
 
-        if (createFolder) {
-            fs.mkdirSync(pluginPath, { recursive: true });
-        }
+        // Recursive function to create folders and files
+        const createFilesAndFolders = (basePath: string, structure: { [key: string]: any }) => {
+            Object.keys(structure).forEach(key => {
+                const currentPath = path.join(basePath, key);
 
-        Object.keys(files).forEach(file => {
-            const filePath = path.join(pluginPath, file);
-            fs.writeFileSync(filePath, files[file]);
-        });
+                if (typeof structure[key] === 'string') {
+                    // If the value is a string, it's a file, so write the content to the file
+                    fs.writeFileSync(currentPath, structure[key]);
+                } else {
+                    // If the value is an object, it's a folder, so create it
+                    fs.mkdirSync(currentPath, { recursive: true });
+                    // Recursively process the nested folders and files
+                    createFilesAndFolders(currentPath, structure[key]);
+                }
+            });
+        };
+
+        createFilesAndFolders(pluginPath, files);
     }
 
     public getLuaPluginInfo(): string {
@@ -48,6 +70,21 @@ function GetPluginWebsite()
     return "${this.pluginWebsite}"
 end
 `;
+    }
+
+    public getPluginConfig(): string {
+        return `{
+    "prefix": "{DARKRED}${this.pluginName}{DEFAULT}"
+}`;
+    }
+
+    public getPluginTranslation(): string {
+        return `{
+    "key": {
+        "en" : "key-en",
+        "pl" : "key-pl" 
+    }
+}`;
     }
 }
 
@@ -94,7 +131,7 @@ export function registerPluginGeneratorCommand(context: vscode.ExtensionContext)
 
             // Generate plugin structure in the workspace folder
             const generator = new PluginGenerator(rootPath, pluginName, pluginAuthor, pluginVersion, pluginWebsite);
-            generator.generateStructure(pluginManifestFile, true);
+            generator.generateStructure(pluginName, pluginManifestFile, true);
             vscode.window.showInformationMessage(`Plugin "${pluginName}" generated successfully.`);
         } else {
             const newWorkspaceUri = await vscode.window.showOpenDialog({
@@ -115,7 +152,7 @@ export function registerPluginGeneratorCommand(context: vscode.ExtensionContext)
 
                 // Create the manifest file in the new workspace
                 const generator = new PluginGenerator(workspaceFolderPath, pluginName, pluginAuthor, pluginVersion, pluginWebsite);
-                generator.generateStructure(pluginManifestFile, false);
+                generator.generateStructure(pluginName, pluginManifestFile, false);
 
                 // Open the new workspace
                 const workspaceUri = vscode.Uri.file(workspaceFolderPath);
