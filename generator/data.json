@@ -350,6 +350,99 @@
                     "value": "string"
                 },
                 "additional": {}
+            },
+            "exists": {
+                "title": "Exists",
+                "template": "function-syntax",
+                "description": "Checks if a convar exists.",
+                "variable": {
+                    "lua": "convar:Exists"
+                },
+                "return": {
+                    "lua": "bool"
+                },
+                "params": {
+                    "name": "string"
+                },
+                "additional": {}
+            },
+            "existsfake": {
+                "title": "ExistsFake",
+                "template": "function-syntax",
+                "description": "Checks if a fake convar exists.",
+                "variable": {
+                    "lua": "convar:ExistsFake"
+                },
+                "return": {
+                    "lua": "bool"
+                },
+                "params": {
+                    "name": "string"
+                },
+                "additional": {}
+            },
+            "addflags": {
+                "title": "AddFlags",
+                "template": "function-syntax",
+                "description": "Adds the flags to the convar.",
+                "variable": {
+                    "lua": "convar:AddFlags"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "name": "string",
+                    "flags": "number"
+                },
+                "additional": {}
+            },
+            "removeflags": {
+                "title": "RemoveFlags",
+                "template": "function-syntax",
+                "description": "Removes the flags from the convar.",
+                "variable": {
+                    "lua": "convar:RemoveFlags"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "name": "string",
+                    "flags": "number"
+                },
+                "additional": {}
+            },
+            "getflags": {
+                "title": "GetFlags",
+                "template": "function-syntax",
+                "description": "Returns the convar flags.",
+                "variable": {
+                    "lua": "convar:GetFlags"
+                },
+                "return": {
+                    "lua": "number"
+                },
+                "params": {
+                    "name": "string"
+                },
+                "additional": {}
+            },
+            "hasflags": {
+                "title": "HasFlags",
+                "template": "function-syntax",
+                "description": "Checks if a convar has the flags.",
+                "variable": {
+                    "lua": "convar:HasFlags"
+                },
+                "return": {
+                    "lua": "bool"
+                },
+                "params": {
+                    "name": "string",
+                    "flags": "number"
+                },
+                "additional": {}
             }
         }
     },
@@ -91148,6 +91241,43 @@
                 "icon": "laptop-code",
                 "order": 2,
                 "data": {
+                    "convarflags": {
+                        "title": "ConvarFlags",
+                        "template": "types-syntax",
+                        "values": {
+                            "FCVAR_NONE": "0",
+                            "FCVAR_LINKED_CONCOMMAND": "1<<0",
+                            "FCVAR_DEVELOPMENTONLY": "1<<1",
+                            "FCVAR_GAMEDLL": "1<<2",
+                            "FCVAR_CLIENTDLL": "1<<3",
+                            "FCVAR_HIDDEN": "1<<4",
+                            "FCVAR_PROTECTED": "1<<5",
+                            "FCVAR_SPONLY": "1<<6",
+                            "FCVAR_ARCHIVE": "1<<7",
+                            "FCVAR_NOTIFY": "1<<8",
+                            "FCVAR_USERINFO": "1<<9",
+                            "FCVAR_MISSING0": "1<<10",
+                            "FCVAR_UNLOGGED": "1<<11",
+                            "FCVAR_MISSING1": "1<<12",
+                            "FCVAR_REPLICATED": "1<<13",
+                            "FCVAR_CHEAT": "1<<14",
+                            "FCVAR_PER_USER": "1<<15",
+                            "FCVAR_DEMO": "1<<16",
+                            "FCVAR_DONTRECORD": "1<<17",
+                            "FCVAR_MISSING2": "1<<18",
+                            "FCVAR_RELEASE": "1<<19",
+                            "FCVAR_MENUBAR_ITEM": "1<<20",
+                            "FCVAR_MISSING3": "1<<21",
+                            "FCVAR_NOT_CONNECTED": "1<<22",
+                            "FCVAR_VCONSOLE_FUZZY_MATCHING": "1<<23",
+                            "FCVAR_SERVER_CAN_EXECUTE": "1<<24",
+                            "FCVAR_CLIENT_CAN_EXECUTE": "1<<25",
+                            "FCVAR_SERVER_CANNOT_QUERY": "1<<26",
+                            "FCVAR_VCONSOLE_SET_FOCUS": "1<<27",
+                            "FCVAR_CLIENTCMD_CAN_EXECUTE": "1<<28",
+                            "FCVAR_EXECUTE_PER_TICK": "1<<29"
+                        }
+                    },
                     "pluginstate_t": {
                         "title": "PluginState_t",
                         "template": "types-syntax",
