@@ -63,10 +63,10 @@ const ProcessData = async (data, subfolder, className) => {
                     let classVariable = data[key].variable["lua"].split(":")[0].split(".")[0]
                     if (classVariable.includes('[')) classVariable = classVariable.split('[')[0]
 
-                    writeFileSync(subfolder + ".lua", (data[key].variable["lua"].split(":").length >= 2 || data[key].variable["lua"].split(".").length >= 2) ? `---@meta
+                    writeFileSync(subfolder + ".lua", (data[key].variable["lua"].split(":").length >= 2 || data[key].variable["lua"].split(".").length >= 2 || key == "constructor") ? `---@meta
 
 ---@class ${className == "Weapons Manager" ? "WeaponManager" : className}
-${classVariable} = {}` : `---@meta`)
+${classVariable.toLowerCase()} = {}` : `---@meta`)
                 }
 
                 if (data[key].variable['lua'].includes("[")) continue;

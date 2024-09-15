@@ -1,5 +1,8 @@
 ---@meta
 
+---@class Event
+event = {}
+
 --- Generates an event object to trigger a game event from Counter Strike: 2.
 --- @param event_name string
 --- @return Event
