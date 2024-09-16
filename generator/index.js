@@ -82,8 +82,13 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                 }
                 appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua'].replace(/ \/ /g, "|")))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
             } else if (data[key].template == "types-syntax") {
-                if (!existsSync(subfolder)) mkdirSync(subfolder)
-                writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                if(subfolder.includes("generated")) {
+                    if (!existsSync(subfolder + ".lua")) writeFileSync(subfolder + ".lua", "--- @meta");
+                    appendFileSync(subfolder + ".lua", `\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                } else {
+                    if (!existsSync(subfolder)) mkdirSync(subfolder)
+                    writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                }
             } else if (data[key].template.includes("event-syntax")) {
                 subfolder = `${subfolder}/../list.lua`
                 if (!existsSync(subfolder)) writeFileSync(subfolder, `--- @meta\n--- @alias GameEvent`)
