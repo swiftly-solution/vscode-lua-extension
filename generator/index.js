@@ -90,7 +90,9 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                     writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
                 }
             } else if (data[key].template.includes("event-syntax")) {
-                subfolder = `${subfolder}/../list.lua`
+                var somehowDir = subfolder.split("/")
+                somehowDir.pop()
+                subfolder = `${somehowDir.join("/")}/list.lua`
                 if (!existsSync(subfolder)) writeFileSync(subfolder, `--- @meta\n--- @alias GameEvent`)
                 appendFileSync(subfolder, `\n--- |"${data[key].title}"`)
             } else if (data[key].template == "class-syntax") {
