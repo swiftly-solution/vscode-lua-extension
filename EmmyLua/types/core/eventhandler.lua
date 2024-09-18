@@ -1,6 +1,0 @@
---- @meta
-
---- @class EventHandler
-EventHandler = {
-
-}
