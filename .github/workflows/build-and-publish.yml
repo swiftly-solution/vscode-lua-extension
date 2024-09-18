@@ -28,11 +28,6 @@ jobs:
             - name: Generate Lua Types
               run: bash generate.sh
 
-            - name: Build Package
-              run: yarn build:prod
-              env:
-                NODE_ENV: production
-
             - name: Create Changelog
               run: |
                 git log $(git describe --tags --abbrev=0)..HEAD --oneline &> ${{ github.workspace }}-CHANGELOG.txt
