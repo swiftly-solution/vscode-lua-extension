@@ -1,0 +1,80 @@
+name: "Extension Compiler"
+
+on:
+    push:
+        branches:
+            - '**'
+
+    pull_request:
+
+jobs:
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone Repository
+              uses: actions/checkout@v2
+              with:
+                fetch-depth: 0
+
+            - name: Setup Node version
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.17.0'
+
+            - name: Install Dependencies
+              run: npm i
+
+            - name: Generate Lua Types
+              run: bash generate.sh
+
+            - name: Build Package
+              run: yarn build:prod
+              env:
+                NODE_ENV: production
+
+            - name: Create Changelog
+              run: |
+                git log $(git describe --tags --abbrev=0)..HEAD --oneline &> ${{ github.workspace }}-CHANGELOG.txt
+                cat ${{ github.workspace }}-CHANGELOG.txt
+
+            - name: Setup Git
+              run: |
+                git config user.name "${{ github.actor }}"
+                git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+
+            - name: Get Current Version Number
+              run: |
+                CURRENT_VERSION=$(cat package.json | jq .version | cut -d'"' -f 2)
+                echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_ENV
+
+            - name: Compile New Version
+              run: |
+                RELEASE_VERSION=$(npx semver $CURRENT_VERSION)
+                echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
+                echo "Bump to $RELEASE_VERSION"
+
+            - name: Version Package
+              run: |
+                npm version $RELEASE_VERSION
+                git tag -a $RELEASE_VERSION -m "$RELEASE_VERSION"
+
+            - name: Package Extension
+              run: npx vsce package $RELEASE_VERSION --no-git-tag-version --no-update-package-json -o "./swiftlycs2-$RELEASE_VERSION.vsix"
+
+            - name: Publish to Visual Studio Marketplace
+              run: npx vsce publish --packagePath "./swiftlycs2-$RELEASE_VERSION.vsix" -p ${{ secrets.VSC_MKTP_PAT }} --no-git-tag-version --no-update-package-json
+
+            - name: Push Tags
+              run: |
+                git log -1 --stat
+                git push origin main --tags
+                export GIT_TAG=$(git describe --tags --abbrev=0)
+                echo "GIT_TAG=$GIT_TAG" >> $GITHUB_ENV
+
+            - name: GitHub Release
+              uses: ncipollo/release-action@v1
+              with:
+                artifacts: "./swiftlycs2-*"
+                bodyFile: ${{ github.workspace }}-CHANGELOG.txt
+                tag: ${{ env.GIT_TAG }}
