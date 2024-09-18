@@ -101,12 +101,4 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
     }
 }
 
-if(existsSync("../EmmyLua")) {
-    rm("../EmmyLua", { recursive: true }, () => {
-        mkdirSync("../EmmyLua")
-        ProcessData(data, __dirname + "/../EmmyLua")
-    });
-} else {
-    mkdirSync("../EmmyLua")
-    ProcessData(data, __dirname + "/../EmmyLua")
-}
+ProcessData(data, __dirname + "/../EmmyLua")

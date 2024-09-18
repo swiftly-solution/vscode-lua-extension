@@ -8,5 +8,6 @@ mv docgen/data/data.json ../generator
 cd ..
 rm -rf documentation
 
+mkdir EmmyLua
 cd generator
 node index.js
