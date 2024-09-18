@@ -51,6 +51,7 @@ jobs:
 
             - name: Version Package
               run: |
+                git reset --hard
                 npm version $RELEASE_VERSION
                 git tag -a $RELEASE_VERSION -m "$RELEASE_VERSION"
 
