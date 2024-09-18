@@ -180,6 +180,16 @@ function player:GetBunnyhop() end
 --- @return nil
 function player:SetBunnyhop(state) end
 
+--- Checks if a player is listening to a game event.
+--- @param game_event string
+--- @return nil
+function player:IsListeningToGameEvent(game_event) end
+
+--- Queries a convar from a player.
+--- @param convar_name string
+--- @return nil
+function player:QueryConvar(convar_name) end
+
 --- Returns the voice flags of the player.
 --- @return number
 function player:GetVoiceFlags() end

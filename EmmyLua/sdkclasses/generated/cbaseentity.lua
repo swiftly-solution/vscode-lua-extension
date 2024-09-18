@@ -98,8 +98,9 @@ function cbaseentity:CollisionRulesChanged() end
 --- @return CBaseEntity
 function cbaseentity:EHandle() end
 
+--- @param keyvals CEntityKeyValues|nil
 --- @return nil
-function cbaseentity:Spawn() end
+function cbaseentity:Spawn(keyvals) end
 
 --- @return nil
 function cbaseentity:Despawn() end

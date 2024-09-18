@@ -1271,6 +1271,20 @@
                         },
                         "additional": {}
                     },
+                    "onclientconvarquery": {
+                        "title": "OnClientConvarQuery",
+                        "template": "core-event-syntax",
+                        "description": "This game event is triggered when a player's convar is being queried.",
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "playerid": "number",
+                            "convar_name": "string",
+                            "convar_value": "string"
+                        },
+                        "additional": {}
+                    },
                     "onclientcommand": {
                         "title": "OnClientCommand",
                         "template": "core-event-syntax",
@@ -8492,6 +8506,274 @@
                 "additional": {
                     "lua": "To see a complete list of class names and the specific entity class, see the following link: [https://cs2.poggu.me/dumped-data/entity-list](https://cs2.poggu.me/dumped-data/entity-list).\n\nThis list is provided by Poggu on it's own website for Counter Strike 2."
                 }
+            },
+            "centitykeyvalues": {
+                "title": "CEntityKeyValues",
+                "description": "",
+                "template": "class-syntax",
+                "languages": [
+                    "lua"
+                ],
+                "constructor": {},
+                "properties": {},
+                "functions": {
+                    "GetBool": {
+                        "return": {
+                            "lua": "bool"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetInt": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetUint": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetInt64": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetUint64": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetFloat": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetDouble": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetString": {
+                        "return": {
+                            "lua": "string"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetPtr": {
+                        "return": {
+                            "lua": "string"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetStringToken": {
+                        "return": {
+                            "lua": "number"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetColor": {
+                        "return": {
+                            "lua": "Color"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetVector": {
+                        "return": {
+                            "lua": "Vector"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetVector2D": {
+                        "return": {
+                            "lua": "Vector2D"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetVector4D": {
+                        "return": {
+                            "lua": "Vector4D"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "GetQAngle": {
+                        "return": {
+                            "lua": "QAngle"
+                        },
+                        "params": {
+                            "key": "string"
+                        }
+                    },
+                    "SetBool": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "bool"
+                        }
+                    },
+                    "SetInt": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetUint": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetInt64": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetUint64": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetFloat": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetDouble": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetString": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "string"
+                        }
+                    },
+                    "SetPtr": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "string"
+                        }
+                    },
+                    "SetStringToken": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "number"
+                        }
+                    },
+                    "SetColor": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "Color"
+                        }
+                    },
+                    "SetVector": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "Vector"
+                        }
+                    },
+                    "SetVector2D": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "Vector2D"
+                        }
+                    },
+                    "SetVector4D": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "Vector4D"
+                        }
+                    },
+                    "SetQAngle": {
+                        "return": {
+                            "lua": "void"
+                        },
+                        "params": {
+                            "key": "string",
+                            "value": "QAngle"
+                        }
+                    }
+                },
+                "additional": {}
             }
         }
     },
@@ -8876,6 +9158,150 @@
                 "params": {
                     "hookHandle": "HookHandle",
                     "...": "any"
+                },
+                "additional": {}
+            }
+        }
+    },
+    "ip": {
+        "title": "IP",
+        "description": "A list of API functions for IP informations.",
+        "iscategory": true,
+        "order": 3,
+        "icon": "magnifying-glass",
+        "data": {
+            "getisocode": {
+                "title": "GetIsoCode",
+                "template": "function-syntax",
+                "description": "Returns the ISO code for the country from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetIsoCode"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getcontinent": {
+                "title": "GetContinent",
+                "template": "function-syntax",
+                "description": "Returns the continent from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetContinent"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getcountry": {
+                "title": "GetCountry",
+                "template": "function-syntax",
+                "description": "Returns the country from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetCountry"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getregion": {
+                "title": "GetRegion",
+                "template": "function-syntax",
+                "description": "Returns the region from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetRegion"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getcity": {
+                "title": "GetCity",
+                "template": "function-syntax",
+                "description": "Returns the city from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetCity"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "gettimezone": {
+                "title": "GetTimezone",
+                "template": "function-syntax",
+                "description": "Returns the timezone of the country from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetTimezone"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getlatitude": {
+                "title": "GetLatitude",
+                "template": "function-syntax",
+                "description": "Returns the latitude from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetLatitude"
+                },
+                "return": {
+                    "lua": "number"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getlongitude": {
+                "title": "GetTimezone",
+                "template": "function-syntax",
+                "description": "Returns the longitude from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetLongitude"
+                },
+                "return": {
+                    "lua": "number"
+                },
+                "params": {
+                    "ip": "string"
+                },
+                "additional": {}
+            },
+            "getasn": {
+                "title": "GetASN",
+                "template": "function-syntax",
+                "description": "Returns the Autonomous System Number (ASN) from which this ip originates.",
+                "variable": {
+                    "lua": "ip:GetASN"
+                },
+                "return": {
+                    "lua": "string"
+                },
+                "params": {
+                    "ip": "string"
                 },
                 "additional": {}
             }
@@ -9917,6 +10343,36 @@
                 },
                 "additional": {}
             },
+            "islisteningtogameevent": {
+                "title": "IsListeningToGameEvent",
+                "template": "function-syntax",
+                "description": "Checks if a player is listening to a game event.",
+                "variable": {
+                    "lua": "player:IsListeningToGameEvent"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "game_event": "string"
+                },
+                "additional": {}
+            },
+            "queryconvar": {
+                "title": "QueryConvar",
+                "template": "function-syntax",
+                "description": "Queries a convar from a player.",
+                "variable": {
+                    "lua": "player:QueryConvar"
+                },
+                "return": {
+                    "lua": "void"
+                },
+                "params": {
+                    "convar_name": "string"
+                },
+                "additional": {}
+            },
             "getvoiceflags": {
                 "title": "GetVoiceFlags",
                 "template": "function-syntax",
@@ -10860,7 +11316,9 @@
                                 "return": {
                                     "lua": "void"
                                 },
-                                "params": {}
+                                "params": {
+                                    "keyvals": "CEntityKeyValues/nil"
+                                }
                             },
                             "Despawn": {
                                 "return": {

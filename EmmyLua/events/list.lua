@@ -12,6 +12,7 @@
 --- |"OnEntityCreated"
 --- |"OnEntityDeleted"
 --- |"OnClientKeyStateChange"
+--- |"OnClientConvarQuery"
 --- |"OnClientCommand"
 --- |"OnClientChat"
 --- |"OnPlayerDamage"
