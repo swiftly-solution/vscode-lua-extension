@@ -65,7 +65,7 @@ const ProcessData = async (data, subfolder, className) => {
 
                     writeFileSync(subfolder + ".lua", (data[key].variable["lua"].split(":").length >= 2 || data[key].variable["lua"].split(".").length >= 2 || key == "constructor") ? `---@meta
 
----@class ${className == "Weapons Manager" ? "WeaponManager" : className}
+---@class ${className == "Weapons Manager" ? "WeaponManager" : className.split(" ").join("")}
 ${classVariable.toLowerCase()} = {}` : `---@meta`)
                 }
 
@@ -84,10 +84,10 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
             } else if (data[key].template == "types-syntax") {
                 if(subfolder.includes("generated")) {
                     if (!existsSync(subfolder + ".lua")) writeFileSync(subfolder + ".lua", "--- @meta");
-                    appendFileSync(subfolder + ".lua", `\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                    appendFileSync(subfolder + ".lua", `\n\n--- @class ${data[key].title.split(" ").join("")}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
                 } else {
                     if (!existsSync(subfolder)) mkdirSync(subfolder)
-                    writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                    writeFileSync(subfolder + "/" + data[key].title.toLowerCase() + ".lua", `--- @meta\n\n--- @class ${data[key].title.split(" ").join("")}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
                 }
             } else if (data[key].template.includes("event-syntax")) {
                 var somehowDir = subfolder.split("/")
@@ -97,7 +97,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                 appendFileSync(subfolder, `\n--- |"${data[key].title}"`)
             } else if (data[key].template == "class-syntax") {
                 if (!existsSync(subfolder)) mkdirSync(subfolder)
-                writeFileSync(subfolder + `/${key}.lua`, `--- @meta\n\n--- @class ${data[key].title}${GenerateClassProperties(data[key].properties)}\n${key} = {}\n\n--- This is the constructor for ${data[key].title} class.${ProcessParameters(data[key].constructor)}\n--- @return ${data[key].title}\nfunction ${data[key].title}(${Object.keys(data[key].constructor).join(", ")}) end${GenerateClassFunctions(key, data[key])}`)
+                writeFileSync(subfolder + `/${key}.lua`, `--- @meta\n\n--- @class ${data[key].title.split(" ").join("")}${GenerateClassProperties(data[key].properties)}\n${key} = {}\n\n--- This is the constructor for ${data[key].title} class.${ProcessParameters(data[key].constructor)}\n--- @return ${data[key].title}\nfunction ${data[key].title}(${Object.keys(data[key].constructor).join(", ")}) end${GenerateClassFunctions(key, data[key])}`)
             }
         }
     }
