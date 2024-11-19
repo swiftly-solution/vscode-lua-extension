@@ -58,7 +58,7 @@ const GenerateFunctionParameters = (params: any, language: string) => {
         }
 
         if (forlang == language) {
-            if (language == "lua") returnParams.push(`--- @param ${name} ${GenerateType(params[paramkey])}`)
+            if (language == "lua") returnParams.push(`--- @param ${name} ${GenerateType(params[paramkey], language)}`)
         }
     }
     if(returnParams.length == 0) return "";
