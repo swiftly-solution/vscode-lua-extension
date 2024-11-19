@@ -14,9 +14,9 @@ data.utils.data.targetselector.data.getplayer.return.lua = "Player|nil"
 const GetType = (type) => {
     if (data.types.data.core.data[type.toLowerCase()]) {
         if (Object.keys(data.types.data.core.data[type.toLowerCase()].values).length == 0) return type
-        return "number"
+        return "number " + type
     }
-    else if (data.types.data.generated.data[type.toLowerCase()]) return "number"
+    else if (data.types.data.generated.data[type.toLowerCase()]) return "number " + type
     else return type
 }
 

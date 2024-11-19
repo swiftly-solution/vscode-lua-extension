@@ -10,6 +10,10 @@ function CategoryHasFoundString(category: any, str: string) {
     return JSON.stringify(category).includes(str)
 }
 
+export function GetDocsData() {
+    return docsData
+}
+
 export class DocumentationProvider implements vscode.TreeDataProvider<Item> {
     private _onDidChangeTreeData: vscode.EventEmitter<Item | undefined | void> = new vscode.EventEmitter<Item | undefined | void>();
     readonly onDidChangeTreeData: vscode.Event<Item | undefined | void> = this._onDidChangeTreeData.event;

@@ -1,6 +1,9 @@
 import { markdownTable } from "./markdowntable";
+import { GetDocsData } from "./provider";
 
 let generatedPages: any = {}
+
+let data: any = {}
 
 const templates: any = {
     "getting-started": "{description}\n{code}",
@@ -13,8 +16,18 @@ const templates: any = {
 }
 
 const GenerateLuaType = (param: string) => {
-    if (param == "any") return "Any* any"
+    if (param == "any") return "any";
+    else if(param == "void") return "nil";
+    else if(param.includes("/")) return param.split("/").map((p) => p.trim()).join("|");
+    else if(
+        GetDocsData().types.data.generated.data[param.toLowerCase()] != undefined ||
+        GetDocsData().types.data.core.data[param.toLowerCase()] != undefined
+    ) return `number ${param}`
     else return param;
+}
+
+const GenerateType = (param: string, lang: string) => {
+    if(lang == "lua") return GenerateLuaType(param);
 }
 
 const ProcessParameters = (params: any, language: string) => {
@@ -28,32 +41,60 @@ const ProcessParameters = (params: any, language: string) => {
         }
 
         if (forlang == language) {
-            if (language == "lua") returnParams.push(`${name} --[[ ${GenerateLuaType(params[paramkey])} ]]`)
+            if (language == "lua") returnParams.push(`${name}`)
         }
     }
     return returnParams.join(", ");
 }
 
+const GenerateFunctionParameters = (params: any, language: string) => {
+    const returnParams = [];
+    for (const paramkey of Object.keys(params)) {
+        let forlang = language;
+        let name = paramkey
+        if (paramkey.includes("/")) {
+            forlang = paramkey.split("/")[0];
+            name = paramkey.split("/")[1];
+        }
+
+        if (forlang == language) {
+            if (language == "lua") returnParams.push(`--- @param ${name} ${GenerateType(params[paramkey])}`)
+        }
+    }
+    if(returnParams.length == 0) return "";
+    else return `\n${returnParams.join("\n")}`
+}
+
 const GenerateFunctionSyntax = (data: any) => {
-    return `\`\`\`lua\n@returns ${data.return["lua"]}\n${data.variable["lua"]}(${ProcessParameters(data.params, "lua")})\n\`\`\`\n${data.additional["lua"] || ""}`;
+    return `\`\`\`lua${GenerateFunctionParameters(data.params, "lua")}\n--- @return ${data.return["lua"]}\n${data.variable["lua"]}(${ProcessParameters(data.params, "lua")})\n\`\`\`\n${data.additional["lua"] || ""}`;
 }
 
 const GenerateGettingStarted = (data: any) => {
     return data.content["lua"]
 }
 
-const GenerateEventParameters = (paramsData: any) => {
+const GenerateEventParameters = (paramsData: any, lang: string) => {
     if (Object.keys(paramsData).length == 0) return "";
 
-    return ", " + Object.keys(paramsData).map((key) => `${key} --[[ ${paramsData[key]} ]]`).join(', ')
+    if (lang == "lua") {
+        return ", " + Object.keys(paramsData).join(', ')
+    }
+}
+
+const GenerateEventParamTypes = (paramsData: any, lang: string) => {
+    if (Object.keys(paramsData).length == 0) return "";
+
+    if (lang == "lua") {
+        return `\n${Object.keys(paramsData).map((key) => `--- @param ${key} ${paramsData[key]}`).join('\n')}`
+    }
 }
 
 const GenerateCoreEventSyntax = (data: any) => {
-    return `\`\`\`lua\n@event returns ${data.return["lua"]}\nAddEventHandler("${data.title}", function(event --[[ Event ]]${GenerateEventParameters(data.params)})\n    --[[ ... ]]\n    return EventResult.Continue\nend)\n\`\`\`\n${data.additional["lua"] || ""}`
+    return `\`\`\`lua\n--- @param event Event${GenerateEventParamTypes(data.params, "lua")}\n--- @return number|nil EventResult\n--- @event returns ${GenerateType(data.return["lua"], "lua")} Via event:SetReturn\nAddEventHandler("${data.title}", function(event${GenerateEventParameters(data.params, "lua")})\n    --[[ ... ]]\n    return EventResult.Continue\nend)\n\`\`\`\n${data.additional["lua"] || ""}`
 }
 
 const GenerateGameEventSyntax = (data: any) => {
-    return `\`\`\`lua\n@event returns ${data.return["lua"]}\nAddEventHandler("${data.title}", function(event --[[ Event ]])\n    --[[ ... ]]\n    return EventResult.Continue\nend)\n\`\`\`\n${data.additional["lua"] || ""}`;
+    return `\`\`\`lua\n--- @param event Event\n--- @return number|nil EventResult\nAddEventHandler("${data.title}", function(event)\n    --[[ ... ]]\n    return EventResult.Continue\nend)\n\`\`\`\n${data.additional["lua"] || ""}`;
 }
 
 const GenerateGameEventArguments = (data: any) => {
@@ -79,7 +120,7 @@ const GenerateClassProperties = (classname: string, data: any) => {
     const properties = []
 
     for (const key of Object.keys(data)) {
-        properties.push(`## ${key} ${data[key].writable ? "" : "(Read-Only)"}\n\`\`\`lua\n@type ${data[key].type}\nRead: ${classname}.${key}${data[key].writable ? `\nWrite: ${classname}.${key} = value` : ""}\n\`\`\``)
+        properties.push(`## ${key} ${data[key].writable ? "" : "(Read-Only)"}\n\`\`\`lua\n--- @type ${data[key].type}\nRead: ${classname}.${key}${data[key].writable ? `\nWrite: ${classname}.${key} = value` : ""}\n\`\`\``)
     }
 
     return properties.join("\n")
@@ -92,14 +133,14 @@ const GenerateClassFunctions = (classname: string, data: any) => {
     const functions = []
 
     for (const key of Object.keys(data)) {
-        functions.push(`## ${key}\n\`\`\`lua\n@returns ${data[key].return["lua"]}\n${classname}:${key}(${ProcessParameters(data[key].params, "lua")})\n\`\`\``)
+        functions.push(`## ${key}\n\`\`\`lua${GenerateFunctionParameters(data[key].params, "lua")}}\n--- @return ${GenerateType(data[key].return["lua"], "lua")}\n${classname}:${key}(${ProcessParameters(data[key].params, "lua")})\n\`\`\``)
     }
 
     return functions.join("\n")
 }
 
 const GenerateClassSyntax = (data: any) => {
-    return `# Constructor\n\`\`\`lua\n${data.title}(${ProcessParameters(data["constructor"], "lua")})\n\`\`\`\n# Properties\n${GenerateClassProperties(data.title.toLowerCase(), data.properties)}\n# Functions\n${GenerateClassFunctions(data.title.toLowerCase(), data.functions)}\n${data.additional["lua"] || ""}`;
+    return `# Constructor\n\`\`\`lua${GenerateFunctionParameters(data["constructor"], "lua")}\n${data.title}(${ProcessParameters(data["constructor"], "lua")})\n\`\`\`\n# Properties\n${GenerateClassProperties(data.title.toLowerCase(), data.properties)}\n# Functions\n${GenerateClassFunctions(data.title.toLowerCase(), data.functions)}\n${data.additional["lua"] || ""}`;
 }
 
 const GenerateTypeData = (data: any) => {
