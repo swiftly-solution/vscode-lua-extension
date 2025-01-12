@@ -2,7 +2,6 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { registerPluginGeneratorCommand } from './PluginGenerator';
-import { SetupDocumentation } from './documentation';
 
 function setExternalLibrary(folder: string, enable: boolean) {
 	const extensionId = "swiftlycs2.swiftly---cs2-autocomplete"; // this id is case sensitive
@@ -54,8 +53,6 @@ export function activate(context: vscode.ExtensionContext) {
 	}));
 
 	registerPluginGeneratorCommand(context);
-	SetupDocumentation(context);
-
 }
 
 export function deactivate() { }

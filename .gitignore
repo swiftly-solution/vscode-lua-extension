@@ -4,3 +4,4 @@ dist/
 *.vsix
 EmmyLua/
 generator/data.json
+documentation/

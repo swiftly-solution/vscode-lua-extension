@@ -7,7 +7,7 @@
     "url": "https://github.com/swiftly-solution/vscode-lua-extension"
   },
   "description": "",
-  "version": "1.0.71",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -23,24 +23,8 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "documentation-lua",
-          "title": "SwiftlyCS2 - Lua Documentation",
-          "icon": "assets/swiftly-logo.png",
-          "description": "hello there"
-        }
-      ]
-    },
-    "views": {
-      "documentation-lua": [
-        {
-          "id": "documentation",
-          "name": "Documentation"
-        }
-      ]
-    },
+    "viewsContainers": {},
+    "views": {},
     "commands": [
       {
         "command": "swiftly---cs2-autocomplete.disableAnnotations",
@@ -59,10 +43,6 @@
       {
         "command": "swiftly---cs2-autocomplete.commands.openPagePreview",
         "title": "SwiftlyCS2 - Open Page Preview"
-      },
-      {
-        "command": "swiftly---cs2-autocomplete.commands.openUpSearch",
-        "title": "SwiftlyCS2 - Open Documentation Search"
       }
     ]
   },
