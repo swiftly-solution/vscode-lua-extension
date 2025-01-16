@@ -2,15 +2,17 @@ const { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } = r
 const { dirname } = require('path')
 
 const dataFiles = [
-    "../documentation/data/coreclass/data.json",
     "../documentation/data/coretypes/data.json",
+    "../documentation/data/sdktypes/data.json",
+    "../documentation/data/coreclass/data.json",
     "../documentation/data/gameevents/data.json",
     "../documentation/data/scripting/data.json",
     "../documentation/data/sdkclass/data.json",
-    "../documentation/data/sdktypes/data.json",
 ]
 
+let types = []
 const GetType = (type) => {
+    if(types.includes(type)) return `number ${type}`
     return type
 }
 
@@ -86,6 +88,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                     existsTypes = true
                 }
                 appendFileSync(subfolder + "/types.lua", `\n\n--- @class ${data[key].title.split(" ").join("")}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                types.push(data[key].title)
             } else if (data[key].template.includes("event-syntax")) {
                 var subfld = `../EmmyLua/events/list.lua`
                 if (!existsSync("../EmmyLua/events")) mkdirSync("../EmmyLua/events")
@@ -95,7 +98,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                 if (!existsSync("../EmmyLua/classes.lua")) writeFileSync("../EmmyLua/classes.lua", "--- @meta");
                 if (!existsSync("../EmmyLua/sdkclassalias.lua")) writeFileSync("../EmmyLua/sdkclassalias.lua", `--- @meta\n--- @alias AnySDKClass`)
                 appendFileSync("../EmmyLua/classes.lua", `\n\n--- @class ${data[key].title.split(" ").join("")}${GenerateClassProperties(data[key].properties)}\n${key} = {}${!data[key].constructor.hide ? `\n\n--- This is the constructor for ${data[key].title} class.${ProcessParameters(data[key].constructor)}\n--- @return ${data[key].title}\nfunction ${data[key].title}(${Object.keys(data[key].constructor).join(", ")}) end` : ""}${GenerateClassFunctions(key, data[key])}`)
-                if (data[key].description == "") appendFileSync("../EmmyLua/sdkclassalias.lua", `\n--- | '${data[key].title.split(" ").join("")}'`)
+                if (data[key].description == "") appendFileSync("../EmmyLua/sdkclassalias.lua", `\n--- | ${data[key].title.split(" ").join("")}`)
             }
         }
     }
