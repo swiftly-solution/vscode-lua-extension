@@ -96,6 +96,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                 appendFileSync(subfld, `\n--- | '"${data[key].title}"' # ${data[key].description}`)
             } else if (data[key].template == "class-syntax") {
                 if (!existsSync("../EmmyLua/classes")) mkdirSync("../EmmyLua/classes")
+                if (key.startsWith("c_")) continue;
                 writeFileSync("../EmmyLua/classes" + `/${key}.lua`, `--- @meta\n\n--- @class ${data[key].title.split(" ").join("")}${GenerateClassProperties(data[key].properties)}\n${key} = {}${!data[key].constructor.hide ? `\n\n--- This is the constructor for ${data[key].title} class.${ProcessParameters(data[key].constructor)}\n--- @return ${data[key].title}\nfunction ${data[key].title}(${Object.keys(data[key].constructor).join(", ")}) end` : ""}${GenerateClassFunctions(key, data[key])}`)
 
                 if (!existsSync("../EmmyLua/sdkclassalias.lua")) writeFileSync("../EmmyLua/sdkclassalias.lua", `--- @meta\n--- @alias AnySDKClass`)
