@@ -13,7 +13,10 @@ const dataFiles = [
 let types = []
 const GetType = (type) => {
     if (types.includes(type)) return `number ${type}`
-    return type
+    if (type == "void") return "nil"
+    if (type == "Any* any") return "any"
+    if (type.includes("table of")) return `table ${type.split("of")[1].trim()}`
+    return type.replace(/ \/ /g, "|")
 }
 
 var existsTypes = false
@@ -44,7 +47,7 @@ const GenerateClassFunctions = (key, data) => {
 
     for (const [fnc, fncData] of Object.entries(data.functions || {})) {
         const params = ProcessParameters(fncData.params)
-        functions.push(`${params != "" ? `${params}\n` : "\n"}--- @return ${fncData.return['lua'] == "void" ? "nil" : (fncData.return['lua'] == "Any* any" ? "any" : (fncData.return['lua'].includes("table of") ? "table" : fncData.return['lua']))}\nfunction ${key}:${fnc}(${Object.keys(fncData.params).join(", ")}) end`)
+        functions.push(`${params != "" ? `${params}\n` : "\n"}--- @return ${GetType(fncData.return['lua'])}\nfunction ${key}:${fnc}(${Object.keys(fncData.params).join(", ")}) end`)
     }
 
     if (functions.length == 0) return "";
@@ -81,7 +84,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                         appendFileSync(subfolder + ".lua", `\n\n--- This is the constructor for Memory class.\n--- @return Memory\nfunction Memory() end`)
                     }
                 }
-                appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${data[key].return['lua'] == "void" ? "nil" : (data[key].return['lua'] == "Any* any" ? "any" : (data[key].return['lua'].includes("table of") ? "table" : data[key].return['lua'].replace(/ \/ /g, "|")))}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
+                appendFileSync(subfolder + ".lua", `\n\n--- ${data[key].description.split("\n>")[0]}${ProcessParameters(data[key].params)}\n--- @return ${GetType(data[key].return['lua'])}\nfunction ${data[key].variable['lua']}(${Object.keys(data[key].params).join(", ")}) end`)
             } else if (data[key].template == "types-syntax") {
                 if (!existsTypes) {
                     writeFileSync(subfolder + "/types.lua", "--- @meta")
