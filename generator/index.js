@@ -12,7 +12,6 @@ const dataFiles = [
 
 let types = []
 const GetType = (type) => {
-    if (types.includes(type)) return `number ${type}`
     if (type == "void") return "nil"
     if (type == "Any* any") return "any"
     if (type.includes("table of")) return `table ${type.split("of")[1].trim()}`
@@ -46,8 +45,17 @@ const GenerateClassFunctions = (key, data) => {
     const functions = []
 
     for (const [fnc, fncData] of Object.entries(data.functions || {})) {
-        const params = ProcessParameters(fncData.params)
-        functions.push(`${params != "" ? `${params}\n` : "\n"}--- @return ${GetType(fncData.return['lua'])}\nfunction ${key}:${fnc}(${Object.keys(fncData.params).join(", ")}) end`)
+        let forlang = "lua"
+        let name = fnc
+        if (fnc.includes("/")) {
+            forlang = fnc.split("/")[0];
+            name = fnc.split("/")[1];
+        }
+
+        if(forlang == "lua") {
+            const params = ProcessParameters(fncData.params)
+            functions.push(`${params != "" ? `${params}\n` : "\n"}--- @return ${GetType(fncData.return['lua'])}\nfunction ${key}:${fnc}(${Object.keys(fncData.params).join(", ")}) end`)
+        }
     }
 
     if (functions.length == 0) return "";
@@ -90,7 +98,7 @@ ${classVariable.toLowerCase()} = {}` : `---@meta`)
                     writeFileSync(subfolder + "/types.lua", "--- @meta")
                     existsTypes = true
                 }
-                appendFileSync(subfolder + "/types.lua", `\n\n--- @class ${data[key].title.split(" ").join("")}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
+                appendFileSync(subfolder + "/types.lua", `\n\n--- @enum ${data[key].title.split(" ").join("")}\n${data[key].title} = {\n${Object.keys(data[key].values).map((val) => `    ${val} = ${data[key].values[val]}`).join(",\n")}\n}`)
                 types.push(data[key].title)
             } else if (data[key].template.includes("event-syntax")) {
                 var subfld = `../EmmyLua/events/list.lua`
